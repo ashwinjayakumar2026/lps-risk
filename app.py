@@ -14,7 +14,7 @@ df["district"] = df["district"].str.strip().str.lower()
 # Merge using district names
 gdf = gdf.merge(df, on="district", how="left")
 
-st.title("India Climate Risk Dashboard")
+st.title("India Monsoon LPS Risk Dashboard")
 
 # Controls
 risk_type = st.selectbox("Risk Type", ["Population", "System"])
