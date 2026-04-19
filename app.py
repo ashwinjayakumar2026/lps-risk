@@ -24,11 +24,11 @@ with col1:
 with col2:
     time_label = st.selectbox("Time", ["Present", "Near Future", "Far Future"])
 
-    time_map = {
-        "Present": "present",
-        "Near Future": "near",
-        "Far Future": "far"
-    }
+time_map = {
+    "Present": "present",
+    "Near Future": "near",
+    "Far Future": "far"
+}
 
 time = time_map[time_label]
 
@@ -41,6 +41,11 @@ with col3:
 prefix = "pop" if risk_type == "Population" else "sys"
 col = f"{prefix}_{agg}_{time}"
 
+# Safety check
+if col not in df.columns:
+    st.error(f"{col} not found in dataset")
+    st.stop()
+
 # -----------------------------
 # CLASSIFICATION
 # -----------------------------
@@ -52,17 +57,17 @@ labels = [
 
 df["class"] = pd.cut(df[col], bins=bins, labels=labels, include_lowest=True)
 
-# Drop NaN classification (no "No Data" category)
+# Drop NaN classification
 df = df[df["class"].notna()]
 
 # Force order
 df["class"] = pd.Categorical(df["class"], categories=labels, ordered=True)
 
 # -----------------------------
-# COLOR SCALE (WHITE → RED ONLY)
+# COLOR SCALE
 # -----------------------------
 colors = [
-    "#ffffff",  # 0–0.01
+    "#ffffff",
     "#fee5d9",
     "#fcbba1",
     "#fc9272",
@@ -129,55 +134,47 @@ if not row.empty:
         ]
     })
 
-    # Fill NaN safely for display
     change_df["Change (%)"] = change_df["Change (%)"].fillna("Low baseline")
 
     st.write("### Change (%)")
     st.dataframe(change_df, use_container_width=True)
 
-    # -------- H / E / V (COMBINED TABLE) --------
-        st.write("### Components")
-        
-        # Select exposure based on risk type
-        if risk_type == "Population":
-            exposure_val = row.get("exp_pop")
-        else:
-            exposure_val = row.get("exp_sys")
-        
-        # Extract values
-        haz = row.get(f"haz_{time}")
-        exp = exposure_val
-        vul = row.get("vul")
-        
-        # Create dataframe
-        hev_df = pd.DataFrame({
-            "Component": ["Hazard", "Exposure", "Vulnerability"],
-            "Value": [haz, exp, vul]
-        })
-        
-        # Calculate contribution safely
-        if pd.notna(haz) and pd.notna(exp) and pd.notna(vul):
-            total = haz + exp + vul
-        
-            if total != 0:
-                hev_df["Contribution (%)"] = [
-                    haz / total * 100,
-                    exp / total * 100,
-                    vul / total * 100
-                ]
-            else:
-                hev_df["Contribution (%)"] = 0
-        else:
-            hev_df["Contribution (%)"] = None
-        
-        # Round for readability
-        hev_df["Value"] = hev_df["Value"].round(4)
-        hev_df["Contribution (%)"] = hev_df["Contribution (%)"].round(2)
-        
-        st.dataframe(hev_df, use_container_width=True)
+    # -------- H / E / V --------
+    st.write("### Components & Contribution")
 
-    except:
-        st.info("Contribution not available")
+    if risk_type == "Population":
+        exposure_val = row.get("exp_pop")
+    else:
+        exposure_val = row.get("exp_sys")
+
+    haz = row.get(f"haz_{time}")
+    exp = exposure_val
+    vul = row.get("vul")
+
+    hev_df = pd.DataFrame({
+        "Component": ["Hazard", "Exposure", "Vulnerability"],
+        "Value": [haz, exp, vul]
+    })
+
+    # Contribution
+    if pd.notna(haz) and pd.notna(exp) and pd.notna(vul):
+        total = haz + exp + vul
+
+        if total != 0:
+            hev_df["Contribution (%)"] = [
+                haz / total * 100,
+                exp / total * 100,
+                vul / total * 100
+            ]
+        else:
+            hev_df["Contribution (%)"] = 0
+    else:
+        hev_df["Contribution (%)"] = None
+
+    hev_df["Value"] = hev_df["Value"].round(4)
+    hev_df["Contribution (%)"] = hev_df["Contribution (%)"].round(2)
+
+    st.dataframe(hev_df, use_container_width=True)
 
 else:
     st.warning("No data available")
