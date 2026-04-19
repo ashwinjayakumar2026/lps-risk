@@ -10,6 +10,12 @@ import json
 df = pd.read_csv("final_app_data.csv")
 gdf = gpd.read_file("districts_light.geojson")
 
+
+
+# FIX GEOMETRY
+gdf["geometry"] = gdf["geometry"].buffer(0)
+gdf = gdf[gdf.is_valid]
+gdf = gdf[~gdf.geometry.is_empty]
 # -----------------------------
 # CLEAN NAMES
 # -----------------------------
