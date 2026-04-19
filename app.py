@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import geopandas as gpd
-import matplotlib.pyplot as plt
+
 
 # -----------------------------
 # LOAD DATA
@@ -27,31 +27,25 @@ agg = st.selectbox("Aggregation", ["mean", "p90", "max"])
 prefix = "pop" if risk_type == "Population" else "sys"
 col = f"{prefix}_{agg}_{time}"
 
-# -----------------------------
-# MAP (MATPLOTLIB)
-# -----------------------------
-st.subheader("Risk Map")
+import folium
+from streamlit_folium import st_folium
 
-fig, ax = plt.subplots(figsize=(10, 12))
+# Create map
+m = folium.Map(location=[22, 80], zoom_start=4)
 
-gdf.plot(
-    column=col,
-    cmap="viridis",
-    linewidth=0.3,
-    edgecolor="black",
-    ax=ax,
-    legend=True,
-    missing_kwds={
-        "color": "lightgrey",
-        "label": "No data"
-    }
-)
+# Add GeoJSON
+folium.Choropleth(
+    geo_data=gdf,
+    data=gdf,
+    columns=["DIST_ID", col],
+    key_on="feature.properties.DIST_ID",
+    fill_color="YlOrRd",
+    fill_opacity=0.7,
+    line_opacity=0.2,
+    legend_name=col
+).add_to(m)
 
-ax.set_title(f"{risk_type} Risk ({agg} - {time})", fontsize=14)
-ax.axis("off")
-
-st.pyplot(fig)
-
+st_data = st_folium(m, width=700, height=500)
 # -----------------------------
 # DISTRICT INSIGHTS
 # -----------------------------
