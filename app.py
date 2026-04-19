@@ -71,18 +71,17 @@ df["class"] = pd.Categorical(df["class"], categories=category_order, ordered=Tru
 # COLOR SCALE
 # -----------------------------
 colors = [
-    "#d3d3d3",  # No Data → light grey
+    "#d3d3d3",  # No Data
     "#ffffff",  # 0–0.01
     "#fee5d9",
     "#fcbba1",
     "#fc9272",
     "#fb6a4a",
     "#ef3b2c",
+    "#e31a1c",   
     "#cb181d",
     "#a50f15",
-    "#67000d",
-    "#3b0008",
-    "#1a0003" 
+    "#800026"    # slightly dark, but not extreme
 ]
 
 # -----------------------------
