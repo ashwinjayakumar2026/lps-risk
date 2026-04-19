@@ -49,6 +49,13 @@ agg = st.selectbox("Aggregation", ["mean", "p90", "max"])
 prefix = "pop" if risk_type == "Population" else "sys"
 col = f"{prefix}_{agg}_{time}"
 
+st.write("Total districts:", len(gdf))
+st.write("Districts with data:", gdf[col].notna().sum())
+
+# Show missing ones
+missing = gdf[gdf[col].isna()]
+st.write("Missing districts:", missing["district"].unique()[:20])
+
 # -----------------------------
 # MAP
 # -----------------------------
