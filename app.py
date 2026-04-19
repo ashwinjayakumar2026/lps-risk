@@ -81,7 +81,8 @@ colors = [
     "#e31a1c",   
     "#cb181d",
     "#a50f15",
-    "#800026"    # slightly dark, but not extreme
+    "#800026",
+    "#3b0008" # slightly dark, but not extreme
 ]
 
 # -----------------------------
