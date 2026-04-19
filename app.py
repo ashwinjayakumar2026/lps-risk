@@ -14,7 +14,7 @@ df = pd.read_csv("final_app_data.csv")
 # -----------------------------
 # UI
 # -----------------------------
-st.title("India Monsoon LPS Risk Dashboard")
+st.title("Indian Monsoon LPS Risk Dashboard")
 
 col1, col2, col3 = st.columns(3)
 
