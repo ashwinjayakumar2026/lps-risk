@@ -6,7 +6,7 @@ import plotly.express as px
 # -----------------------------
 # LOAD DATA
 # -----------------------------
-with open("districts_light.geojson") as f:
+with open("districts_final.geojson") as f:
     geojson = json.load(f)
 
 df = pd.read_csv("final_app_data.csv")
