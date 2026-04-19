@@ -3,10 +3,14 @@
 ## Overview
 This project presents an interactive climate risk dashboard for India, developed using Low Pressure System (LPS)-driven rainfall hazard, exposure, and vulnerability data.
 
-The dashboard allows users to explore district-level climate risk across:
-- Present (historical baseline)
-- Near future
-- Far future
+## 🌐 Live Application
+
+ https://lps-risk-4blbz2nvmtwdctsrh8hgha.streamlit.app/
+
+Explore district-level climate risk across India with interactive controls for:
+- Risk type (Population / Human-System)
+- Time (Present / Near / Far)
+- Aggregation (Mean / P90 / Max)
 
 ## Methodology
 
