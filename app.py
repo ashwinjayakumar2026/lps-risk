@@ -2,54 +2,94 @@ import streamlit as st
 import pandas as pd
 import geopandas as gpd
 import plotly.express as px
+import json
 
-# Load data
+# -----------------------------
+# LOAD DATA
+# -----------------------------
 df = pd.read_csv("final_app_data.csv")
 gdf = gpd.read_file("districts_light.geojson")
 
-# Standardize names
-gdf["district"] = gdf["district_clean"].str.strip().str.lower()
-df["district"] = df["district"].str.strip().str.lower()
+# -----------------------------
+# CLEAN NAMES
+# -----------------------------
+df["district"] = df["district"].str.lower().str.strip()
+gdf["district"] = gdf["district_clean"].str.lower().str.strip()
 
-# Merge using district names
+# -----------------------------
+# MERGE
+# -----------------------------
 gdf = gdf.merge(df, on="district", how="left")
 
+# -----------------------------
+# FIX GEOMETRY (IMPORTANT)
+# -----------------------------
+gdf = gdf.explode(index_parts=False)
+gdf = gdf.reset_index(drop=True)
+
+# -----------------------------
+# CREATE GEOJSON WITH IDS
+# -----------------------------
+geojson = json.loads(gdf.to_json())
+
+for i, feature in enumerate(geojson["features"]):
+    feature["id"] = str(i)
+
+gdf["id"] = gdf.index.astype(str)
+
+# -----------------------------
+# STREAMLIT UI
+# -----------------------------
 st.title("India Monsoon LPS Risk Dashboard")
 
-# Controls
 risk_type = st.selectbox("Risk Type", ["Population", "System"])
 time = st.selectbox("Time", ["present", "near", "far"])
 agg = st.selectbox("Aggregation", ["mean", "p90", "max"])
 
-# Column selection
 prefix = "pop" if risk_type == "Population" else "sys"
 col = f"{prefix}_{agg}_{time}"
 
-gdf["id"] = gdf.index.astype(str)
-
-gdf = gdf.explode(index_parts=False)
-gdf = gdf.reset_index(drop=True)
-gdf["id"] = gdf.index.astype(str)
-
-# Map
-gdf["id"] = gdf.index.astype(str)
-
+# -----------------------------
+# MAP
+# -----------------------------
 fig = px.choropleth(
     gdf,
-    geojson=gdf.__geo_interface__,
+    geojson=geojson,
     locations="id",
     color=col,
-    hover_name="district"
+    hover_name="district",
 )
 
 fig.update_geos(fitbounds="locations", visible=False)
-st.plotly_chart(fig)
-# District insights
-district = st.selectbox("Select District", df["district"].dropna().unique())
 
-row = df[df["district"] == district].iloc[0]
+st.plotly_chart(fig, use_container_width=True)
 
-st.write("### Risk Values")
-st.write(row[[f"{prefix}_mean_present",
-              f"{prefix}_mean_near",
-              f"{prefix}_mean_far"]])
+# -----------------------------
+# DISTRICT INSIGHTS
+# -----------------------------
+st.subheader("District Insights")
+
+district = st.selectbox(
+    "Select District",
+    sorted(df["district"].dropna().unique())
+)
+
+row = df[df["district"] == district]
+
+if not row.empty:
+    row = row.iloc[0]
+
+    st.write("### Risk Values")
+    st.write({
+        "Present": row[f"{prefix}_mean_present"],
+        "Near Future": row[f"{prefix}_mean_near"],
+        "Far Future": row[f"{prefix}_mean_far"]
+    })
+
+    st.write("### Change (%)")
+    st.write({
+        "Near Change": row.get(f"{prefix}_change_mean_near", None),
+        "Far Change": row.get(f"{prefix}_change_mean_far", None)
+    })
+else:
+    st.warning("No data available for this district")
