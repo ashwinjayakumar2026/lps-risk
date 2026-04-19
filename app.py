@@ -26,8 +26,8 @@ gdf = gdf.merge(df, on="district", how="left")
 # -----------------------------
 geojson = json.loads(gdf.to_json())
 
-# Use DIST_ID for stable mapping
-gdf["id"] = gdf["DIST_ID"].astype(str)
+gdf = gdf.reset_index(drop=True)
+gdf["id"] = gdf.index.astype(str)
 
 for feature in geojson["features"]:
     feature["id"] = str(feature["properties"]["DIST_ID"])
