@@ -1,7 +1,4 @@
-streamlit==1.33.0
-pandas==2.2.2
-geopandas==0.14.4
+streamlit
+pandas
 folium
 streamlit-folium
-shapely==2.0.4
-pyogrio
