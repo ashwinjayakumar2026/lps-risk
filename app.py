@@ -25,18 +25,19 @@ agg = st.selectbox("Aggregation", ["mean", "p90", "max"])
 prefix = "pop" if risk_type == "Population" else "sys"
 col = f"{prefix}_{agg}_{time}"
 
+gdf["id"] = gdf.index.astype(str)
+
 # Map
 fig = px.choropleth(
     gdf,
-    geojson=gdf.geometry,
-    locations=gdf.index,
+    geojson=gdf.__geo_interface__,
+    locations="id",
     color=col,
     hover_name="district",
 )
 
 fig.update_geos(fitbounds="locations", visible=False)
 st.plotly_chart(fig)
-
 # District insights
 district = st.selectbox("Select District", df["district"].dropna().unique())
 
