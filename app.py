@@ -11,6 +11,15 @@ df = pd.read_csv("final_app_data.csv")
 import folium
 from streamlit_folium import st_folium
 
+import streamlit as st
+
+# UI controls
+risk_type = st.selectbox("Risk Type", ["Population", "System"])
+time = st.selectbox("Time", ["present", "near", "far"])
+agg = st.selectbox("Aggregation", ["mean", "p90", "max"])
+
+prefix = "pop" if risk_type == "Population" else "sys"
+col = f"{prefix}_{agg}_{time}"
 # Fill NaN
 df[col] = df[col].fillna(0)
 
