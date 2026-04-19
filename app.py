@@ -27,13 +27,16 @@ col = f"{prefix}_{agg}_{time}"
 
 gdf["id"] = gdf.index.astype(str)
 
+gdf = gdf.explode(index_parts=False)
 # Map
+gdf["id"] = gdf.index.astype(str)
+
 fig = px.choropleth(
     gdf,
     geojson=gdf.__geo_interface__,
     locations="id",
     color=col,
-    hover_name="district",
+    hover_name="district"
 )
 
 fig.update_geos(fitbounds="locations", visible=False)
