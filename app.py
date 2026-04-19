@@ -1,8 +1,7 @@
 import streamlit as st
 import pandas as pd
 import geopandas as gpd
-import plotly.express as px
-import json
+import matplotlib.pyplot as plt
 
 # -----------------------------
 # LOAD DATA
@@ -11,25 +10,16 @@ df = pd.read_csv("final_app_data.csv")
 gdf = gpd.read_file("districts_final.geojson")
 
 # -----------------------------
-# MERGE USING DIST_ID (PERFECT MATCH)
+# MERGE USING DIST_ID (IMPORTANT)
 # -----------------------------
 gdf = gdf.merge(df, on="DIST_ID", how="left")
 
 # -----------------------------
-# GEOJSON WITH IDS
-# -----------------------------
-geojson = json.loads(gdf.to_json())
-
-gdf["id"] = gdf["DIST_ID"].astype(str)
-
-for feature in geojson["features"]:
-    feature["id"] = str(feature["properties"]["DIST_ID"])
-
-# -----------------------------
-# UI
+# STREAMLIT UI
 # -----------------------------
 st.title("India Monsoon LPS Risk Dashboard")
 
+# Controls
 risk_type = st.selectbox("Risk Type", ["Population", "System"])
 time = st.selectbox("Time", ["present", "near", "far"])
 agg = st.selectbox("Aggregation", ["mean", "p90", "max"])
@@ -38,21 +28,32 @@ prefix = "pop" if risk_type == "Population" else "sys"
 col = f"{prefix}_{agg}_{time}"
 
 # -----------------------------
-# MAP
+# MAP (MATPLOTLIB)
 # -----------------------------
-fig = px.choropleth(
-    gdf,
-    geojson=geojson,
-    locations="id",
-    color=col,
-    hover_name="district_clean"
+st.subheader("Risk Map")
+
+fig, ax = plt.subplots(figsize=(10, 12))
+
+gdf.plot(
+    column=col,
+    cmap="viridis",
+    linewidth=0.3,
+    edgecolor="black",
+    ax=ax,
+    legend=True,
+    missing_kwds={
+        "color": "lightgrey",
+        "label": "No data"
+    }
 )
 
-fig.update_geos(fitbounds="locations", visible=False)
-st.plotly_chart(fig, width="stretch")
+ax.set_title(f"{risk_type} Risk ({agg} - {time})", fontsize=14)
+ax.axis("off")
+
+st.pyplot(fig)
 
 # -----------------------------
-# INSIGHTS
+# DISTRICT INSIGHTS
 # -----------------------------
 st.subheader("District Insights")
 
@@ -68,7 +69,15 @@ if not row.empty:
 
     st.write("### Risk Values")
     st.write({
-        "Present": row[f"{prefix}_mean_present"],
-        "Near Future": row[f"{prefix}_mean_near"],
-        "Far Future": row[f"{prefix}_mean_far"]
+        "Present": row.get(f"{prefix}_mean_present"),
+        "Near Future": row.get(f"{prefix}_mean_near"),
+        "Far Future": row.get(f"{prefix}_mean_far")
     })
+
+    st.write("### Change (%)")
+    st.write({
+        "Near Change": row.get(f"{prefix}_change_mean_near"),
+        "Far Change": row.get(f"{prefix}_change_mean_far")
+    })
+else:
+    st.warning("No data available for this district")
