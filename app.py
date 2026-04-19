@@ -136,45 +136,45 @@ if not row.empty:
     st.dataframe(change_df, use_container_width=True)
 
     # -------- H / E / V (COMBINED TABLE) --------
-    st.write("### Components")
-    
-    # Select exposure based on risk type
-    if risk_type == "Population":
-        exposure_val = row.get("exp_pop")
-    else:
-        exposure_val = row.get("exp_sys")
-    
-    # Extract values
-    haz = row.get(f"haz_{time}")
-    exp = exposure_val
-    vul = row.get("vul")
-    
-    # Create dataframe
-    hev_df = pd.DataFrame({
-        "Component": ["Hazard", "Exposure", "Vulnerability"],
-        "Value": [haz, exp, vul]
-    })
-    
-    # Calculate contribution safely
-    if pd.notna(haz) and pd.notna(exp) and pd.notna(vul):
-        total = haz + exp + vul
-    
-        if total != 0:
-            hev_df["Contribution (%)"] = [
-                haz / total * 100,
-                exp / total * 100,
-                vul / total * 100
-            ]
+        st.write("### Components")
+        
+        # Select exposure based on risk type
+        if risk_type == "Population":
+            exposure_val = row.get("exp_pop")
         else:
-            hev_df["Contribution (%)"] = 0
-    else:
-        hev_df["Contribution (%)"] = None
-    
-    # Round for readability
-    hev_df["Value"] = hev_df["Value"].round(4)
-    hev_df["Contribution (%)"] = hev_df["Contribution (%)"].round(2)
-    
-    st.dataframe(hev_df, use_container_width=True)
+            exposure_val = row.get("exp_sys")
+        
+        # Extract values
+        haz = row.get(f"haz_{time}")
+        exp = exposure_val
+        vul = row.get("vul")
+        
+        # Create dataframe
+        hev_df = pd.DataFrame({
+            "Component": ["Hazard", "Exposure", "Vulnerability"],
+            "Value": [haz, exp, vul]
+        })
+        
+        # Calculate contribution safely
+        if pd.notna(haz) and pd.notna(exp) and pd.notna(vul):
+            total = haz + exp + vul
+        
+            if total != 0:
+                hev_df["Contribution (%)"] = [
+                    haz / total * 100,
+                    exp / total * 100,
+                    vul / total * 100
+                ]
+            else:
+                hev_df["Contribution (%)"] = 0
+        else:
+            hev_df["Contribution (%)"] = None
+        
+        # Round for readability
+        hev_df["Value"] = hev_df["Value"].round(4)
+        hev_df["Contribution (%)"] = hev_df["Contribution (%)"].round(2)
+        
+        st.dataframe(hev_df, use_container_width=True)
 
     except:
         st.info("Contribution not available")
