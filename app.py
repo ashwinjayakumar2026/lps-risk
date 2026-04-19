@@ -7,8 +7,12 @@ import plotly.express as px
 df = pd.read_csv("final_app_data.csv")
 gdf = gpd.read_file("districts_light.geojson")
 
-# Merge
-gdf = gdf.merge(df, on="DIST_ID")
+# Standardize names
+gdf["district"] = gdf["district_clean"].str.strip().str.lower()
+df["district"] = df["district"].str.strip().str.lower()
+
+# Merge using district names
+gdf = gdf.merge(df, on="district", how="left")
 
 st.title("India Climate Risk Dashboard")
 
