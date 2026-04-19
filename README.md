@@ -19,7 +19,7 @@ Risk = Hazard × Exposure × Vulnerability
 - **Hazard**: LPS-induced rainfall extremes (ETCCDI indices)
 - **Exposure**:
   - Population exposure
-  - Human system exposure (built-up intensity)
+  - Human system exposure (built-up and crop intensity)
 - **Vulnerability**: District-level socio-economic vulnerability index
 
 ### Aggregation
