@@ -22,7 +22,15 @@ with col1:
     risk_type = st.selectbox("Risk Type", ["Population", "Human-System"])
 
 with col2:
-    time = st.selectbox("Time", ["Present", "Near-Future", "Far-Future"])
+    time_label = st.selectbox("Time", ["Present", "Near Future", "Far Future"])
+
+    time_map = {
+        "Present": "present",
+        "Near Future": "near",
+        "Far Future": "far"
+    }
+
+time = time_map[time_label]
 
 with col3:
     agg = st.selectbox("Aggregation", ["mean", "p90", "max"])
