@@ -5,7 +5,7 @@ import plotly.express as px
 
 # Load data
 df = pd.read_csv("final_app_data.csv")
-gdf = gpd.read_file("districts.geojson")
+gdf = gpd.read_file("districts_light.geojson")
 
 # Merge
 gdf = gdf.merge(df, on="DIST_ID")
