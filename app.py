@@ -1,64 +1,77 @@
 import streamlit as st
 import pandas as pd
-import geopandas as gpd
-import plotly.express as px
 import json
+import plotly.express as px
 
 # -----------------------------
 # LOAD DATA
 # -----------------------------
+with open("districts_light.geojson") as f:
+    geojson = json.load(f)
+
 df = pd.read_csv("final_app_data.csv")
-gdf = gpd.read_file("districts_light.geojson")
 
 # -----------------------------
-# CLEAN NAMES
-# -----------------------------
-gdf["district"] = gdf["district_clean"].str.strip().str.lower()
-df["district"] = df["district"].str.strip().str.lower()
-
-# -----------------------------
-# MERGE
-# -----------------------------
-gdf = gdf.merge(df, on="district", how="left")
-
-# -----------------------------
-# STREAMLIT UI
+# UI
 # -----------------------------
 st.title("India Monsoon LPS Risk Dashboard")
 
-risk_type = st.selectbox("Risk Type", ["Population", "System"])
-time = st.selectbox("Time", ["present", "near", "far"])
-agg = st.selectbox("Aggregation", ["mean", "p90", "max"])
+col1, col2, col3, col4 = st.columns(4)
 
+with col1:
+    risk_type = st.selectbox("Risk Type", ["Population", "System"])
+
+with col2:
+    time = st.selectbox("Time", ["present", "near", "far"])
+
+with col3:
+    agg = st.selectbox("Aggregation", ["mean", "p90", "max"])
+
+with col4:
+    view = st.selectbox("View", ["Absolute", "Normalized"])
+
+# -----------------------------
+# COLUMN SELECTION
+# -----------------------------
 prefix = "pop" if risk_type == "Population" else "sys"
 col = f"{prefix}_{agg}_{time}"
 
 # -----------------------------
-# HANDLE NaN (IMPORTANT)
+# NORMALIZATION (ONLY FOR VIEW)
 # -----------------------------
-gdf[col] = gdf[col].fillna(0)
+if view == "Normalized":
+    df[f"{col}_norm"] = (
+        df[col] - df[col].min()
+    ) / (df[col].max() - df[col].min())
+
+    plot_col = f"{col}_norm"
+else:
+    plot_col = col
 
 # -----------------------------
-# GEOJSON (MORE STABLE)
+# DISCRETE BINS (FROM YOUR PAPER)
 # -----------------------------
-geojson = json.loads(gdf.to_json())
+bins = [0,0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.10]
 
-gdf = gdf.reset_index(drop=True)
-gdf["id"] = gdf.index.astype(str)
+df["class"] = pd.cut(df[plot_col], bins=bins)
 
-for i, feature in enumerate(geojson["features"]):
-    feature["id"] = str(i)
+# -----------------------------
+# HANDLE NaN → WHITE
+# -----------------------------
+df["class"] = df["class"].astype(str)
+df.loc[df[plot_col].isna(), "class"] = "No Data"
 
 # -----------------------------
 # MAP
 # -----------------------------
 fig = px.choropleth(
-    gdf,
+    df,
     geojson=geojson,
-    locations="id",
-    color=col,
-    hover_name="district",
-    color_continuous_scale="YlOrRd"
+    locations="DIST_ID",
+    featureidkey="properties.DIST_ID",
+    color="class",
+    color_discrete_sequence=px.colors.sequential.YlOrRd,
+    hover_name="district"
 )
 
 fig.update_geos(fitbounds="locations", visible=False)
@@ -79,10 +92,19 @@ if not row.empty:
     row = row.iloc[0]
 
     st.write("### Risk Values")
+
     st.write({
         "Present": row.get(f"{prefix}_mean_present"),
         "Near Future": row.get(f"{prefix}_mean_near"),
         "Far Future": row.get(f"{prefix}_mean_far")
     })
+
+    st.write("### Change (%)")
+
+    st.write({
+        "Near Change": row.get(f"{prefix}_change_mean_near"),
+        "Far Change": row.get(f"{prefix}_change_mean_far")
+    })
+
 else:
-    st.warning("No data available for this district")
+    st.warning("No data available")
