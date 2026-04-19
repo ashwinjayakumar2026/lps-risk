@@ -1,39 +1,49 @@
-
-import pandas as pd
-import json
-
-# Load GeoJSON directly
-with open("districts_light.geojson") as f:
-    geojson = json.load(f)
-
-df = pd.read_csv("final_app_data.csv")
-
-import folium
-from streamlit_folium import st_folium
-
 import streamlit as st
+import pandas as pd
+import geopandas as gpd
+import plotly.express as px
 
-# UI controls
+# Load data
+df = pd.read_csv("final_app_data.csv")
+gdf = gpd.read_file("districts_light.geojson")
+
+# Standardize names
+gdf["district"] = gdf["district_clean"].str.strip().str.lower()
+df["district"] = df["district"].str.strip().str.lower()
+
+# Merge using district names
+gdf = gdf.merge(df, on="district", how="left")
+
+st.title("India Monsoon LPS Risk Dashboard")
+
+# Controls
 risk_type = st.selectbox("Risk Type", ["Population", "System"])
 time = st.selectbox("Time", ["present", "near", "far"])
 agg = st.selectbox("Aggregation", ["mean", "p90", "max"])
 
+# Column selection
 prefix = "pop" if risk_type == "Population" else "sys"
 col = f"{prefix}_{agg}_{time}"
-# Fill NaN
-df[col] = df[col].fillna(0)
 
-m = folium.Map(location=[22, 80], zoom_start=4, tiles="cartodbpositron")
+gdf["id"] = gdf.index.astype(str)
 
-folium.Choropleth(
-    geo_data=geojson,
-    data=df,
-    columns=["DIST_ID", col],
-    key_on="feature.properties.DIST_ID",
-    fill_color="YlOrRd",
-    fill_opacity=0.7,
-    line_opacity=0.2,
-    legend_name=col
-).add_to(m)
+# Map
+fig = px.choropleth(
+    gdf,
+    geojson=gdf.__geo_interface__,
+    locations="id",
+    color=col,
+    hover_name="district",
+)
 
-st_folium(m, width=700, height=500)
+fig.update_geos(fitbounds="locations", visible=False)
+st.plotly_chart(fig)
+# District insights
+district = st.selectbox("Select District", df["district"].dropna().unique())
+
+row = df[df["district"] == district].iloc[0]
+
+st.write("### Risk Values")
+st.write(row[[f"{prefix}_mean_present",
+              f"{prefix}_mean_near",
+              f"{prefix}_mean_far"]])
