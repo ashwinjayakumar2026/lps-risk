@@ -11,29 +11,22 @@ df = pd.read_csv("final_app_data.csv")
 gdf = gpd.read_file("districts_final.geojson")
 
 # -----------------------------
-# CLEAN NAMES
+# MERGE USING DIST_ID (PERFECT MATCH)
 # -----------------------------
-df["district"] = df["district"].str.lower().str.strip()
-gdf["district"] = gdf["district_clean"].str.lower().str.strip()
+gdf = gdf.merge(df, on="DIST_ID", how="left")
 
 # -----------------------------
-# MERGE
-# -----------------------------
-gdf = gdf.merge(df, on="district", how="left")
-
-# -----------------------------
-# GEOJSON WITH STABLE IDS
+# GEOJSON WITH IDS
 # -----------------------------
 geojson = json.loads(gdf.to_json())
 
-gdf = gdf.reset_index(drop=True)
-gdf["id"] = gdf.index.astype(str)
+gdf["id"] = gdf["DIST_ID"].astype(str)
 
 for feature in geojson["features"]:
     feature["id"] = str(feature["properties"]["DIST_ID"])
 
 # -----------------------------
-# STREAMLIT UI
+# UI
 # -----------------------------
 st.title("India Monsoon LPS Risk Dashboard")
 
@@ -52,24 +45,23 @@ fig = px.choropleth(
     geojson=geojson,
     locations="id",
     color=col,
-    hover_name="district"
+    hover_name="district_clean"
 )
 
 fig.update_geos(fitbounds="locations", visible=False)
-
 st.plotly_chart(fig, width="stretch")
 
 # -----------------------------
-# DISTRICT INSIGHTS
+# INSIGHTS
 # -----------------------------
 st.subheader("District Insights")
 
 district = st.selectbox(
     "Select District",
-    sorted(df["district"].dropna().unique())
+    sorted(gdf["district_clean"].dropna().unique())
 )
 
-row = df[df["district"] == district]
+row = gdf[gdf["district_clean"] == district]
 
 if not row.empty:
     row = row.iloc[0]
@@ -80,11 +72,3 @@ if not row.empty:
         "Near Future": row[f"{prefix}_mean_near"],
         "Far Future": row[f"{prefix}_mean_far"]
     })
-
-    st.write("### Change (%)")
-    st.write({
-        "Near Change": row.get(f"{prefix}_change_mean_near"),
-        "Far Change": row.get(f"{prefix}_change_mean_far")
-    })
-else:
-    st.warning("No data available for this district")
