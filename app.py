@@ -8,14 +8,8 @@ import json
 # LOAD DATA
 # -----------------------------
 df = pd.read_csv("final_app_data.csv")
-gdf = gpd.read_file("districts_light.geojson")
+gdf = gpd.read_file("districts_final.geojson")
 
-
-
-# FIX GEOMETRY
-gdf["geometry"] = gdf["geometry"].buffer(0)
-gdf = gdf[gdf.is_valid]
-gdf = gdf[~gdf.geometry.is_empty]
 # -----------------------------
 # CLEAN NAMES
 # -----------------------------
@@ -28,20 +22,15 @@ gdf["district"] = gdf["district_clean"].str.lower().str.strip()
 gdf = gdf.merge(df, on="district", how="left")
 
 # -----------------------------
-# FIX GEOMETRY (IMPORTANT)
-# -----------------------------
-gdf = gdf.explode(index_parts=False)
-gdf = gdf.reset_index(drop=True)
-
-# -----------------------------
-# CREATE GEOJSON WITH IDS
+# GEOJSON WITH STABLE IDS
 # -----------------------------
 geojson = json.loads(gdf.to_json())
 
-for i, feature in enumerate(geojson["features"]):
-    feature["id"] = str(i)
+# Use DIST_ID for stable mapping
+gdf["id"] = gdf["DIST_ID"].astype(str)
 
-gdf["id"] = gdf.index.astype(str)
+for feature in geojson["features"]:
+    feature["id"] = str(feature["properties"]["DIST_ID"])
 
 # -----------------------------
 # STREAMLIT UI
@@ -55,13 +44,6 @@ agg = st.selectbox("Aggregation", ["mean", "p90", "max"])
 prefix = "pop" if risk_type == "Population" else "sys"
 col = f"{prefix}_{agg}_{time}"
 
-st.write("Total districts:", len(gdf))
-st.write("Districts with data:", gdf[col].notna().sum())
-
-# Show missing ones
-missing = gdf[gdf[col].isna()]
-st.write("Missing districts:", missing["district"].unique()[:20])
-
 # -----------------------------
 # MAP
 # -----------------------------
@@ -70,12 +52,12 @@ fig = px.choropleth(
     geojson=geojson,
     locations="id",
     color=col,
-    hover_name="district",
+    hover_name="district"
 )
 
 fig.update_geos(fitbounds="locations", visible=False)
 
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 
 # -----------------------------
 # DISTRICT INSIGHTS
@@ -101,8 +83,8 @@ if not row.empty:
 
     st.write("### Change (%)")
     st.write({
-        "Near Change": row.get(f"{prefix}_change_mean_near", None),
-        "Far Change": row.get(f"{prefix}_change_mean_far", None)
+        "Near Change": row.get(f"{prefix}_change_mean_near"),
+        "Far Change": row.get(f"{prefix}_change_mean_far")
     })
 else:
     st.warning("No data available for this district")
