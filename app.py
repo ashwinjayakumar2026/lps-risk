@@ -57,17 +57,22 @@ labels = [
 
 df["class"] = pd.cut(df[col], bins=bins, labels=labels, include_lowest=True)
 
-# Drop NaN classification
-df = df[df["class"].notna()]
+# 🔥 KEEP ALL DISTRICTS
+df["class"] = df["class"].astype(object)
+
+# Assign explicit label for missing
+df.loc[df[col].isna(), "class"] = "No Data"
 
 # Force order
-df["class"] = pd.Categorical(df["class"], categories=labels, ordered=True)
+category_order = ["No Data"] + labels
+df["class"] = pd.Categorical(df["class"], categories=category_order, ordered=True)
 
 # -----------------------------
 # COLOR SCALE
 # -----------------------------
 colors = [
-    "#ffffff",
+    "#d3d3d3",  # No Data → light grey
+    "#ffffff",  # 0–0.01
     "#fee5d9",
     "#fcbba1",
     "#fc9272",
@@ -88,7 +93,7 @@ fig = px.choropleth(
     locations="DIST_ID",
     featureidkey="properties.DIST_ID",
     color="class",
-    category_orders={"class": labels},
+    category_orders={"class": category_order},
     color_discrete_sequence=colors,
     hover_name="district"
 )
