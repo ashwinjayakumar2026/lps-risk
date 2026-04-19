@@ -89,28 +89,37 @@ st.plotly_chart(fig, use_container_width=True)
 # -----------------------------
 st.subheader("District Insights")
 
-district_list = sorted(df["district"].dropna().unique())
-district = st.selectbox("Select District", district_list)
+district = st.selectbox("Select District", sorted(df["district"].dropna().unique()))
 
 row = df[df["district"] == district]
 
 if not row.empty:
     row = row.iloc[0]
 
-    st.write("### Risk Values")
+    # -------- Risk Table --------
+    risk_df = pd.DataFrame({
+        "Time": ["Present", "Near Future", "Far Future"],
+        "Risk": [
+            row.get(f"{prefix}_mean_present"),
+            row.get(f"{prefix}_mean_near"),
+            row.get(f"{prefix}_mean_far")
+        ]
+    })
 
-    st.write({
-        "Present": row.get(f"{prefix}_mean_present"),
-        "Near Future": row.get(f"{prefix}_mean_near"),
-        "Far Future": row.get(f"{prefix}_mean_far")
+    st.write("### Risk Values")
+    st.dataframe(risk_df, use_container_width=True)
+
+    # -------- Change Table --------
+    change_df = pd.DataFrame({
+        "Scenario": ["Near Change", "Far Change"],
+        "Change (%)": [
+            row.get(f"{prefix}_change_mean_near"),
+            row.get(f"{prefix}_change_mean_far")
+        ]
     })
 
     st.write("### Change (%)")
-
-    st.write({
-        "Near Change": row.get(f"{prefix}_change_mean_near"),
-        "Far Change": row.get(f"{prefix}_change_mean_far")
-    })
+    st.dataframe(change_df, use_container_width=True)
 
 else:
     st.warning("No data available")
