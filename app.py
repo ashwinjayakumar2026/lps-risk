@@ -28,6 +28,9 @@ col = f"{prefix}_{agg}_{time}"
 gdf["id"] = gdf.index.astype(str)
 
 gdf = gdf.explode(index_parts=False)
+gdf = gdf.reset_index(drop=True)
+gdf["id"] = gdf.index.astype(str)
+
 # Map
 gdf["id"] = gdf.index.astype(str)
 
