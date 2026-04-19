@@ -48,18 +48,23 @@ if view == "Normalized":
 else:
     plot_col = col
 
-# -----------------------------
-# DISCRETE BINS (FROM YOUR PAPER)
-# -----------------------------
+import numpy as np
+
 bins = [0,0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.10]
+labels = [
+    "0–0.01","0.01–0.02","0.02–0.03","0.03–0.04","0.04–0.05",
+    "0.05–0.06","0.06–0.07","0.07–0.08","0.08–0.09","0.09–0.10"
+]
 
-df["class"] = pd.cut(df[plot_col], bins=bins)
+df["class"] = pd.cut(df[plot_col], bins=bins, labels=labels, include_lowest=True)
 
-# -----------------------------
-# HANDLE NaN → WHITE
-# -----------------------------
-df["class"] = df["class"].astype(str)
+# Handle NaN
+df["class"] = df["class"].astype(object)
 df.loc[df[plot_col].isna(), "class"] = "No Data"
+
+# 🔥 FORCE ORDER
+category_order = ["No Data"] + labels
+df["class"] = pd.Categorical(df["class"], categories=category_order, ordered=True)
 
 # -----------------------------
 # MAP
@@ -70,7 +75,8 @@ fig = px.choropleth(
     locations="DIST_ID",
     featureidkey="properties.DIST_ID",
     color="class",
-    color_discrete_sequence=px.colors.sequential.YlOrRd,
+    category_orders={"class": category_order},
+    color_discrete_sequence=["#ffffff"] + px.colors.sequential.YlOrRd,
     hover_name="district"
 )
 
