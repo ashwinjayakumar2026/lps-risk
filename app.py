@@ -1,8 +1,13 @@
 import folium
 from streamlit_folium import st_folium
 
-# Convert to GeoJSON dict
-geojson = gdf.to_json()
+import json
+
+# Load GeoJSON directly
+with open("districts_final.geojson") as f:
+    geojson = json.load(f)
+
+df = pd.read_csv("final_app_data.csv")
 
 # Handle NaN (important for visualization)
 gdf[col] = gdf[col].fillna(0)
