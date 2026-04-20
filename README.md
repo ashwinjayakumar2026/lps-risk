@@ -5,8 +5,6 @@ This project presents an interactive climate risk dashboard for India, developed
 
 ## 🌐 Live Application
 
- https://lps-risk-4blbz2nvmtwdctsrh8hgha.streamlit.app/
-
 Explore district-level climate risk across India with interactive controls for:
 - Risk type (Population / Human-System)
 - Time (Present / Near / Far)
