@@ -10,11 +10,7 @@ with open("districts_full.geojson") as f:
     geojson = json.load(f)
 
 df = pd.read_csv("final_app_data.csv")
-df["district_clean"] = (
-    df["district"]
-    .str.upper()
-    .str.strip()
-)
+
 # -----------------------------
 # UI
 # -----------------------------
