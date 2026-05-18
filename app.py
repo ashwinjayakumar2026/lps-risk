@@ -10,7 +10,8 @@ with open("districts_full.geojson") as f:
     geojson = json.load(f)
 
 df = pd.read_csv("final_app_data.csv")
-
+st.write(df["DIST_ID"].head())
+st.write(geojson["features"][0]["properties"])
 # -----------------------------
 # UI
 # -----------------------------
