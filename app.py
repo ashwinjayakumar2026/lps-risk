@@ -91,8 +91,8 @@ colors = [
 fig = px.choropleth(
     df,
     geojson=geojson,
-    locations="district_clean",
-    featureidkey="properties.district_clean",
+    locations="DIST_ID",
+    featureidkey="properties.DIST_ID",
     color="class",
     category_orders={"class": category_order},
     color_discrete_sequence=colors,
