@@ -99,7 +99,11 @@ fig = px.choropleth(
     hover_name="district"
 )
 
-fig.update_geos(fitbounds="locations", visible=False)
+fig.update_geos(
+    visible=False,
+    projection_scale=1,
+    center={"lat": 22.5, "lon": 80}
+)
 
 st.plotly_chart(fig, use_container_width=True)
 
