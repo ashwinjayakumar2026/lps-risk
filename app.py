@@ -6,7 +6,7 @@ import plotly.express as px
 # -----------------------------
 # LOAD DATA
 # -----------------------------
-with open("districts_light.geojson") as f:
+with open("districts_full.geojson") as f:
     geojson = json.load(f)
 
 df = pd.read_csv("final_app_data.csv")
@@ -57,7 +57,7 @@ labels = [
 
 df["class"] = pd.cut(df[col], bins=bins, labels=labels, include_lowest=True)
 
-# 🔥 KEEP ALL DISTRICTS
+#  KEEP ALL DISTRICTS
 df["class"] = df["class"].astype(object)
 
 # Assign explicit label for missing
