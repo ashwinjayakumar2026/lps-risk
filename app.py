@@ -101,8 +101,8 @@ fig = px.choropleth(
 
 fig.update_geos(
     visible=False,
-    projection_scale=1,
-    center={"lat": 22.5, "lon": 80}
+    lataxis_range=[6, 38],
+    lonaxis_range=[67, 98]
 )
 
 st.plotly_chart(fig, use_container_width=True)
