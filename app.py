@@ -10,8 +10,11 @@ with open("districts_full.geojson") as f:
     geojson = json.load(f)
 
 df = pd.read_csv("final_app_data.csv")
-st.write(df["DIST_ID"].head())
-st.write(geojson["features"][0]["properties"])
+df["district_clean"] = (
+    df["district"]
+    .str.upper()
+    .str.strip()
+)
 # -----------------------------
 # UI
 # -----------------------------
@@ -92,8 +95,8 @@ colors = [
 fig = px.choropleth(
     df,
     geojson=geojson,
-    locations="DIST_ID",
-    featureidkey="properties.DIST_ID",
+    locations="district_clean",
+    featureidkey="properties.district_clean",
     color="class",
     category_orders={"class": category_order},
     color_discrete_sequence=colors,
