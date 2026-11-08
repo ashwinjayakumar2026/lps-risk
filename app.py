@@ -1,364 +1,729 @@
-import streamlit as st
-import pandas as pd
 import json
+from pathlib import Path
+
+import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go
+import streamlit as st
 
-# -----------------------------
+
+# ------------------------------------------------------------
+# INDIAN MONSOON LPS RISK EXPLORER
+#
+# Required files:
+#   app.py
+#   requirements.txt
+#   LPS_Risk_Explorer_Results_20261108T183932Z.xlsx
+#   application_district_metrics.csv
+#   districts_full.geojson
+#
+# Vulnerability source:
+#   application_district_metrics.csv -> vul
+#
+# PCA vulnerability is NOT used.
+# ------------------------------------------------------------
+
+st.set_page_config(
+    page_title="Indian Monsoon LPS Risk Explorer",
+    layout="wide",
+)
+
+st.title("Indian Monsoon LPS Risk Explorer")
+st.caption("District-level LPS risk maxima, risk change and vulnerability")
+
+ROOT = Path(__file__).resolve().parent
+
+XLSX = ROOT / "LPS_Risk_Explorer_Results_20261108T183932Z.xlsx"
+METRICS = ROOT / "application_district_metrics.csv"
+GEOJSON = ROOT / "districts_full.geojson"
+
+
+# ============================================================
 # LOAD DATA
-# -----------------------------
-with open("districts_full.geojson") as f:
-    geojson = json.load(f)
+# ============================================================
 
-with open("india_outline.geojson") as f:
-    india_outline = json.load(f)
+@st.cache_data(show_spinner="Loading district data...")
+def load_inputs():
 
-df = pd.read_csv("final_app_data.csv")
-
-# -----------------------------
-# UI
-# -----------------------------
-st.title("Indian Monsoon LPS Risk Dashboard")
-
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    risk_type = st.selectbox(
-        "Risk Type",
-        ["Population", "Human-System"]
+    maxima = pd.read_excel(
+        XLSX,
+        sheet_name="District Maxima"
     )
 
-with col2:
-    time_label = st.selectbox(
-        "Time",
-        ["Present", "Near Future", "Far Future"]
+    changes = pd.read_excel(
+        XLSX,
+        sheet_name="District Risk Change"
     )
 
-with col3:
-    agg = st.selectbox(
-        "Aggregation",
-        ["mean", "p90", "max"]
+    master = pd.read_excel(
+        XLSX,
+        sheet_name="District Master"
     )
 
-# -----------------------------
-# TIME MAP
-# -----------------------------
-time_map = {
-    "Present": "present",
-    "Near Future": "near",
-    "Far Future": "far"
-}
+    # Original district vulnerability values
+    metrics = pd.read_csv(
+        METRICS,
+        usecols=["DIST_ID", "vul"]
+    )
 
-time = time_map[time_label]
+    metrics["DIST_ID"] = pd.to_numeric(
+        metrics["DIST_ID"],
+        errors="coerce"
+    ).astype("Int64")
 
-# -----------------------------
-# COLUMN SELECTION
-# -----------------------------
-prefix = "pop" if risk_type == "Population" else "sys"
+    metrics = metrics.dropna(
+        subset=["DIST_ID"]
+    )
 
-col = f"{prefix}_{agg}_{time}"
-
-# -----------------------------
-# SAFETY CHECK
-# -----------------------------
-if col not in df.columns:
-    st.error(f"{col} not found in dataset")
-    st.stop()
-
-# -----------------------------
-# CLASSIFICATION
-# -----------------------------
-bins = [
-    0, 0.01, 0.02, 0.03, 0.04, 0.05,
-    0.06, 0.07, 0.08, 0.09, 0.10, 1
-]
-
-labels = [
-    "0–0.01",
-    "0.01–0.02",
-    "0.02–0.03",
-    "0.03–0.04",
-    "0.04–0.05",
-    "0.05–0.06",
-    "0.06–0.07",
-    "0.07–0.08",
-    "0.08–0.09",
-    "0.09–0.10",
-    ">0.10"
-]
-
-df["class"] = pd.cut(
-    df[col],
-    bins=bins,
-    labels=labels,
-    include_lowest=True
-)
-
-# KEEP ALL DISTRICTS
-df["class"] = df["class"].astype(object)
-
-# NO DATA LABEL
-df.loc[df[col].isna(), "class"] = "No Data"
-
-# CATEGORY ORDER
-category_order = ["No Data"] + labels
-
-df["class"] = pd.Categorical(
-    df["class"],
-    categories=category_order,
-    ordered=True
-)
-
-# -----------------------------
-# COLOR SCALE
-# -----------------------------
-colors = [
-    "#d3d3d3",  # No Data
-    "#ffffff",
-    "#fee5d9",
-    "#fcbba1",
-    "#fc9272",
-    "#fb6a4a",
-    "#ef3b2c",
-    "#e31a1c",
-    "#cb181d",
-    "#a50f15",
-    "#800026",
-    "#67000d"
-]
-
-# -----------------------------
-# CREATE DISCRETE COLOR MAP
-# -----------------------------
-color_map = dict(zip(category_order, colors))
-
-# -----------------------------
-# MAIN DISTRICT MAP
-# -----------------------------
-fig = px.choropleth(
-    df,
-    geojson=geojson,
-    locations="DIST_ID",
-    featureidkey="properties.DIST_ID",
-    color="class",
-    category_orders={"class": category_order},
-    color_discrete_map=color_map,
-    hover_name="district"
-)
-
-# -----------------------------
-# DISTRICT BOUNDARY STYLING
-# -----------------------------
-fig.update_traces(
-    marker_line_color="#4a4a4a",
-    marker_line_width=0.7
-)
-
-# -----------------------------
-# ADD INDIA OUTLINE
-# -----------------------------
-for feature in india_outline["features"]:
-
-    geometry = feature["geometry"]
-
-    if geometry["type"] == "Polygon":
-
-        coords = geometry["coordinates"][0]
-
-        lon = [c[0] for c in coords]
-        lat = [c[1] for c in coords]
-
-        fig.add_trace(
-            go.Scattergeo(
-                lon=lon,
-                lat=lat,
-                mode="lines",
-                line=dict(
-                    color="black",
-                    width=2
-                ),
-                hoverinfo="skip",
-                showlegend=False
-            )
+    if metrics["DIST_ID"].duplicated().any():
+        raise ValueError(
+            "Duplicate DIST_ID values in application_district_metrics.csv"
         )
 
-    elif geometry["type"] == "MultiPolygon":
+    # Standardize district IDs
+    master["DIST_ID"] = pd.to_numeric(
+        master["DIST_ID"],
+        errors="coerce"
+    ).astype("Int64")
 
-        for polygon in geometry["coordinates"]:
+    maxima["DIST_ID"] = pd.to_numeric(
+        maxima["DIST_ID"],
+        errors="coerce"
+    ).astype("Int64")
 
-            coords = polygon[0]
+    changes["DIST_ID"] = pd.to_numeric(
+        changes["DIST_ID"],
+        errors="coerce"
+    ).astype("Int64")
 
-            lon = [c[0] for c in coords]
-            lat = [c[1] for c in coords]
+    # Merge original vulnerability
+    master = master.merge(
+        metrics[["DIST_ID", "vul"]],
+        on="DIST_ID",
+        how="left",
+        validate="one_to_one"
+    )
 
-            fig.add_trace(
-                go.Scattergeo(
-                    lon=lon,
-                    lat=lat,
-                    mode="lines",
-                    line=dict(
-                        color="black",
-                        width=2
-                    ),
-                    hoverinfo="skip",
-                    showlegend=False
+    # Load district boundaries
+    with open(GEOJSON, "r", encoding="utf-8") as f:
+        geojson = json.load(f)
+
+    # Ensure GeoJSON IDs are numeric
+    for feature in geojson.get("features", []):
+
+        props = feature.get("properties", {})
+
+        if props.get("DIST_ID") is not None:
+
+            try:
+                props["DIST_ID"] = int(
+                    props["DIST_ID"]
+                )
+
+            except (TypeError, ValueError):
+                pass
+
+    # Attach original vulnerability to other datasets
+    maxima = maxima.merge(
+        master[["DIST_ID", "vul"]],
+        on="DIST_ID",
+        how="left",
+        validate="many_to_one"
+    )
+
+    changes = changes.merge(
+        master[["DIST_ID", "vul"]],
+        on="DIST_ID",
+        how="left",
+        validate="many_to_one"
+    )
+
+    return maxima, changes, master, geojson
+
+
+# ============================================================
+# CHECK FILES AND LOAD
+# ============================================================
+
+required_files = [
+    XLSX,
+    METRICS,
+    GEOJSON
+]
+
+missing = [
+    p.name for p in required_files
+    if not p.exists()
+]
+
+if missing:
+
+    st.error(
+        "Missing required files: "
+        + ", ".join(missing)
+    )
+
+    st.stop()
+
+
+try:
+
+    maxima, changes, master, geojson = load_inputs()
+
+except Exception as exc:
+
+    st.error(
+        f"Data loading failed: {exc}"
+    )
+
+    st.stop()
+
+
+# ============================================================
+# SIDEBAR CONTROLS
+# ============================================================
+
+st.sidebar.header("Map Controls")
+
+layer = st.sidebar.radio(
+    "Explore",
+    [
+        "Risk maxima",
+        "Risk change",
+        "Vulnerability"
+    ]
+)
+
+
+# ============================================================
+# RISK MAXIMA
+# ============================================================
+
+if layer == "Risk maxima":
+
+    config_labels = {
+
+        "Historical (1979–2022) | Population":
+            "historical_population",
+
+        "Historical (1979–2022) | Human system":
+            "historical_human_system",
+
+        "Epoch 1 (1979–2000) | Population":
+            "epoch1_population",
+
+        "Epoch 1 (1979–2000) | Human system":
+            "epoch1_human_system",
+
+        "Epoch 2 (2001–2022) | Population":
+            "epoch2_population",
+
+        "Epoch 2 (2001–2022) | Human system":
+            "epoch2_human_system",
+
+        "Near future (2020–2049) | Population":
+            "near_future_population",
+
+        "Near future (2020–2049) | Human system":
+            "near_future_human_system",
+
+        "Far future (2079–2099) | Population":
+            "far_future_population",
+
+        "Far future (2079–2099) | Human system":
+            "far_future_human_system",
+
+        "Far future | Future population (2100)":
+            "far_future_population_2100"
+    }
+
+    chosen_label = st.sidebar.selectbox(
+        "Period and exposure scenario",
+        list(config_labels)
+    )
+
+    chosen_config = config_labels[
+        chosen_label
+    ]
+
+    variable_labels = {
+
+        "Normalized risk maximum":
+            "Risk_Max_Normalized",
+
+        "Raw risk maximum":
+            "Risk_Max_Raw",
+
+        "Hazard at normalized-risk maximum":
+            "Hazard_at_Normalized_Max",
+
+        "Exposure at normalized-risk maximum":
+            "Exposure_at_Normalized_Max",
+
+        "District vulnerability (original vul)":
+            "vul"
+    }
+
+    variable_label = st.sidebar.selectbox(
+        "Variable",
+        list(variable_labels)
+    )
+
+    value_col = variable_labels[
+        variable_label
+    ]
+
+    plot_df = maxima[
+        maxima["Configuration"] == chosen_config
+    ].copy()
+
+    if value_col == "vul":
+
+        plot_df = master.copy()
+
+    else:
+
+        plot_df = plot_df.merge(
+            master[
+                ["DIST_ID", "District", "State"]
+            ],
+            on="DIST_ID",
+            how="left",
+            suffixes=("", "_master")
+        )
+
+        if "District_master" in plot_df.columns:
+
+            plot_df["District"] = (
+                plot_df["District"].fillna(
+                    plot_df["District_master"]
                 )
             )
 
-# -----------------------------
-# MAP LAYOUT
-# -----------------------------
-fig.update_geos(
-    visible=False,
-    lataxis_range=[6, 38],
-    lonaxis_range=[67, 98],
-    projection_type="mercator"
+        if "State_master" in plot_df.columns:
+
+            plot_df["State"] = (
+                plot_df["State"].fillna(
+                    plot_df["State_master"]
+                )
+            )
+
+    legend = variable_label
+
+
+# ============================================================
+# RISK CHANGE
+# ============================================================
+
+elif layer == "Risk change":
+
+    comparison_options = sorted(
+        changes["Comparison"].dropna().unique()
+    )
+
+    chosen_comparison = st.sidebar.selectbox(
+        "Comparison",
+        comparison_options
+    )
+
+    scenario_options = sorted(
+        changes.loc[
+            changes["Comparison"] == chosen_comparison,
+            "Exposure_Scenario"
+        ].dropna().unique()
+    )
+
+    chosen_scenario = st.sidebar.selectbox(
+        "Exposure scenario",
+        scenario_options
+    )
+
+    plot_df = changes[
+        (changes["Comparison"] == chosen_comparison)
+        &
+        (changes["Exposure_Scenario"] == chosen_scenario)
+    ].copy()
+
+    value_col = "Risk_Change_Percent"
+
+    legend = "Risk change (%)"
+
+
+# ============================================================
+# VULNERABILITY
+# ============================================================
+
+else:
+
+    plot_df = master.copy()
+
+    value_col = "vul"
+
+    legend = "District vulnerability (original vul)"
+
+
+# ============================================================
+# STATE FILTER
+# ============================================================
+
+state_options = (
+    ["All India"]
+    +
+    sorted(master["State"].dropna().unique())
 )
+
+chosen_state = st.sidebar.selectbox(
+    "State",
+    state_options
+)
+
+if chosen_state != "All India":
+
+    plot_df = plot_df[
+        plot_df["State"] == chosen_state
+    ].copy()
+
+
+plot_df = plot_df.drop_duplicates(
+    "DIST_ID"
+).copy()
+
+plot_df[value_col] = pd.to_numeric(
+    plot_df[value_col],
+    errors="coerce"
+)
+
+
+# ============================================================
+# SUMMARY METRICS
+# ============================================================
+
+valid = plot_df[value_col].notna()
+
+c1, c2, c3, c4 = st.columns(4)
+
+c1.metric(
+    "Districts displayed",
+    f"{len(plot_df):,}"
+)
+
+c2.metric(
+    "Valid values",
+    f"{int(valid.sum()):,}"
+)
+
+c3.metric(
+    "Missing values",
+    f"{int((~valid).sum()):,}"
+)
+
+c4.metric(
+    "Mean",
+    "—" if not valid.any()
+    else f"{plot_df.loc[valid, value_col].mean():.4f}"
+)
+
+
+# ============================================================
+# INDIA DISTRICT MAP
+# ============================================================
+
+fig = px.choropleth(
+
+    plot_df,
+
+    geojson=geojson,
+
+    locations="DIST_ID",
+
+    featureidkey="properties.DIST_ID",
+
+    color=value_col,
+
+    color_continuous_scale="YlOrRd",
+
+    hover_name="District",
+
+    hover_data={
+        "DIST_ID": True,
+        "State": True,
+        value_col: ":.5f"
+    },
+
+    labels={
+        value_col: legend
+    }
+)
+
+
+fig.update_traces(
+
+    marker_line_color="#555555",
+
+    marker_line_width=0.45
+
+)
+
+
+fig.update_geos(
+
+    visible=False,
+
+    lataxis_range=[6, 38],
+
+    lonaxis_range=[67, 98],
+
+    projection_type="mercator"
+
+)
+
 
 fig.update_layout(
-    margin=dict(l=0, r=0, t=0, b=0),
-    height=700
+
+    height=650,
+
+    margin=dict(
+        l=0,
+        r=0,
+        t=10,
+        b=0
+    ),
+
+    coloraxis_colorbar=dict(
+        title=legend
+    )
+
 )
 
-# -----------------------------
-# DISPLAY MAP
-# -----------------------------
+
 st.plotly_chart(
     fig,
     use_container_width=True
 )
 
-# -----------------------------
+
+# ============================================================
 # DISTRICT INSIGHTS
-# -----------------------------
+# ============================================================
+
 st.subheader("District Insights")
 
-district = st.selectbox(
-    "Select District",
-    sorted(df["district"].dropna().unique())
+district_names = sorted(
+    master["District"].dropna().unique()
 )
 
-row = df[df["district"] == district]
+selected_district = st.selectbox(
+    "Select District",
+    district_names
+)
 
-if not row.empty:
 
-    row = row.iloc[0]
+drow = master.loc[
+    master["District"] == selected_district
+].iloc[0]
 
-    # -----------------------------
-    # RISK VALUES
-    # -----------------------------
-    risk_df = pd.DataFrame({
-        "Time": [
-            "Present",
-            "Near Future",
-            "Far Future"
-        ],
-        "Risk": [
-            row.get(f"{prefix}_mean_present"),
-            row.get(f"{prefix}_mean_near"),
-            row.get(f"{prefix}_mean_far")
-        ]
-    })
 
-    st.write("### Risk Values")
+district_id = drow["DIST_ID"]
 
-    st.dataframe(
-        risk_df,
-        use_container_width=True
-    )
 
-    # -----------------------------
-    # CHANGE VALUES
-    # -----------------------------
-    change_df = pd.DataFrame({
-        "Scenario": [
-            "Near Change",
-            "Far Change"
-        ],
-        "Change (%)": [
-            row.get(f"{prefix}_change_mean_near"),
-            row.get(f"{prefix}_change_mean_far")
-        ]
-    })
+a, b, c = st.columns(3)
 
-    change_df["Change (%)"] = (
-        change_df["Change (%)"]
-        .fillna("Low baseline")
-    )
 
-    st.write("### Change (%)")
+a.metric(
+    "District",
+    str(drow["District"])
+)
 
-    st.dataframe(
-        change_df,
-        use_container_width=True
-    )
+b.metric(
+    "State",
+    str(drow["State"])
+)
 
-    # -----------------------------
-    # H / E / V COMPONENTS
-    # -----------------------------
-    st.write("### Components & Contribution")
+c.metric(
+    "Vulnerability (original vul)",
 
-    if risk_type == "Population":
-        exposure_val = row.get("exp_pop")
-    else:
-        exposure_val = row.get("exp_sys")
+    "No data"
+    if pd.isna(drow["vul"])
+    else f"{float(drow['vul']):.5f}"
+)
 
-    haz = row.get(f"haz_{time}")
-    exp = exposure_val
-    vul = row.get("vul")
 
-    hev_df = pd.DataFrame({
-        "Component": [
-            "Hazard",
-            "Exposure",
-            "Vulnerability"
-        ],
-        "Value": [
-            haz,
-            exp,
-            vul
-        ]
-    })
+# ============================================================
+# DISTRICT RISK MAXIMA DETAILS
+# ============================================================
 
-    # -----------------------------
-    # CONTRIBUTION
-    # -----------------------------
-    if (
-        pd.notna(haz)
-        and pd.notna(exp)
-        and pd.notna(vul)
-    ):
+if layer == "Risk maxima":
 
-        total = haz + exp + vul
+    selected = maxima[
 
-        if total != 0:
+        (maxima["DIST_ID"] == district_id)
 
-            hev_df["Contribution (%)"] = [
-                haz / total * 100,
-                exp / total * 100,
-                vul / total * 100
+        &
+
+        (maxima["Configuration"] == chosen_config)
+
+    ]
+
+    if not selected.empty:
+
+        r = selected.iloc[0]
+
+        st.markdown(
+            "**Risk maximum and components**"
+        )
+
+        details = pd.DataFrame({
+
+            "Component / metric": [
+
+                "Normalized risk maximum",
+
+                "Raw risk maximum",
+
+                "Hazard at normalized-risk maximum",
+
+                "Exposure at normalized-risk maximum",
+
+                "District vulnerability (original vul)"
+
+            ],
+
+            "Value": [
+
+                r.get("Risk_Max_Normalized"),
+
+                r.get("Risk_Max_Raw"),
+
+                r.get("Hazard_at_Normalized_Max"),
+
+                r.get("Exposure_at_Normalized_Max"),
+
+                drow["vul"]
+
             ]
 
-        else:
+        })
 
-            hev_df["Contribution (%)"] = 0
+        details["Value"] = pd.to_numeric(
+            details["Value"],
+            errors="coerce"
+        ).round(6)
 
-    else:
+        st.dataframe(
+            details,
+            hide_index=True,
+            use_container_width=True
+        )
 
-        hev_df["Contribution (%)"] = None
+        st.caption(
+            "District vulnerability is sourced from "
+            "application_district_metrics.csv, column 'vul'. "
+            "The workbook PCA vulnerability fields are not used."
+        )
 
-    hev_df["Value"] = hev_df["Value"].round(4)
 
-    hev_df["Contribution (%)"] = (
-        hev_df["Contribution (%)"]
-        .round(2)
-    )
+# ============================================================
+# DISTRICT RISK CHANGE DETAILS
+# ============================================================
 
-    st.dataframe(
-        hev_df,
-        use_container_width=True
-    )
+elif layer == "Risk change":
+
+    selected = changes[
+
+        (changes["DIST_ID"] == district_id)
+
+        &
+
+        (changes["Comparison"] == chosen_comparison)
+
+        &
+
+        (changes["Exposure_Scenario"] == chosen_scenario)
+
+    ]
+
+    if not selected.empty:
+
+        r = selected.iloc[0]
+
+        st.markdown(
+            "**Risk-change result**"
+        )
+
+        st.write({
+
+            "Comparison":
+                chosen_comparison,
+
+            "Exposure scenario":
+                chosen_scenario,
+
+            "Risk change (%)":
+
+                None
+                if pd.isna(r["Risk_Change_Percent"])
+
+                else round(
+                    float(r["Risk_Change_Percent"]),
+                    3
+                ),
+
+            "Baseline eligible":
+                r.get("Baseline_Eligible")
+
+        })
+
+
+# ============================================================
+# VULNERABILITY DETAILS
+# ============================================================
 
 else:
 
-    st.warning("No data available")
+    st.caption(
+        "This map uses the original district-level vulnerability "
+        "values from application_district_metrics.csv, column 'vul'."
+    )
+
+
+# ============================================================
+# DATA TABLE AND DOWNLOAD
+# ============================================================
+
+with st.expander("View District Data"):
+
+    st.dataframe(
+
+        plot_df.sort_values("District"),
+
+        hide_index=True,
+
+        use_container_width=True
+
+    )
+
+    st.download_button(
+
+        "Download displayed data (CSV)",
+
+        plot_df.to_csv(
+            index=False
+        ).encode("utf-8"),
+
+        file_name="lps_risk_explorer_view.csv",
+
+        mime="text/csv"
+
+    )
+
+
+# ============================================================
+# FOOTER
+# ============================================================
+
+st.caption(
+
+    "Sources: LPS_Risk_Explorer_Results_20261108T183932Z.xlsx; "
+    "application_district_metrics.csv. "
+    "Vulnerability uses the original 'vul' column."
+
+)
