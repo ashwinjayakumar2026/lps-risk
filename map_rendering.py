@@ -39,44 +39,47 @@ RISK_COLORS = [
     "#2d0b00",
 ]
 CHANGE_BINS = [
-    -np.inf,
+    -150,
+    -100,
     -50,
     -25,
     -10,
+    -5,
     0,
+    5,
     10,
     25,
     50,
     100,
-    200,
-    400,
-    np.inf,
+    150,
 ]
 CHANGE_LABELS = [
-    "< -50%",
+    "-150 to -100%",
+    "-100 to -50%",
     "-50 to -25%",
     "-25 to -10%",
-    "-10 to 0%",
-    "0 to 10%",
+    "-10 to -5%",
+    "-5 to 0%",
+    "0 to 5%",
+    "5 to 10%",
     "10 to 25%",
     "25 to 50%",
     "50 to 100%",
-    "100 to 200%",
-    "200 to 400%",
-    "> 400%",
+    "100 to 150%",
 ]
 CHANGE_COLORS = [
-    "#08306b",
-    "#2171b5",
-    "#6baed6",
-    "#c6dbef",
-    "#f7f7f7",
-    "#fee0d2",
-    "#fc9272",
-    "#fb6a4a",
-    "#de2d26",
-    "#a50f15",
-    "#67000d",
+    "#053061",
+    "#1e61a5",
+    "#3c8abe",
+    "#7bb6d6",
+    "#b8d8e9",
+    "#e4eef4",
+    "#faeae1",
+    "#fac8af",
+    "#ec9374",
+    "#d05548",
+    "#ae172a",
+    "#67001f",
 ]
 NO_DATA_COLOR = "#d9d9d9"
 MAP_HEIGHT = 650
@@ -96,12 +99,19 @@ def classify_map_data(
         ).astype(object)
     else:
         labels, colors = CHANGE_LABELS, CHANGE_COLORS
+        classification_values = pd.to_numeric(
+            result[column], errors="coerce"
+        ).clip(lower=CHANGE_BINS[0], upper=CHANGE_BINS[-1])
+        classification_values = classification_values.mask(
+            classification_values.eq(CHANGE_BINS[-1]),
+            np.nextafter(float(CHANGE_BINS[-1]), -np.inf),
+        )
         result["Map_Class"] = pd.cut(
-            result[column],
+            classification_values,
             bins=CHANGE_BINS,
             labels=CHANGE_LABELS,
             include_lowest=True,
-            right=True,
+            right=False,
         ).astype(object)
     result.loc[result[column].isna(), "Map_Class"] = "No Data"
     order = ["No Data"] + labels

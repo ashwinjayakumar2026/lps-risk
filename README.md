@@ -69,7 +69,15 @@ The dashboard provides two principal indicators:
 - **Risk Maximum:** District-level maximum risk values, including normalised and raw risk.
 - **Risk Change (%):** Percentage change in risk relative to the corresponding baseline period.
 
-The district-level results table presents hazard, exposure, vulnerability and relevant risk indicators for the selected district.
+The district-level results table shows the grid-cell hazard, exposure and
+vulnerability used in the risk product, alongside their reconstructed
+`H × E × V` raw risk. The separate district vulnerability index (`vul`) is an
+application metric, not the vulnerability raster value used in that product.
+Risk-change percentages use raw risk maxima; normalised risk values are
+0–1 map-display values, not the values used in the change calculation.
+
+Risk-change map classes use the same boundaries as the research figures:
+−150, −100, −50, −25, −10, −5, 0, 5, 10, 25, 50, 100 and 150 percent.
 
 ## IMD Homogeneous Regional Analysis
 

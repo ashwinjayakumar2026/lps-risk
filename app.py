@@ -727,13 +727,19 @@ if metric_label == "Risk Maximum":
 
         exposure = r["Exposure_at_Normalized_Max"]
 
+        grid_vulnerability = r["Vulnerability_at_Normalized_Max"]
+
+        reconstructed_risk = hazard * exposure * grid_vulnerability
+
         normalized_risk = r["Risk_Max_Normalized"]
 
         raw_risk = r["Risk_Max_Raw"]
 
     else:
 
-        hazard = exposure = normalized_risk = raw_risk = np.nan
+        hazard = exposure = grid_vulnerability = np.nan
+
+        reconstructed_risk = normalized_risk = raw_risk = np.nan
 
     change_comparison = get_change_comparison(
         time_value
@@ -777,9 +783,13 @@ if metric_label == "Risk Maximum":
 
             "Exposure",
 
-            "Vulnerability",
+            "Grid vulnerability (used in risk)",
 
-            "Normalized Risk Maximum",
+            "Reconstructed H × E × V",
+
+            "District vulnerability index (vul)",
+
+            "Normalized risk map value (0–1)",
 
             "Raw Risk Maximum",
 
@@ -792,6 +802,10 @@ if metric_label == "Risk Maximum":
             hazard,
 
             exposure,
+
+            grid_vulnerability,
+
+            reconstructed_risk,
 
             district_vul,
 
@@ -851,17 +865,25 @@ else:
 
             exposure = m["Exposure_at_Normalized_Max"]
 
+            grid_vulnerability = m["Vulnerability_at_Normalized_Max"]
+
+            reconstructed_risk = hazard * exposure * grid_vulnerability
+
             normalized_risk = m["Risk_Max_Normalized"]
 
         else:
 
-            hazard = exposure = normalized_risk = np.nan
+            hazard = exposure = grid_vulnerability = np.nan
+
+            reconstructed_risk = normalized_risk = np.nan
 
     else:
 
         risk_change = baseline_risk = comparison_risk = np.nan
 
-        hazard = exposure = normalized_risk = np.nan
+        hazard = exposure = grid_vulnerability = np.nan
+
+        reconstructed_risk = normalized_risk = np.nan
 
     table = pd.DataFrame({
 
@@ -871,13 +893,17 @@ else:
 
             "Exposure (comparison period)",
 
-            "Vulnerability",
+            "Grid vulnerability (used in risk)",
+
+            "Reconstructed H × E × V",
+
+            "District vulnerability index (vul)",
 
             "Baseline Raw Risk Maximum",
 
             "Comparison Raw Risk Maximum",
 
-            "Comparison Normalized Risk Maximum",
+            "Comparison normalized map value (0–1)",
 
             "Risk Change (%)"
 
@@ -888,6 +914,10 @@ else:
             hazard,
 
             exposure,
+
+            grid_vulnerability,
+
+            reconstructed_risk,
 
             district_vul,
 
@@ -924,9 +954,10 @@ st.dataframe(
 )
 
 st.caption(
-    "Hazard and exposure are extracted at the grid cell of maximum "
-    "normalized risk. Vulnerability is the original district-level "
-    "'vul' value from application_district_metrics.csv."
+    "Grid hazard, exposure and vulnerability are collocated at the maximum-risk "
+    "cell; their product reconstructs raw risk. The district vulnerability index "
+    "('vul') is a separate application metric. Raw risk maxima drive percentage "
+    "change; normalized map values are for display."
 )
 
 

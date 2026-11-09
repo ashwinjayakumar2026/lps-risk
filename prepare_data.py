@@ -19,6 +19,7 @@ TABLE_COLUMNS = {
         "Risk_Max_Raw",
         "Hazard_at_Normalized_Max",
         "Exposure_at_Normalized_Max",
+        "Vulnerability_at_Normalized_Max",
         "Exposure_Scenario",
         "Time_Period",
         "Configuration",
