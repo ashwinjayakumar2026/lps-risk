@@ -3,9 +3,9 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
 import streamlit as st
+
+from map_rendering import create_map as create_optimized_map
 
 
 # ============================================================
@@ -18,36 +18,26 @@ st.set_page_config(
 )
 
 ROOT = Path(__file__).resolve().parent
-
-XLSX = ROOT / "LPS_Risk_Explorer_Results_20261108T183932Z.xlsx"
-METRICS = ROOT / "application_district_metrics.csv"
-DISTRICTS = ROOT / "districts_full.geojson"
-INDIA_OUTLINE = ROOT / "india_outline.geojson"
-MAP_STYLE = ROOT / "Map_Style.json"
+DATA_DIR = ROOT / "data"
+TABLE_DIR = DATA_DIR / "tables"
+MAP_DIR = DATA_DIR / "maps"
+METRICS = DATA_DIR / "source" / "application_district_metrics.csv"
+DISTRICTS = MAP_DIR / "districts.geojson"
+INDIA_OUTLINE = MAP_DIR / "india_outline.geojson"
+MAP_STYLE = MAP_DIR / "Map_Style.json"
 
 
 # ============================================================
 # LOAD DATA
 # ============================================================
 
-@st.cache_data(show_spinner="Loading LPS risk data...")
+@st.cache_resource(show_spinner="Loading LPS risk data...")
 def load_data():
 
-    maxima = pd.read_excel(
-        XLSX, sheet_name="District Maxima"
-    )
-
-    changes = pd.read_excel(
-        XLSX, sheet_name="District Risk Change"
-    )
-
-    imd = pd.read_excel(
-        XLSX, sheet_name="IMD Regional Summary"
-    )
-
-    master = pd.read_excel(
-        XLSX, sheet_name="District Master"
-    )
+    maxima = pd.read_parquet(TABLE_DIR / "district_maxima.parquet")
+    changes = pd.read_parquet(TABLE_DIR / "district_risk_change.parquet")
+    imd = pd.read_parquet(TABLE_DIR / "imd_regional_summary.parquet")
+    master = pd.read_parquet(TABLE_DIR / "district_master.parquet")
 
     metrics = pd.read_csv(
         METRICS,
@@ -105,11 +95,14 @@ def load_data():
 
 # Check required files
 required = [
-    XLSX,
     METRICS,
     DISTRICTS,
     INDIA_OUTLINE,
-    MAP_STYLE
+    MAP_STYLE,
+    TABLE_DIR / "district_maxima.parquet",
+    TABLE_DIR / "district_risk_change.parquet",
+    TABLE_DIR / "imd_regional_summary.parquet",
+    TABLE_DIR / "district_master.parquet",
 ]
 
 missing = [f.name for f in required if not f.exists()]
@@ -506,7 +499,7 @@ def add_india_outline(fig):
 # MAP CREATION
 # ============================================================
 
-def create_map(df, column, map_type="risk"):
+def create_map_legacy(df, column, map_type="risk"):
 
     if map_type == "risk":
 
@@ -664,10 +657,13 @@ st.subheader(
     f"{metric_label} | {selected_time} | {scenario}"
 )
 
-main_fig, main_map_df = create_map(
+main_fig, main_map_df = create_optimized_map(
     main_df,
     map_column,
-    map_type
+    map_type,
+    districts,
+    outline,
+    style,
 )
 
 st.plotly_chart(
@@ -1062,13 +1058,16 @@ else:
 
         st.markdown("**Regional Average Risk Change Map**")
 
-        regional_fig, _ = create_map(
+        regional_fig, _ = create_optimized_map(
 
             regional_map,
 
             "Average_Risk_Change",
 
-            "change"
+            "change",
+            districts,
+            outline,
+            style,
 
         )
 
