@@ -181,11 +181,11 @@ with col2:
             "Epoch 2 vs Epoch 1":
                 "Epoch 2 vs Epoch 1",
 
-            "Near Future vs Historical":
-                "Near future vs Historical (1979-2022)",
+            "Near Future vs Present":
+                "Near future vs Present",
 
-            "Far Future vs Historical":
-                "Far future vs Historical (1979-2022)"
+            "Far Future vs Present":
+                "Far future vs Present"
         }
 
     selected_time = st.selectbox(
@@ -211,7 +211,7 @@ with col3:
         scenario_options = [
             "Population",
             "Human system",
-            "Future population (2100) vs historical population"
+            "Future population (2100)"
         ]
 
     scenario = st.selectbox(
@@ -273,20 +273,16 @@ def get_change_comparison(time_period):
             "Epoch 2 vs Epoch 1",
 
         "Near future (2020-2049)":
-            "Near future vs Historical (1979-2022)",
+            "Near future vs Present",
 
         "Far future (2079-2099)":
-            "Far future vs Historical (1979-2022)"
+            "Far future vs Present"
     }
 
     return mapping.get(time_period)
 
 
 def get_change_scenario(scenario):
-
-    if scenario == "Future population (2100)":
-        return "Future population (2100) vs historical population"
-
     return scenario
 
 

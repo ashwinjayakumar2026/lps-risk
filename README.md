@@ -31,8 +31,13 @@ The dashboard covers the following assessment periods:
 ### Risk Change Comparisons
 
 - Epoch 2 vs Epoch 1
-- Near Future vs Historical
-- Far Future vs Historical
+- Near Future vs scenario-specific Present
+- Far Future vs scenario-specific Present
+
+Future comparisons use the present-risk baseline and eligibility mask for the
+selected exposure scenario. Historical equal-exposure epoch maxima are
+zero-filled and normalized by epoch; their changes follow the research
+workflow's zero-fill and ±150% clipping rules.
 
 ## Risk Assessment Framework
 
@@ -124,6 +129,19 @@ streamlit run app.py
 ```
 
 The dashboard will open in your default web browser.
+
+### Regenerate the dashboard tables
+
+After rebuilding the corrected pipeline workbook, run:
+
+```bash
+python prepare_data.py --workbook "<path-to-LPS_Risk_Explorer_Results.xlsx>"
+```
+
+Without `--workbook`, the script rebuilds from the existing district maxima.
+It uses `data/source/district_present_risk_baselines.csv`, derived from the
+original scenario-specific present-risk arrays, to rebuild district changes
+and IMD summaries. It does not rebuild maps or change the vulnerability CSV.
 
 ## Data
 

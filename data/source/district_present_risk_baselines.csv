@@ -1,0 +1,1921 @@
+﻿DIST_ID,District,State,Configuration,Reference_Risk_Max_Raw,District_Mask_Threshold,Grid_Mask,District_Mask_Eligible
+0,NICOBARS,Andaman & Nicobar Island,population_reference,2.964668987535721e-05,0.005,none,False
+1,NORTH & MIDDLE ANDAMAN,Andaman & Nicobar Island,population_reference,0.0006893451126973548,0.005,none,False
+2,SOUTH ANDAMAN,Andaman & Nicobar Island,population_reference,0.00298844767680824,0.005,none,False
+3,ADILABAD,Andhra Pradesh,population_reference,0.0065034335705600535,0.005,none,True
+4,ANANTAPUR,Andhra Pradesh,population_reference,0.0024715092811542832,0.005,none,False
+5,CHITTOOR,Andhra Pradesh,population_reference,0.002903948279905088,0.005,none,False
+6,EAST GODAVARI,Andhra Pradesh,population_reference,0.02622895853488523,0.005,none,True
+7,GUNTUR,Andhra Pradesh,population_reference,0.019166517214972825,0.005,none,True
+8,HYDERABAD,Andhra Pradesh,population_reference,,0.005,none,False
+9,KARIMNAGAR,Andhra Pradesh,population_reference,0.016029222311099843,0.005,none,True
+10,KHAMMAM,Andhra Pradesh,population_reference,0.011418759205825158,0.005,none,True
+11,KRISHNA,Andhra Pradesh,population_reference,0.022559987728827786,0.005,none,True
+12,KURNOOL,Andhra Pradesh,population_reference,0.004013207792090883,0.005,none,False
+13,MAHBUBNAGAR,Andhra Pradesh,population_reference,0.004580949672170569,0.005,none,False
+14,MEDAK,Andhra Pradesh,population_reference,0.027118392185585663,0.005,none,True
+15,NALGONDA,Andhra Pradesh,population_reference,0.007386836477534913,0.005,none,True
+16,NIZAMABAD,Andhra Pradesh,population_reference,0.007901689237956916,0.005,none,True
+17,PRAKASAM,Andhra Pradesh,population_reference,0.004869351568894896,0.005,none,False
+18,RANGAREDDY,Andhra Pradesh,population_reference,0.07513915146273527,0.005,none,True
+19,SRI POTTI SRIRAMULU NELLORE,Andhra Pradesh,population_reference,0.007100536007164189,0.005,none,True
+20,SRIKAKULAM,Andhra Pradesh,population_reference,0.009311856695533501,0.005,none,True
+21,VISAKHAPATNAM,Andhra Pradesh,population_reference,0.039809614065360883,0.005,none,True
+22,VIZIANAGARAM,Andhra Pradesh,population_reference,0.014377096310302937,0.005,none,True
+23,WARANGAL,Andhra Pradesh,population_reference,0.020110371529529516,0.005,none,True
+24,WEST GODAVARI,Andhra Pradesh,population_reference,0.01799879997407373,0.005,none,True
+25,Y.S.R.,Andhra Pradesh,population_reference,0.0035691642660383347,0.005,none,False
+26,ANJAW,Arunanchal Pradesh,population_reference,6.982780246556123e-05,0.005,none,False
+27,CHANGLANG,Arunanchal Pradesh,population_reference,0.0016238484809355529,0.005,none,False
+28,DIBANG VALLEY,Arunanchal Pradesh,population_reference,7.775516544950741e-05,0.005,none,False
+29,EAST KAMENG,Arunanchal Pradesh,population_reference,0.00039417667343272396,0.005,none,False
+30,EAST SIANG,Arunanchal Pradesh,population_reference,0.0009103878969884392,0.005,none,False
+31,KURUNG KUMEY,Arunanchal Pradesh,population_reference,0.000194546659648685,0.005,none,False
+32,LOHIT,Arunanchal Pradesh,population_reference,0.0006208903369474626,0.005,none,False
+33,LOWER DIBANG VALLEY,Arunanchal Pradesh,population_reference,0.0009227789033737158,0.005,none,False
+34,LOWER SUBANSIRI,Arunanchal Pradesh,population_reference,0.0002641789199502878,0.005,none,False
+35,PAPUM PARE,Arunanchal Pradesh,population_reference,0.0018562437189318865,0.005,none,False
+36,TAWANG,Arunanchal Pradesh,population_reference,0.00021105186623568233,0.005,none,False
+37,TIRAP,Arunanchal Pradesh,population_reference,0.001460306250748839,0.005,none,False
+38,UPPER SIANG,Arunanchal Pradesh,population_reference,0.00013828817508985397,0.005,none,False
+39,UPPER SUBANSIRI,Arunanchal Pradesh,population_reference,0.0002307196143320762,0.005,none,False
+40,WEST KAMENG,Arunanchal Pradesh,population_reference,0.0005585883628239614,0.005,none,False
+41,WEST SIANG,Arunanchal Pradesh,population_reference,0.0008122929151341261,0.005,none,False
+42,BAKSA,Assam,population_reference,0.00584787928204178,0.005,none,True
+43,BARPETA,Assam,population_reference,0.007798790504249039,0.005,none,True
+44,BONGAIGAON,Assam,population_reference,0.007437460154640594,0.005,none,True
+45,CACHAR,Assam,population_reference,0.00830430204667707,0.005,none,True
+46,CHIRANG,Assam,population_reference,0.009345812843045415,0.005,none,True
+47,DARRANG,Assam,population_reference,0.00697166236462789,0.005,none,True
+48,DHEMAJI,Assam,population_reference,0.002350146737779656,0.005,none,False
+49,DHUBRI,Assam,population_reference,0.013532632851377232,0.005,none,True
+50,DIBRUGARH,Assam,population_reference,0.005238764782232223,0.005,none,True
+51,DIMA HASAO,Assam,population_reference,0.0010606374566334645,0.005,none,False
+52,GOALPARA,Assam,population_reference,0.0072216021465702366,0.005,none,True
+53,GOLAGHAT,Assam,population_reference,0.00319589161809157,0.005,none,False
+54,HAILAKANDI,Assam,population_reference,0.0029113677427181385,0.005,none,False
+55,JORHAT,Assam,population_reference,0.0036113169944118188,0.005,none,False
+56,KAMRUP,Assam,population_reference,0.014806531888787867,0.005,none,True
+57,KAMRUP METROPOLITAN,Assam,population_reference,0.005433365956668055,0.005,none,True
+58,KARBI ANGLONG,Assam,population_reference,0.007575347692980115,0.005,none,True
+59,KARIMGANJ,Assam,population_reference,0.008700297134922572,0.005,none,True
+60,KOKRAJHAR,Assam,population_reference,0.009225305951729497,0.005,none,True
+61,LAKHIMPUR,Assam,population_reference,0.0021497143077955933,0.005,none,False
+62,MORIGAON,Assam,population_reference,0.004974735373857131,0.005,none,False
+63,NAGAON,Assam,population_reference,0.006905622296340016,0.005,none,True
+64,NALBARI,Assam,population_reference,0.006970084520245143,0.005,none,True
+65,SIVASAGAR,Assam,population_reference,0.005703427017207574,0.005,none,True
+66,SONITPUR,Assam,population_reference,0.00665401456448922,0.005,none,True
+67,TINSUKIA,Assam,population_reference,0.0050475156593027416,0.005,none,True
+68,UDALGURI,Assam,population_reference,0.00501964622025869,0.005,none,True
+69,ARARIA,Bihar,population_reference,0.014256658259514898,0.005,none,True
+70,ARWAL,Bihar,population_reference,0.010708015423979336,0.005,none,True
+71,AURANGABAD,Bihar,population_reference,0.019893453597485632,0.005,none,True
+72,BANKA,Bihar,population_reference,0.010585205361240614,0.005,none,True
+73,BEGUSARAI,Bihar,population_reference,0.022167711038450756,0.005,none,True
+74,BHAGALPUR,Bihar,population_reference,0.0189850163262073,0.005,none,True
+75,BHOJPUR,Bihar,population_reference,0.01936191865482741,0.005,none,True
+76,BUXAR,Bihar,population_reference,0.019101881365424764,0.005,none,True
+77,DARBHANGA,Bihar,population_reference,0.02054840136479761,0.005,none,True
+78,GAYA,Bihar,population_reference,0.026614898254008784,0.005,none,True
+79,GOPALGANJ,Bihar,population_reference,0.01348431267206788,0.005,none,True
+80,JAMUI,Bihar,population_reference,0.009354393214318987,0.005,none,True
+81,JEHANABAD,Bihar,population_reference,0.014016168748751003,0.005,none,True
+82,KAIMUR,Bihar,population_reference,0.014235926921574833,0.005,none,True
+83,KATIHAR,Bihar,population_reference,0.01751558882215425,0.005,none,True
+84,KHAGARIA,Bihar,population_reference,0.009814581628572247,0.005,none,True
+85,KISHANGANJ,Bihar,population_reference,0.015625937815767096,0.005,none,True
+86,LAKHISARAI,Bihar,population_reference,0.007375837726645683,0.005,none,True
+87,MADHEPURA,Bihar,population_reference,0.01647187419103196,0.005,none,True
+88,MADHUBANI,Bihar,population_reference,0.012299603649189975,0.005,none,True
+89,MUNGER,Bihar,population_reference,0.010925027783264594,0.005,none,True
+90,MUZAFFARPUR,Bihar,population_reference,0.01939374390430964,0.005,none,True
+91,NALANDA,Bihar,population_reference,0.014220416966419425,0.005,none,True
+92,NAWADA,Bihar,population_reference,0.012454114072651354,0.005,none,True
+93,PASHCHIM CHAMPARAN,Bihar,population_reference,0.01578257261495026,0.005,none,True
+94,PATNA,Bihar,population_reference,0.0317973382556778,0.005,none,True
+95,PURBA CHAMPARAN,Bihar,population_reference,0.011889722529166681,0.005,none,True
+96,PURNIA,Bihar,population_reference,0.023120181261239534,0.005,none,True
+97,ROHTAS,Bihar,population_reference,0.020017812224668054,0.005,none,True
+98,SAHARSA,Bihar,population_reference,0.012972756244049392,0.005,none,True
+99,SAMASTIPUR,Bihar,population_reference,0.019070815298379024,0.005,none,True
+100,SARAN,Bihar,population_reference,0.0203777857173793,0.005,none,True
+101,SHEIKHPURA,Bihar,population_reference,0.007839902988622078,0.005,none,True
+102,SHEOHAR,Bihar,population_reference,0.007516540098232894,0.005,none,True
+103,SITAMARHI,Bihar,population_reference,0.011204482554452297,0.005,none,True
+104,SIWAN,Bihar,population_reference,0.018853244074638804,0.005,none,True
+105,SUPAUL,Bihar,population_reference,0.01248899808848307,0.005,none,True
+106,VAISHALI,Bihar,population_reference,0.024447678424465984,0.005,none,True
+107,CHANDIGARH,Chandigarh,population_reference,0.016259480428388318,0.005,none,True
+108,BASTAR,Chhattisgarh,population_reference,0.010660546545573912,0.005,none,True
+109,BIJAPUR,Chhattisgarh,population_reference,0.0018739164373100968,0.005,none,False
+110,BILASPUR,Chhattisgarh,population_reference,0.021184193401201874,0.005,none,True
+111,DAKSHIN BASTAR DANTEWADA,Chhattisgarh,population_reference,0.005034968605572344,0.005,none,True
+112,DHAMTARI,Chhattisgarh,population_reference,0.012091056209396734,0.005,none,True
+113,DURG,Chhattisgarh,population_reference,0.032066585189329484,0.005,none,True
+114,JANJGIR - CHAMPA,Chhattisgarh,population_reference,0.012029561153176722,0.005,none,True
+115,JASHPUR,Chhattisgarh,population_reference,0.005204261492397444,0.005,none,True
+116,KABEERDHAM,Chhattisgarh,population_reference,0.007514293008808649,0.005,none,True
+117,KORBA,Chhattisgarh,population_reference,0.01265436404565433,0.005,none,True
+118,KORIYA,Chhattisgarh,population_reference,0.0058833158421032015,0.005,none,True
+119,MAHASAMUND,Chhattisgarh,population_reference,0.008026706979199985,0.005,none,True
+120,NARAYANPUR,Chhattisgarh,population_reference,0.0030524108446184856,0.005,none,False
+121,RAIGARH,Chhattisgarh,population_reference,0.010010084996081397,0.005,none,True
+122,RAIPUR,Chhattisgarh,population_reference,0.03304974480703342,0.005,none,True
+123,RAJNANDGAON,Chhattisgarh,population_reference,0.013349603436338607,0.005,none,True
+124,SURGUJA,Chhattisgarh,population_reference,0.007356527714160001,0.005,none,True
+125,UTTAR BASTAR KANKER,Chhattisgarh,population_reference,0.005969486354683383,0.005,none,True
+126,DADRA & NAGAR HAVELI,Dadara & Nagar Havelli,population_reference,0.046284675870070895,0.005,none,True
+127,DAMAN,Daman & Diu,population_reference,,0.005,none,False
+128,DIU,Daman & Diu,population_reference,,0.005,none,False
+129,NORTH GOA,Goa,population_reference,0.010201638555270644,0.005,none,True
+130,SOUTH GOA,Goa,population_reference,0.012917450589176569,0.005,none,True
+131,AHMADABAD,Gujarat,population_reference,0.04139857722121043,0.005,none,True
+132,AMRELI,Gujarat,population_reference,0.007399568194731972,0.005,none,True
+133,ANAND,Gujarat,population_reference,0.019611079387899476,0.005,none,True
+134,BANAS KANTHA,Gujarat,population_reference,0.006646588911412951,0.005,none,True
+135,BHARUCH,Gujarat,population_reference,0.013497032256074947,0.005,none,True
+136,BHAVNAGAR,Gujarat,population_reference,0.005683731037665841,0.005,none,True
+137,DOHAD,Gujarat,population_reference,0.013383808352435305,0.005,none,True
+138,GANDHINAGAR,Gujarat,population_reference,0.011050370752424482,0.005,none,True
+139,JAMNAGAR,Gujarat,population_reference,0.011272035506186637,0.005,none,True
+140,JUNAGADH,Gujarat,population_reference,0.011130182380815822,0.005,none,True
+141,KACHCHH,Gujarat,population_reference,0.008361733551758923,0.005,none,True
+142,KHEDA,Gujarat,population_reference,0.010729289839168916,0.005,none,True
+143,MAHESANA,Gujarat,population_reference,0.0049675736103124545,0.005,none,False
+144,NARMADA,Gujarat,population_reference,0.0039074174320635835,0.005,none,False
+145,NAVSARI,Gujarat,population_reference,0.021845261751604884,0.005,none,True
+146,PANCH MAHALS,Gujarat,population_reference,0.00887524187222482,0.005,none,True
+147,PATAN,Gujarat,population_reference,0.004446678470488993,0.005,none,False
+148,PORBANDAR,Gujarat,population_reference,0.00786189137356826,0.005,none,True
+149,RAJKOT,Gujarat,population_reference,0.018967174641409512,0.005,none,True
+150,SABAR KANTHA,Gujarat,population_reference,0.005150186501103987,0.005,none,True
+151,SURAT,Gujarat,population_reference,0.04412750647897126,0.005,none,True
+152,SURENDRANAGAR,Gujarat,population_reference,0.005172899921494824,0.005,none,True
+153,TAPI,Gujarat,population_reference,0.014412734098620327,0.005,none,True
+154,THE DANGS,Gujarat,population_reference,0.00566068545672961,0.005,none,True
+155,VADODARA,Gujarat,population_reference,0.03553768031635934,0.005,none,True
+156,VALSAD,Gujarat,population_reference,0.037695417920743324,0.005,none,True
+157,AMBALA,Haryana,population_reference,0.004428297039283241,0.005,none,False
+158,BHIWANI,Haryana,population_reference,0.004147060794067155,0.005,none,False
+159,FARIDABAD,Haryana,population_reference,0.005227586894328292,0.005,none,True
+160,FATEHABAD,Haryana,population_reference,0.002307085532503782,0.005,none,False
+161,GURGAON,Haryana,population_reference,0.04716887339798549,0.005,none,True
+162,HISAR,Haryana,population_reference,0.004105797121771324,0.005,none,False
+163,JHAJJAR,Haryana,population_reference,0.004146144784845681,0.005,none,False
+164,JIND,Haryana,population_reference,0.0029224045520580503,0.005,none,False
+165,KAITHAL,Haryana,population_reference,0.003914803259095215,0.005,none,False
+166,KARNAL,Haryana,population_reference,0.005876885881568729,0.005,none,True
+167,KURUKSHETRA,Haryana,population_reference,0.0032074389335279637,0.005,none,False
+168,MAHENDRAGARH,Haryana,population_reference,0.0047341080936130295,0.005,none,False
+169,MEWAT,Haryana,population_reference,0.0079898498334104,0.005,none,True
+170,PALWAL,Haryana,population_reference,0.011032034931130346,0.005,none,True
+171,PANCHKULA,Haryana,population_reference,0.0023716916631547048,0.005,none,False
+172,PANIPAT,Haryana,population_reference,0.003960231451333868,0.005,none,False
+173,REWARI,Haryana,population_reference,0.004443901825225454,0.005,none,False
+174,ROHTAK,Haryana,population_reference,0.0044087617893625915,0.005,none,False
+175,SIRSA,Haryana,population_reference,0.0026258724643837684,0.005,none,False
+176,SONIPAT,Haryana,population_reference,0.0058625692401351485,0.005,none,True
+177,YAMUNANAGAR,Haryana,population_reference,0.004303088411293635,0.005,none,False
+178,BILASPUR,Himachal Pradesh,population_reference,0.0022768232597759532,0.005,none,False
+179,CHAMBA,Himachal Pradesh,population_reference,0.0009529122604782115,0.005,none,False
+180,HAMIRPUR,Himachal Pradesh,population_reference,0.0018892262356737769,0.005,none,False
+181,KANGRA,Himachal Pradesh,population_reference,0.002664821183520745,0.005,none,False
+182,KINNAUR,Himachal Pradesh,population_reference,0.00029323517000718496,0.005,none,False
+183,KULLU,Himachal Pradesh,population_reference,0.0008306466025632559,0.005,none,False
+184,LAHUL & SPITI,Himachal Pradesh,population_reference,5.492324246287285e-05,0.005,none,False
+185,MANDI,Himachal Pradesh,population_reference,0.0017264135856857722,0.005,none,False
+186,SHIMLA,Himachal Pradesh,population_reference,0.0014566854219578355,0.005,none,False
+187,SIRMAUR,Himachal Pradesh,population_reference,0.0029470697976184314,0.005,none,False
+188,SOLAN,Himachal Pradesh,population_reference,0.0027217304117263565,0.005,none,False
+189,UNA,Himachal Pradesh,population_reference,0.002573375049811978,0.005,none,False
+190,ANANTNAG,Jammu & Kashmir,population_reference,0.0021899804053371217,0.005,none,False
+191,BADGAM,Jammu & Kashmir,population_reference,0.0067521887246522905,0.005,none,True
+192,BANDIPORE,Jammu & Kashmir,population_reference,0.0003722227858519622,0.005,none,False
+193,BARAMULA,Jammu & Kashmir,population_reference,0.0021759915259399907,0.005,none,False
+194,DODA,Jammu & Kashmir,population_reference,0.00041421188535105944,0.005,none,False
+195,GANDERBAL,Jammu & Kashmir,population_reference,5.362896943211095e-05,0.005,none,False
+196,JAMMU,Jammu & Kashmir,population_reference,0.0049636836587835615,0.005,none,False
+197,KARGIL,Jammu & Kashmir,population_reference,7.738862790185704e-05,0.005,none,False
+198,KATHUA,Jammu & Kashmir,population_reference,0.0014057883862229452,0.005,none,False
+199,KISHTWAR,Jammu & Kashmir,population_reference,0.0005897880463482691,0.005,none,False
+200,KULGAM,Jammu & Kashmir,population_reference,0.00038208093799875926,0.005,none,False
+201,KUPWARA,Jammu & Kashmir,population_reference,0.001315288327709777,0.005,none,False
+202,LEH,Jammu & Kashmir,population_reference,0.000328633490255423,0.005,none,False
+203,PULWAMA,Jammu & Kashmir,population_reference,0.0020692130020263147,0.005,none,False
+204,PUNCH,Jammu & Kashmir,population_reference,0.0013986019355020128,0.005,none,False
+205,RAJOURI,Jammu & Kashmir,population_reference,0.001800424949320784,0.005,none,False
+206,RAMBAN,Jammu & Kashmir,population_reference,0.0006628322093142064,0.005,none,False
+207,REASI,Jammu & Kashmir,population_reference,0.0020753256194577696,0.005,none,False
+208,SAMBA,Jammu & Kashmir,population_reference,0.0015115428674996566,0.005,none,False
+209,SHUPIYAN,Jammu & Kashmir,population_reference,0.003007203196250056,0.005,none,False
+210,SRINAGAR,Jammu & Kashmir,population_reference,0.003032306930309983,0.005,none,False
+211,UDHAMPUR,Jammu & Kashmir,population_reference,0.001562176882066873,0.005,none,False
+212,BOKARO,Jharkhand,population_reference,0.020230244989790213,0.005,none,True
+213,CHATRA,Jharkhand,population_reference,0.006498882404514507,0.005,none,True
+214,DEOGHAR,Jharkhand,population_reference,0.013406487073430493,0.005,none,True
+215,DHANBAD,Jharkhand,population_reference,0.034339939513567695,0.005,none,True
+216,DUMKA,Jharkhand,population_reference,0.007655935907956408,0.005,none,True
+217,GARHWA,Jharkhand,population_reference,0.011954904645033295,0.005,none,True
+218,GIRIDIH,Jharkhand,population_reference,0.0122923706153421,0.005,none,True
+219,GODDA,Jharkhand,population_reference,0.008819405807708383,0.005,none,True
+220,GUMLA,Jharkhand,population_reference,0.005149261650914109,0.005,none,True
+221,HAZARIBAGH,Jharkhand,population_reference,0.008904544929804862,0.005,none,True
+222,JAMTARA,Jharkhand,population_reference,0.007061730254311414,0.005,none,True
+223,KHUNTI,Jharkhand,population_reference,0.005028458920415032,0.005,none,True
+224,KODARMA,Jharkhand,population_reference,0.0055962820646443985,0.005,none,True
+225,LATEHAR,Jharkhand,population_reference,0.004859142502438483,0.005,none,False
+226,LOHARDAGA,Jharkhand,population_reference,0.008782456754235973,0.005,none,True
+227,PAKUR,Jharkhand,population_reference,0.0067837940335247916,0.005,none,True
+228,PALAMU,Jharkhand,population_reference,0.012058484688527223,0.005,none,True
+229,PASHCHIMI SINGHBHUM,Jharkhand,population_reference,0.01338632928496318,0.005,none,True
+230,PURBI SINGHBHUM,Jharkhand,population_reference,0.055067693194096906,0.005,none,True
+231,RAMGARH,Jharkhand,population_reference,0.011975376134800418,0.005,none,True
+232,RANCHI,Jharkhand,population_reference,0.0292224209491761,0.005,none,True
+233,SAHIBGANJ,Jharkhand,population_reference,0.006674836915880685,0.005,none,True
+234,SARAIKELA-KHARSAWAN,Jharkhand,population_reference,0.014595418188908554,0.005,none,True
+235,SIMDEGA,Jharkhand,population_reference,0.00563577700983242,0.005,none,True
+236,BAGALKOT,Karnataka,population_reference,0.007129496587596164,0.005,none,True
+237,BANGALORE,Karnataka,population_reference,0.017975526640734783,0.005,none,True
+238,BANGALORE RURAL,Karnataka,population_reference,0.0025357145983257866,0.005,none,False
+239,BELGAUM,Karnataka,population_reference,0.01593986488384044,0.005,none,True
+240,BELLARY,Karnataka,population_reference,0.002201349485379044,0.005,none,False
+241,BIDAR,Karnataka,population_reference,0.004421481125635444,0.005,none,False
+242,BIJAPUR,Karnataka,population_reference,0.004293967862859323,0.005,none,False
+243,CHAMARAJANAGAR,Karnataka,population_reference,0.001408171584992103,0.005,none,False
+244,CHIKKABALLAPURA,Karnataka,population_reference,0.0011395108601175291,0.005,none,False
+245,CHIKMAGALUR,Karnataka,population_reference,0.004256676435855113,0.005,none,False
+246,CHITRADURGA,Karnataka,population_reference,0.0009252999260968035,0.005,none,False
+247,DAKSHINA KANNADA,Karnataka,population_reference,0.011089327796713441,0.005,none,True
+248,DAVANAGERE,Karnataka,population_reference,0.0030131380628146466,0.005,none,False
+249,DHARWAD,Karnataka,population_reference,0.006798773730244261,0.005,none,True
+250,GADAG,Karnataka,population_reference,0.0016506239063143206,0.005,none,False
+251,GULBARGA,Karnataka,population_reference,0.006487057316144224,0.005,none,True
+252,HASSAN,Karnataka,population_reference,0.004624144496115688,0.005,none,False
+253,HAVERI,Karnataka,population_reference,0.0033850070857268117,0.005,none,False
+254,KODAGU,Karnataka,population_reference,0.004224303107552106,0.005,none,False
+255,KOLAR,Karnataka,population_reference,0.0015175226027468456,0.005,none,False
+256,KOPPAL,Karnataka,population_reference,0.0021692145882901653,0.005,none,False
+257,MANDYA,Karnataka,population_reference,0.002585454125856167,0.005,none,False
+258,MYSORE,Karnataka,population_reference,0.004219423722943533,0.005,none,False
+259,RAICHUR,Karnataka,population_reference,0.0021218190211163977,0.005,none,False
+260,RAMANAGARA,Karnataka,population_reference,0.0018544397377656036,0.005,none,False
+261,SHIMOGA,Karnataka,population_reference,0.004629654428730149,0.005,none,False
+262,TUMKUR,Karnataka,population_reference,0.0028504790477428075,0.005,none,False
+263,UDUPI,Karnataka,population_reference,0.013611339011230402,0.005,none,True
+264,UTTARA KANNADA,Karnataka,population_reference,0.0055175324784173885,0.005,none,True
+265,YADGIR,Karnataka,population_reference,0.0019252762191423417,0.005,none,False
+266,ALAPPUZHA,Kerala,population_reference,0.007021815713541203,0.005,none,True
+267,ERNAKULAM,Kerala,population_reference,0.022570748911909695,0.005,none,True
+268,IDUKKI,Kerala,population_reference,0.0009113371177644073,0.005,none,False
+269,KANNUR,Kerala,population_reference,0.012994021787672911,0.005,none,True
+270,KASARAGOD,Kerala,population_reference,0.008636990660613061,0.005,none,True
+271,KOLLAM,Kerala,population_reference,0.005142058494877538,0.005,none,True
+272,KOTTAYAM,Kerala,population_reference,0.005423813215750018,0.005,none,True
+273,KOZHIKODE,Kerala,population_reference,0.006523592353868944,0.005,none,True
+274,MALAPPURAM,Kerala,population_reference,0.015918743027644296,0.005,none,True
+275,PALAKKAD,Kerala,population_reference,0.010689168843680045,0.005,none,True
+276,PATHANAMTHITTA,Kerala,population_reference,0.004751115728323707,0.005,none,False
+277,THIRUVANANTHAPURAM,Kerala,population_reference,0.007161496136531846,0.005,none,True
+278,THRISSUR,Kerala,population_reference,0.01945948753027956,0.005,none,True
+279,WAYANAD,Kerala,population_reference,0.0073451357931510995,0.005,none,True
+280,LAKSHADWEEP,Lakshadweep,population_reference,,0.005,none,False
+281,ALIRAJPUR,Madhya Pradesh,population_reference,0.008567826662267842,0.005,none,True
+282,ANUPPUR,Madhya Pradesh,population_reference,0.005756300149633697,0.005,none,True
+283,ASHOKNAGAR,Madhya Pradesh,population_reference,0.003295624818636927,0.005,none,False
+284,BALAGHAT,Madhya Pradesh,population_reference,0.010038237533707063,0.005,none,True
+285,BARWANI,Madhya Pradesh,population_reference,0.006886304208484312,0.005,none,True
+286,BETUL,Madhya Pradesh,population_reference,0.006971841625765792,0.005,none,True
+287,BHIND,Madhya Pradesh,population_reference,0.0032432578865221897,0.005,none,False
+288,BHOPAL,Madhya Pradesh,population_reference,0.03568826255500517,0.005,none,True
+289,BURHANPUR,Madhya Pradesh,population_reference,0.006892052604538433,0.005,none,True
+290,CHHATARPUR,Madhya Pradesh,population_reference,0.005618090098541234,0.005,none,True
+291,CHHINDWARA,Madhya Pradesh,population_reference,0.008386944408060691,0.005,none,True
+292,DAMOH,Madhya Pradesh,population_reference,0.005051247116170572,0.005,none,True
+293,DATIA,Madhya Pradesh,population_reference,0.00426944535572134,0.005,none,False
+294,DEWAS,Madhya Pradesh,population_reference,0.012419941508560482,0.005,none,True
+295,DHAR,Madhya Pradesh,population_reference,0.007014523248117097,0.005,none,True
+296,DINDORI,Madhya Pradesh,population_reference,0.0039358933905887785,0.005,none,False
+297,GUNA,Madhya Pradesh,population_reference,0.003287770584015421,0.005,none,False
+298,GWALIOR,Madhya Pradesh,population_reference,0.01663448079762839,0.005,none,True
+299,HARDA,Madhya Pradesh,population_reference,0.00528009527081857,0.005,none,True
+300,HOSHANGABAD,Madhya Pradesh,population_reference,0.007297055619500648,0.005,none,True
+301,INDORE,Madhya Pradesh,population_reference,0.03226162900377918,0.005,none,True
+302,JABALPUR,Madhya Pradesh,population_reference,0.02836033003709871,0.005,none,True
+303,JHABUA,Madhya Pradesh,population_reference,0.013489938734741736,0.005,none,True
+304,KATNI,Madhya Pradesh,population_reference,0.008497423359102469,0.005,none,True
+305,KHANDWA,Madhya Pradesh,population_reference,0.008113172401685197,0.005,none,True
+306,KHARGONE,Madhya Pradesh,population_reference,0.0047394701420389014,0.005,none,False
+307,MANDLA,Madhya Pradesh,population_reference,0.006529205741204241,0.005,none,True
+308,MANDSAUR,Madhya Pradesh,population_reference,0.005569901169863561,0.005,none,True
+309,MORENA,Madhya Pradesh,population_reference,0.005057649442089341,0.005,none,True
+310,NARSIMHAPUR,Madhya Pradesh,population_reference,0.00747632703014501,0.005,none,True
+311,NEEMUCH,Madhya Pradesh,population_reference,0.0038428056931164435,0.005,none,False
+312,PANNA,Madhya Pradesh,population_reference,0.003813146617547729,0.005,none,False
+313,RAISEN,Madhya Pradesh,population_reference,0.006157932564972329,0.005,none,True
+314,RAJGARH,Madhya Pradesh,population_reference,0.0034118698717088215,0.005,none,False
+315,RATLAM,Madhya Pradesh,population_reference,0.012286973473351316,0.005,none,True
+316,REWA,Madhya Pradesh,population_reference,0.01971325964128485,0.005,none,True
+317,SAGAR,Madhya Pradesh,population_reference,0.00559358093947303,0.005,none,True
+318,SATNA,Madhya Pradesh,population_reference,0.013716389757262469,0.005,none,True
+319,SEHORE,Madhya Pradesh,population_reference,0.005760929299683641,0.005,none,True
+320,SEONI,Madhya Pradesh,population_reference,0.0057844381436921895,0.005,none,True
+321,SHAHDOL,Madhya Pradesh,population_reference,0.007900624832178986,0.005,none,True
+322,SHAJAPUR,Madhya Pradesh,population_reference,0.004496074971067244,0.005,none,False
+323,SHEOPUR,Madhya Pradesh,population_reference,0.0017522754945457973,0.005,none,False
+324,SHIVPURI,Madhya Pradesh,population_reference,0.0028090100423513913,0.005,none,False
+325,SIDHI,Madhya Pradesh,population_reference,0.006810126793874705,0.005,none,True
+326,SINGRAULI,Madhya Pradesh,population_reference,0.014681916727586473,0.005,none,True
+327,TIKAMGARH,Madhya Pradesh,population_reference,0.004689729745523688,0.005,none,False
+328,UJJAIN,Madhya Pradesh,population_reference,0.014631725913052604,0.005,none,True
+329,UMARIA,Madhya Pradesh,population_reference,0.004138901467548511,0.005,none,False
+330,VIDISHA,Madhya Pradesh,population_reference,0.0026947199987774084,0.005,none,False
+331,AHMADNAGAR,Maharashtra,population_reference,0.020426197942579456,0.005,none,True
+332,AKOLA,Maharashtra,population_reference,0.012494483423094635,0.005,none,True
+333,AMRAVATI,Maharashtra,population_reference,0.015138437696521049,0.005,none,True
+334,AURANGABAD,Maharashtra,population_reference,0.015575996919992717,0.005,none,True
+335,BHANDARA,Maharashtra,population_reference,0.009122763604217472,0.005,none,True
+336,BID,Maharashtra,population_reference,0.01003104793679461,0.005,none,True
+337,BULDANA,Maharashtra,population_reference,0.005956600122619442,0.005,none,True
+338,CHANDRAPUR,Maharashtra,population_reference,0.013395447389562581,0.005,none,True
+339,DHULE,Maharashtra,population_reference,0.012987750465402289,0.005,none,True
+340,GADCHIROLI,Maharashtra,population_reference,0.006398147435227374,0.005,none,True
+341,GONDIYA,Maharashtra,population_reference,0.012828083399706805,0.005,none,True
+342,HINGOLI,Maharashtra,population_reference,0.004815657758468754,0.005,none,False
+343,JALGAON,Maharashtra,population_reference,0.011454323973797396,0.005,none,True
+344,JALNA,Maharashtra,population_reference,0.005601232583122564,0.005,none,True
+345,KOLHAPUR,Maharashtra,population_reference,0.03742825054332554,0.005,none,True
+346,LATUR,Maharashtra,population_reference,0.004484338749316482,0.005,none,False
+347,MUMBAI,Maharashtra,population_reference,,0.005,none,False
+348,MUMBAI SUBURBAN,Maharashtra,population_reference,,0.005,none,False
+349,NAGPUR,Maharashtra,population_reference,0.03334760705815902,0.005,none,True
+350,NANDED,Maharashtra,population_reference,0.013643531158539167,0.005,none,True
+351,NANDURBAR,Maharashtra,population_reference,0.009239060358332649,0.005,none,True
+352,NASHIK,Maharashtra,population_reference,0.08635279772463117,0.005,none,True
+353,OSMANABAD,Maharashtra,population_reference,0.004665397804973294,0.005,none,False
+354,PARBHANI,Maharashtra,population_reference,0.008404471765823807,0.005,none,True
+355,PUNE,Maharashtra,population_reference,0.11588285651364971,0.005,none,True
+356,RAIGARH,Maharashtra,population_reference,0.030497124358394283,0.005,none,True
+357,RATNAGIRI,Maharashtra,population_reference,0.017687683230207446,0.005,none,True
+358,SANGLI,Maharashtra,population_reference,0.017379128327756618,0.005,none,True
+359,SATARA,Maharashtra,population_reference,0.026911456231567158,0.005,none,True
+360,SINDHUDURG,Maharashtra,population_reference,0.010329538602638083,0.005,none,True
+361,SOLAPUR,Maharashtra,population_reference,0.008275961521614125,0.005,none,True
+362,THANE,Maharashtra,population_reference,0.11431060616208477,0.005,none,True
+363,WARDHA,Maharashtra,population_reference,0.007804309121230323,0.005,none,True
+364,WASHIM,Maharashtra,population_reference,0.0038236560380773437,0.005,none,False
+365,YAVATMAL,Maharashtra,population_reference,0.00783919563041152,0.005,none,True
+366,BISHNUPUR,Manipur,population_reference,0.003665566654940459,0.005,none,False
+367,CHANDEL,Manipur,population_reference,0.0009463812291460769,0.005,none,False
+368,CHURACHANDPUR,Manipur,population_reference,0.0025684044990342686,0.005,none,False
+369,IMPHAL EAST,Manipur,population_reference,0.018990721382492765,0.005,none,True
+370,IMPHAL WEST,Manipur,population_reference,,0.005,none,False
+371,SENAPATI,Manipur,population_reference,0.003354005614549216,0.005,none,False
+372,TAMENGLONG,Manipur,population_reference,0.0006659512416572994,0.005,none,False
+373,THOUBAL,Manipur,population_reference,0.005772663541135895,0.005,none,True
+374,UKHRUL,Manipur,population_reference,0.001374444621880309,0.005,none,False
+375,EAST GARO HILLS,Meghalaya,population_reference,0.005241791414416913,0.005,none,True
+376,EAST KHASI HILLS,Meghalaya,population_reference,0.004857492718164617,0.005,none,False
+377,JAINTIA HILLS,Meghalaya,population_reference,0.002807533170982386,0.005,none,False
+378,RIBHOI,Meghalaya,population_reference,0.003962852220717945,0.005,none,False
+379,SOUTH GARO HILLS,Meghalaya,population_reference,0.0020751271873500916,0.005,none,False
+380,WEST GARO HILLS,Meghalaya,population_reference,0.004171596229294668,0.005,none,False
+381,WEST KHASI HILLS,Meghalaya,population_reference,0.002038198764556317,0.005,none,False
+382,AIZAWL,Mizoram,population_reference,0.003414420671583823,0.005,none,False
+383,CHAMPHAI,Mizoram,population_reference,0.000965347067080545,0.005,none,False
+384,KOLASIB,Mizoram,population_reference,0.0011314393088047124,0.005,none,False
+385,LAWNGTLAI,Mizoram,population_reference,0.0011257433436457622,0.005,none,False
+386,LUNGLEI,Mizoram,population_reference,0.0008976145739187416,0.005,none,False
+387,MAMIT,Mizoram,population_reference,0.000574275503616734,0.005,none,False
+388,SAIHA,Mizoram,population_reference,0.0014548532317034096,0.005,none,False
+389,SERCHHIP,Mizoram,population_reference,0.0007674511366256552,0.005,none,False
+390,CENTRAL,NCT of Delhi,population_reference,,0.005,none,False
+391,EAST,NCT of Delhi,population_reference,,0.005,none,False
+392,NEW DELHI,NCT of Delhi,population_reference,,0.005,none,False
+393,NORTH,NCT of Delhi,population_reference,,0.005,none,False
+394,NORTH EAST,NCT of Delhi,population_reference,0.08266109881812307,0.005,none,True
+395,NORTH WEST,NCT of Delhi,population_reference,0.04775951470602811,0.005,none,True
+396,SOUTH,NCT of Delhi,population_reference,0.07421358822553775,0.005,none,True
+397,SOUTH WEST,NCT of Delhi,population_reference,,0.005,none,False
+398,WEST,NCT of Delhi,population_reference,,0.005,none,False
+399,DIMAPUR,Nagaland,population_reference,0.004607564926727788,0.005,none,False
+400,KIPHIRE,Nagaland,population_reference,0.0006584497691072157,0.005,none,False
+401,KOHIMA,Nagaland,population_reference,0.00230347982349169,0.005,none,False
+402,LONGLENG,Nagaland,population_reference,0.002196392614672515,0.005,none,False
+403,MOKOKCHUNG,Nagaland,population_reference,0.0005233871448242637,0.005,none,False
+404,MON,Nagaland,population_reference,0.0008455774220955621,0.005,none,False
+405,PEREN,Nagaland,population_reference,0.00028592046346898915,0.005,none,False
+406,PHEK,Nagaland,population_reference,0.0011869602553358405,0.005,none,False
+407,TUENSANG,Nagaland,population_reference,0.0007481726553240799,0.005,none,False
+408,WOKHA,Nagaland,population_reference,0.0017653914806862827,0.005,none,False
+409,ZUNHEBOTO,Nagaland,population_reference,0.0013170106469237817,0.005,none,False
+410,ANUGUL,Odisha,population_reference,0.011809111073744868,0.005,none,True
+411,BALANGIR,Odisha,population_reference,0.014239388171006315,0.005,none,True
+412,BALESHWAR,Odisha,population_reference,0.016722860318429247,0.005,none,True
+413,BARGARH,Odisha,population_reference,0.0111232212704098,0.005,none,True
+414,BAUDH,Odisha,population_reference,0.007679198578133555,0.005,none,True
+415,BHADRAK,Odisha,population_reference,0.009981644581690576,0.005,none,True
+416,CUTTACK,Odisha,population_reference,0.028711079990507128,0.005,none,True
+417,DEBAGARH,Odisha,population_reference,0.005114276761860598,0.005,none,True
+418,DHENKANAL,Odisha,population_reference,0.01208014451930625,0.005,none,True
+419,GAJAPATI,Odisha,population_reference,0.001650643563185391,0.005,none,False
+420,GANJAM,Odisha,population_reference,0.015062991024996638,0.005,none,True
+421,JAGATSINGHAPUR,Odisha,population_reference,0.013397384562223672,0.005,none,True
+422,JAJAPUR,Odisha,population_reference,0.015271148439887331,0.005,none,True
+423,JHARSUGUDA,Odisha,population_reference,0.006740764461256879,0.005,none,True
+424,KALAHANDI,Odisha,population_reference,0.008916322305827146,0.005,none,True
+425,KANDHAMAL,Odisha,population_reference,0.004577461700922026,0.005,none,False
+426,KENDRAPARA,Odisha,population_reference,0.013010750492841824,0.005,none,True
+427,KENDUJHAR,Odisha,population_reference,0.011533797661635814,0.005,none,True
+428,KHORDHA,Odisha,population_reference,0.05706385770123837,0.005,none,True
+429,KORAPUT,Odisha,population_reference,0.006414185487663161,0.005,none,True
+430,MALKANGIRI,Odisha,population_reference,0.005705026588117904,0.005,none,True
+431,MAYURBHANJ,Odisha,population_reference,0.012424317161405341,0.005,none,True
+432,NABARANGAPUR,Odisha,population_reference,0.005456361720035492,0.005,none,True
+433,NAYAGARH,Odisha,population_reference,0.007564355158060473,0.005,none,True
+434,NUAPADA,Odisha,population_reference,0.006058550498772716,0.005,none,True
+435,PURI,Odisha,population_reference,0.013018552803520503,0.005,none,True
+436,RAYAGADA,Odisha,population_reference,0.005110744168998799,0.005,none,True
+437,SAMBALPUR,Odisha,population_reference,0.026439630005118755,0.005,none,True
+438,SUBARNAPUR,Odisha,population_reference,0.007667268082517785,0.005,none,True
+439,SUNDARGARH,Odisha,population_reference,0.02826564552784496,0.005,none,True
+440,KARAIKAL,Puducherry,population_reference,0.0015012495153787354,0.005,none,False
+441,MAHE,Puducherry,population_reference,,0.005,none,False
+442,PUDUCHERRY,Puducherry,population_reference,0.0029389513599924434,0.005,none,False
+443,YANAM,Puducherry,population_reference,,0.005,none,False
+444,AMRITSAR,Punjab,population_reference,0.0023075736381316624,0.005,none,False
+445,BARNALA,Punjab,population_reference,0.002060297682590515,0.005,none,False
+446,BATHINDA,Punjab,population_reference,0.003370729506780708,0.005,none,False
+447,FARIDKOT,Punjab,population_reference,0.0016078589994199541,0.005,none,False
+448,FATEHGARH SAHIB,Punjab,population_reference,,0.005,none,False
+449,FIROZPUR,Punjab,population_reference,0.0015439514932431622,0.005,none,False
+450,GURDASPUR,Punjab,population_reference,0.0022590865572389906,0.005,none,False
+451,HOSHIARPUR,Punjab,population_reference,0.0021603219596197177,0.005,none,False
+452,JALANDHAR,Punjab,population_reference,0.00533483211096871,0.005,none,True
+453,KAPURTHALA,Punjab,population_reference,0.002844312134345131,0.005,none,False
+454,LUDHIANA,Punjab,population_reference,0.0058909760734029825,0.005,none,True
+455,MANSA,Punjab,population_reference,0.002235038569123429,0.005,none,False
+456,MOGA,Punjab,population_reference,0.002451945512489925,0.005,none,False
+457,MUKTSAR,Punjab,population_reference,0.0014064153109650385,0.005,none,False
+458,PATIALA,Punjab,population_reference,0.004310550659831093,0.005,none,False
+459,RUPNAGAR,Punjab,population_reference,0.0033635034742987083,0.005,none,False
+460,SAHIBZADA AJIT SINGH NAGAR,Punjab,population_reference,,0.005,none,False
+461,SANGRUR,Punjab,population_reference,0.0030506464297702374,0.005,none,False
+462,SHAHID BHAGAT SINGH NAGAR,Punjab,population_reference,0.003920077783301662,0.005,none,False
+463,TARN TARAN,Punjab,population_reference,0.002855924673184018,0.005,none,False
+464,AJMER,Rajasthan,population_reference,0.00464573214873223,0.005,none,False
+465,ALWAR,Rajasthan,population_reference,0.005106786507969592,0.005,none,True
+466,BANSWARA,Rajasthan,population_reference,0.007046617886508389,0.005,none,True
+467,BARAN,Rajasthan,population_reference,0.0027479500488641405,0.005,none,False
+468,BARMER,Rajasthan,population_reference,0.0025576001583758456,0.005,none,False
+469,BHARATPUR,Rajasthan,population_reference,0.005059243116637944,0.005,none,True
+470,BHILWARA,Rajasthan,population_reference,0.0036466573500253674,0.005,none,False
+471,BIKANER,Rajasthan,population_reference,0.004999438032920776,0.005,none,False
+472,BUNDI,Rajasthan,population_reference,0.007849805691079664,0.005,none,True
+473,CHITTAURGARH,Rajasthan,population_reference,0.0028953451671385514,0.005,none,False
+474,CHURU,Rajasthan,population_reference,0.0018700004120087675,0.005,none,False
+475,DAUSA,Rajasthan,population_reference,0.002950532222441322,0.005,none,False
+476,DHAULPUR,Rajasthan,population_reference,0.00298849907655937,0.005,none,False
+477,DUNGARPUR,Rajasthan,population_reference,0.007569384810677255,0.005,none,True
+478,GANGANAGAR,Rajasthan,population_reference,0.0010728795442242543,0.005,none,False
+479,HANUMANGARH,Rajasthan,population_reference,0.0014547593142436707,0.005,none,False
+480,JAIPUR,Rajasthan,population_reference,0.014459270165510428,0.005,none,True
+481,JAISALMER,Rajasthan,population_reference,0.0011199459182353899,0.005,none,False
+482,JALOR,Rajasthan,population_reference,0.002392013873369629,0.005,none,False
+483,JHALAWAR,Rajasthan,population_reference,0.002923313429164183,0.005,none,False
+484,JHUNJHUNUN,Rajasthan,population_reference,0.004823933693424901,0.005,none,False
+485,JODHPUR,Rajasthan,population_reference,0.01457569485685258,0.005,none,True
+486,KARAULI,Rajasthan,population_reference,0.0032332246422559574,0.005,none,False
+487,KOTA,Rajasthan,population_reference,0.00324553380357303,0.005,none,False
+488,NAGAUR,Rajasthan,population_reference,0.002278721306433687,0.005,none,False
+489,PALI,Rajasthan,population_reference,0.0019493817436233869,0.005,none,False
+490,PRATAPGARH,Rajasthan,population_reference,0.0028714152617351205,0.005,none,False
+491,RAJSAMAND,Rajasthan,population_reference,0.0035396980274355282,0.005,none,False
+492,SAWAI MADHOPUR,Rajasthan,population_reference,0.0022600806230499582,0.005,none,False
+493,SIKAR,Rajasthan,population_reference,0.0038348717479127713,0.005,none,False
+494,SIROHI,Rajasthan,population_reference,0.0029457632339218083,0.005,none,False
+495,TONK,Rajasthan,population_reference,0.0026233039166048064,0.005,none,False
+496,UDAIPUR,Rajasthan,population_reference,0.008357706842255879,0.005,none,True
+497,EAST,Sikkim,population_reference,0.004775558142786915,0.005,none,False
+498,NORTH,Sikkim,population_reference,0.0005448847509670707,0.005,none,False
+499,SOUTH,Sikkim,population_reference,,0.005,none,False
+500,WEST,Sikkim,population_reference,0.0028616360196546285,0.005,none,False
+501,ARIYALUR,Tamil Nadu,population_reference,0.0010134526625365401,0.005,none,False
+502,CHENNAI,Tamil Nadu,population_reference,0.021057688061888805,0.005,none,True
+503,COIMBATORE,Tamil Nadu,population_reference,0.007158217454428706,0.005,none,True
+504,CUDDALORE,Tamil Nadu,population_reference,0.0014898498838461706,0.005,none,False
+505,DHARMAPURI,Tamil Nadu,population_reference,0.0016690267894092995,0.005,none,False
+506,DINDIGUL,Tamil Nadu,population_reference,0.00120432831199426,0.005,none,False
+507,ERODE,Tamil Nadu,population_reference,0.002370872358599035,0.005,none,False
+508,KANCHEEPURAM,Tamil Nadu,population_reference,0.007652744872777268,0.005,none,True
+509,KANNIYAKUMARI,Tamil Nadu,population_reference,0.0026434754438799907,0.005,none,False
+510,KARUR,Tamil Nadu,population_reference,0.001880496790396896,0.005,none,False
+511,KRISHNAGIRI,Tamil Nadu,population_reference,0.0024277156629193405,0.005,none,False
+512,MADURAI,Tamil Nadu,population_reference,0.0018135418570959841,0.005,none,False
+513,NAGAPATTINAM,Tamil Nadu,population_reference,0.001233955394500155,0.005,none,False
+514,NAMAKKAL,Tamil Nadu,population_reference,0.001809696231920804,0.005,none,False
+515,PERAMBALUR,Tamil Nadu,population_reference,0.0006571373554830784,0.005,none,False
+516,PUDUKKOTTAI,Tamil Nadu,population_reference,0.0009583041299352599,0.005,none,False
+517,RAMANATHAPURAM,Tamil Nadu,population_reference,0.00046432895256318693,0.005,none,False
+518,SALEM,Tamil Nadu,population_reference,0.0022346130581944075,0.005,none,False
+519,SIVAGANGA,Tamil Nadu,population_reference,0.0007760203084841261,0.005,none,False
+520,THANJAVUR,Tamil Nadu,population_reference,0.0012522254673040024,0.005,none,False
+521,THE NILGIRIS,Tamil Nadu,population_reference,0.0018194449579504897,0.005,none,False
+522,THENI,Tamil Nadu,population_reference,0.0009109659618131958,0.005,none,False
+523,THIRUVALLUR,Tamil Nadu,population_reference,0.007716179986065414,0.005,none,True
+524,THIRUVARUR,Tamil Nadu,population_reference,0.0009689363291471226,0.005,none,False
+525,THOOTHUKKUDI,Tamil Nadu,population_reference,0.0009601795132745096,0.005,none,False
+526,TIRUCHIRAPPALLI,Tamil Nadu,population_reference,0.002356427565917802,0.005,none,False
+527,TIRUNELVELI,Tamil Nadu,population_reference,0.001644223347514924,0.005,none,False
+528,TIRUPPUR,Tamil Nadu,population_reference,0.0035641818452461726,0.005,none,False
+529,TIRUVANNAMALAI,Tamil Nadu,population_reference,0.0011422250461909937,0.005,none,False
+530,VELLORE,Tamil Nadu,population_reference,0.00441880995598586,0.005,none,False
+531,VILUPPURAM,Tamil Nadu,population_reference,0.0015455822273836878,0.005,none,False
+532,VIRUDHUNAGAR,Tamil Nadu,population_reference,0.001309263967305114,0.005,none,False
+533,DHALAI,Tripura,population_reference,0.0023232043968370725,0.005,none,False
+534,NORTH TRIPURA,Tripura,population_reference,0.004092642617307525,0.005,none,False
+535,SOUTH TRIPURA,Tripura,population_reference,0.006930800506268393,0.005,none,True
+536,WEST TRIPURA,Tripura,population_reference,0.012042795507318613,0.005,none,True
+537,AGRA,Uttar Pradesh,population_reference,0.03965293735993614,0.005,none,True
+538,ALIGARH,Uttar Pradesh,population_reference,0.015008807272420545,0.005,none,True
+539,ALLAHABAD,Uttar Pradesh,population_reference,0.05723553527759534,0.005,none,True
+540,AMBEDKAR NAGAR,Uttar Pradesh,population_reference,0.014807301425295153,0.005,none,True
+541,AURAIYA,Uttar Pradesh,population_reference,0.00622114545496449,0.005,none,True
+542,AZAMGARH,Uttar Pradesh,population_reference,0.029703807291550248,0.005,none,True
+543,BAGHPAT,Uttar Pradesh,population_reference,0.005775512288611923,0.005,none,True
+544,BAHRAICH,Uttar Pradesh,population_reference,0.006942241652437924,0.005,none,True
+545,BALLIA,Uttar Pradesh,population_reference,0.018028387809145348,0.005,none,True
+546,BALRAMPUR,Uttar Pradesh,population_reference,0.005433574273771259,0.005,none,True
+547,BANDA,Uttar Pradesh,population_reference,0.012364919322309128,0.005,none,True
+548,BARA BANKI,Uttar Pradesh,population_reference,0.015072932142159736,0.005,none,True
+549,BAREILLY,Uttar Pradesh,population_reference,0.011659749122320345,0.005,none,True
+550,BASTI,Uttar Pradesh,population_reference,0.01812925856989435,0.005,none,True
+551,BIJNOR,Uttar Pradesh,population_reference,0.0063136047454699,0.005,none,True
+552,BUDAUN,Uttar Pradesh,population_reference,0.004283450299444824,0.005,none,False
+553,BULANDSHAHR,Uttar Pradesh,population_reference,0.009475331401299355,0.005,none,True
+554,CHANDAULI,Uttar Pradesh,population_reference,0.02375822625930549,0.005,none,True
+555,CHITRAKOOT,Uttar Pradesh,population_reference,0.012517411566773233,0.005,none,True
+556,DEORIA,Uttar Pradesh,population_reference,0.016449457049322158,0.005,none,True
+557,ETAH,Uttar Pradesh,population_reference,0.005739287804793068,0.005,none,True
+558,ETAWAH,Uttar Pradesh,population_reference,0.010411412602282998,0.005,none,True
+559,FAIZABAD,Uttar Pradesh,population_reference,0.012603837574179865,0.005,none,True
+560,FARRUKHABAD,Uttar Pradesh,population_reference,0.005554211673539919,0.005,none,True
+561,FATEHPUR,Uttar Pradesh,population_reference,0.014991975501088009,0.005,none,True
+562,FIROZABAD,Uttar Pradesh,population_reference,0.009547459895965968,0.005,none,True
+563,GAUTAM BUDDHA NAGAR,Uttar Pradesh,population_reference,0.03642946830524293,0.005,none,True
+564,GHAZIABAD,Uttar Pradesh,population_reference,0.028166707332582436,0.005,none,True
+565,GHAZIPUR,Uttar Pradesh,population_reference,0.027726499922356818,0.005,none,True
+566,GONDA,Uttar Pradesh,population_reference,0.008732047310191303,0.005,none,True
+567,GORAKHPUR,Uttar Pradesh,population_reference,0.027700691275158302,0.005,none,True
+568,HAMIRPUR,Uttar Pradesh,population_reference,0.005358807827618174,0.005,none,True
+569,HARDOI,Uttar Pradesh,population_reference,0.004973094602684445,0.005,none,False
+570,JALAUN,Uttar Pradesh,population_reference,0.007862377647558075,0.005,none,True
+571,JAUNPUR,Uttar Pradesh,population_reference,0.03157256828614814,0.005,none,True
+572,JHANSI,Uttar Pradesh,population_reference,0.020042092268416162,0.005,none,True
+573,JYOTIBA PHULE NAGAR,Uttar Pradesh,population_reference,0.005605628556900023,0.005,none,True
+574,KANNAUJ,Uttar Pradesh,population_reference,0.004534023155794603,0.005,none,False
+575,KANPUR DEHAT,Uttar Pradesh,population_reference,0.0044244137485989635,0.005,none,False
+576,KANPUR NAGAR,Uttar Pradesh,population_reference,0.04128445497727733,0.005,none,True
+577,KANSHIRAM NAGAR,Uttar Pradesh,population_reference,0.004948822407241112,0.005,none,False
+578,KAUSHAMBI,Uttar Pradesh,population_reference,0.018193910206518123,0.005,none,True
+579,KHERI,Uttar Pradesh,population_reference,0.006232277307395703,0.005,none,True
+580,KUSHINAGAR,Uttar Pradesh,population_reference,0.013027769242572316,0.005,none,True
+581,LALITPUR,Uttar Pradesh,population_reference,0.006989735341704799,0.005,none,True
+582,LUCKNOW,Uttar Pradesh,population_reference,0.08323024311994764,0.005,none,True
+583,MAHAMAYA NAGAR,Uttar Pradesh,population_reference,0.006799154501942901,0.005,none,True
+584,MAHOBA,Uttar Pradesh,population_reference,0.005046262825330075,0.005,none,True
+585,MAHRAJGANJ,Uttar Pradesh,population_reference,0.008818735960488738,0.005,none,True
+586,MAINPURI,Uttar Pradesh,population_reference,0.006661755979421541,0.005,none,True
+587,MATHURA,Uttar Pradesh,population_reference,0.013739445847590953,0.005,none,True
+588,MAU,Uttar Pradesh,population_reference,0.023400692221954,0.005,none,True
+589,MEERUT,Uttar Pradesh,population_reference,0.0250916826942868,0.005,none,True
+590,MIRZAPUR,Uttar Pradesh,population_reference,0.011112625330995154,0.005,none,True
+591,MORADABAD,Uttar Pradesh,population_reference,0.013988477392269306,0.005,none,True
+592,MUZAFFARNAGAR,Uttar Pradesh,population_reference,0.009700852676042617,0.005,none,True
+593,PILIBHIT,Uttar Pradesh,population_reference,0.004551917513279185,0.005,none,False
+594,PRATAPGARH,Uttar Pradesh,population_reference,0.021287274702259343,0.005,none,True
+595,RAE BARELI,Uttar Pradesh,population_reference,0.01723243276885544,0.005,none,True
+596,RAMPUR,Uttar Pradesh,population_reference,0.008401375316098029,0.005,none,True
+597,SAHARANPUR,Uttar Pradesh,population_reference,0.011300509561897163,0.005,none,True
+598,SANT KABIR NAGAR,Uttar Pradesh,population_reference,0.01310994261572772,0.005,none,True
+599,SANT RAVIDAS NAGAR,Uttar Pradesh,population_reference,0.0370492373018865,0.005,none,True
+600,SHAHJAHANPUR,Uttar Pradesh,population_reference,0.007109702607129611,0.005,none,True
+601,SHRAWASTI,Uttar Pradesh,population_reference,0.005017492920010385,0.005,none,True
+602,SIDDHARTHNAGAR,Uttar Pradesh,population_reference,0.007299794501513465,0.005,none,True
+603,SITAPUR,Uttar Pradesh,population_reference,0.006587442228732214,0.005,none,True
+604,SONBHADRA,Uttar Pradesh,population_reference,0.013811041748259407,0.005,none,True
+605,SULTANPUR,Uttar Pradesh,population_reference,0.02100995308543894,0.005,none,True
+606,UNNAO,Uttar Pradesh,population_reference,0.015998797854415308,0.005,none,True
+607,VARANASI,Uttar Pradesh,population_reference,0.08812423372325309,0.005,none,True
+608,ALMORA,Uttarakhand,population_reference,0.0030869110951499148,0.005,none,False
+609,BAGESHWAR,Uttarakhand,population_reference,0.002299893502353743,0.005,none,False
+610,CHAMOLI,Uttarakhand,population_reference,0.0013647226770837062,0.005,none,False
+611,CHAMPAWAT,Uttarakhand,population_reference,0.0012551356218688688,0.005,none,False
+612,DEHRADUN,Uttarakhand,population_reference,0.010342442849673764,0.005,none,True
+613,GARHWAL,Uttarakhand,population_reference,0.004203954080791956,0.005,none,False
+614,HARDWAR,Uttarakhand,population_reference,0.00427067130041112,0.005,none,False
+615,NAINITAL,Uttarakhand,population_reference,0.007218421690700002,0.005,none,True
+616,PITHORAGARH,Uttarakhand,population_reference,0.002529956832642795,0.005,none,False
+617,RUDRAPRAYAG,Uttarakhand,population_reference,0.0011262644768306258,0.005,none,False
+618,TEHRI GARHWAL,Uttarakhand,population_reference,0.001962559431413588,0.005,none,False
+619,UDHAM SINGH NAGAR,Uttarakhand,population_reference,0.006430405382653645,0.005,none,True
+620,UTTARKASHI,Uttarakhand,population_reference,0.0010301811735204099,0.005,none,False
+621,BANKURA,West Bengal,population_reference,0.03655482314981884,0.005,none,True
+622,BARDDHAMAN,West Bengal,population_reference,0.033460478489812304,0.005,none,True
+623,BIRBHUM,West Bengal,population_reference,0.013947239098936604,0.005,none,True
+624,DAKSHIN DINAJPUR,West Bengal,population_reference,0.0077811304660265245,0.005,none,True
+625,DARJILING,West Bengal,population_reference,0.011663178400171878,0.005,none,True
+626,HAORA,West Bengal,population_reference,0.024655769672052182,0.005,none,True
+627,HUGLI,West Bengal,population_reference,0.06654002752556215,0.005,none,True
+628,JALPAIGURI,West Bengal,population_reference,0.022889783960764187,0.005,none,True
+629,KOCH BIHAR,West Bengal,population_reference,0.020527096333513815,0.005,none,True
+630,KOLKATA,West Bengal,population_reference,,0.005,none,False
+631,MALDAH,West Bengal,population_reference,0.01344552210355639,0.005,none,True
+632,MURSHIDABAD,West Bengal,population_reference,0.016012496658196103,0.005,none,True
+633,NADIA,West Bengal,population_reference,0.04024610833510165,0.005,none,True
+634,NORTH TWENTY FOUR PARGANAS,West Bengal,population_reference,0.07117331455797883,0.005,none,True
+635,PASCHIM MEDINIPUR,West Bengal,population_reference,0.020028500011860392,0.005,none,True
+636,PURBA MEDINIPUR,West Bengal,population_reference,0.016312849504411205,0.005,none,True
+637,PURULIYA,West Bengal,population_reference,0.011361834973676812,0.005,none,True
+638,SOUTH TWENTY FOUR PARGANAS,West Bengal,population_reference,0.12780459328550486,0.005,none,True
+639,UTTAR DINAJPUR,West Bengal,population_reference,0.01382737632971326,0.005,none,True
+0,NICOBARS,Andaman & Nicobar Island,human_system_reference,,0.01,risk >= 0.005,False
+1,NORTH & MIDDLE ANDAMAN,Andaman & Nicobar Island,human_system_reference,,0.01,risk >= 0.005,False
+2,SOUTH ANDAMAN,Andaman & Nicobar Island,human_system_reference,,0.01,risk >= 0.005,False
+3,ADILABAD,Andhra Pradesh,human_system_reference,0.062149459843827096,0.01,risk >= 0.005,True
+4,ANANTAPUR,Andhra Pradesh,human_system_reference,0.015884345855364426,0.01,risk >= 0.005,True
+5,CHITTOOR,Andhra Pradesh,human_system_reference,0.014330249281912134,0.01,risk >= 0.005,True
+6,EAST GODAVARI,Andhra Pradesh,human_system_reference,0.09046297802462737,0.01,risk >= 0.005,True
+7,GUNTUR,Andhra Pradesh,human_system_reference,0.08073026848278225,0.01,risk >= 0.005,True
+8,HYDERABAD,Andhra Pradesh,human_system_reference,,0.01,risk >= 0.005,False
+9,KARIMNAGAR,Andhra Pradesh,human_system_reference,0.06709645395715241,0.01,risk >= 0.005,True
+10,KHAMMAM,Andhra Pradesh,human_system_reference,0.07271724756520372,0.01,risk >= 0.005,True
+11,KRISHNA,Andhra Pradesh,human_system_reference,0.07871351658283669,0.01,risk >= 0.005,True
+12,KURNOOL,Andhra Pradesh,human_system_reference,0.025131130816221255,0.01,risk >= 0.005,True
+13,MAHBUBNAGAR,Andhra Pradesh,human_system_reference,0.04210163485869625,0.01,risk >= 0.005,True
+14,MEDAK,Andhra Pradesh,human_system_reference,0.06989180445442568,0.01,risk >= 0.005,True
+15,NALGONDA,Andhra Pradesh,human_system_reference,0.06524096391393445,0.01,risk >= 0.005,True
+16,NIZAMABAD,Andhra Pradesh,human_system_reference,0.06183589478473999,0.01,risk >= 0.005,True
+17,PRAKASAM,Andhra Pradesh,human_system_reference,0.05351134096567459,0.01,risk >= 0.005,True
+18,RANGAREDDY,Andhra Pradesh,human_system_reference,0.0890003428033754,0.01,risk >= 0.005,True
+19,SRI POTTI SRIRAMULU NELLORE,Andhra Pradesh,human_system_reference,0.02886371268047442,0.01,risk >= 0.005,True
+20,SRIKAKULAM,Andhra Pradesh,human_system_reference,0.071103853788385,0.01,risk >= 0.005,True
+21,VISAKHAPATNAM,Andhra Pradesh,human_system_reference,0.08001253948602001,0.01,risk >= 0.005,True
+22,VIZIANAGARAM,Andhra Pradesh,human_system_reference,0.06360470751924663,0.01,risk >= 0.005,True
+23,WARANGAL,Andhra Pradesh,human_system_reference,0.0690493735544429,0.01,risk >= 0.005,True
+24,WEST GODAVARI,Andhra Pradesh,human_system_reference,0.0886175072476378,0.01,risk >= 0.005,True
+25,Y.S.R.,Andhra Pradesh,human_system_reference,0.020397035824224922,0.01,risk >= 0.005,True
+26,ANJAW,Arunanchal Pradesh,human_system_reference,,0.01,risk >= 0.005,False
+27,CHANGLANG,Arunanchal Pradesh,human_system_reference,0.005934686213664431,0.01,risk >= 0.005,False
+28,DIBANG VALLEY,Arunanchal Pradesh,human_system_reference,,0.01,risk >= 0.005,False
+29,EAST KAMENG,Arunanchal Pradesh,human_system_reference,0.00882310482437111,0.01,risk >= 0.005,False
+30,EAST SIANG,Arunanchal Pradesh,human_system_reference,0.0056504979163606115,0.01,risk >= 0.005,False
+31,KURUNG KUMEY,Arunanchal Pradesh,human_system_reference,,0.01,risk >= 0.005,False
+32,LOHIT,Arunanchal Pradesh,human_system_reference,0.006764867386915964,0.01,risk >= 0.005,False
+33,LOWER DIBANG VALLEY,Arunanchal Pradesh,human_system_reference,0.006022802117319815,0.01,risk >= 0.005,False
+34,LOWER SUBANSIRI,Arunanchal Pradesh,human_system_reference,,0.01,risk >= 0.005,False
+35,PAPUM PARE,Arunanchal Pradesh,human_system_reference,0.010174153768597462,0.01,risk >= 0.005,True
+36,TAWANG,Arunanchal Pradesh,human_system_reference,,0.01,risk >= 0.005,False
+37,TIRAP,Arunanchal Pradesh,human_system_reference,0.008333640727902913,0.01,risk >= 0.005,False
+38,UPPER SIANG,Arunanchal Pradesh,human_system_reference,,0.01,risk >= 0.005,False
+39,UPPER SUBANSIRI,Arunanchal Pradesh,human_system_reference,,0.01,risk >= 0.005,False
+40,WEST KAMENG,Arunanchal Pradesh,human_system_reference,0.013308926050915427,0.01,risk >= 0.005,True
+41,WEST SIANG,Arunanchal Pradesh,human_system_reference,0.007184229904931349,0.01,risk >= 0.005,False
+42,BAKSA,Assam,human_system_reference,0.026853052608280303,0.01,risk >= 0.005,True
+43,BARPETA,Assam,human_system_reference,0.046254639474042424,0.01,risk >= 0.005,True
+44,BONGAIGAON,Assam,human_system_reference,0.04084945575017227,0.01,risk >= 0.005,True
+45,CACHAR,Assam,human_system_reference,0.028318871827129947,0.01,risk >= 0.005,True
+46,CHIRANG,Assam,human_system_reference,0.040298683674769985,0.01,risk >= 0.005,True
+47,DARRANG,Assam,human_system_reference,0.03096148439255518,0.01,risk >= 0.005,True
+48,DHEMAJI,Assam,human_system_reference,0.015715837789822554,0.01,risk >= 0.005,True
+49,DHUBRI,Assam,human_system_reference,0.07093031336050701,0.01,risk >= 0.005,True
+50,DIBRUGARH,Assam,human_system_reference,0.022916693909739556,0.01,risk >= 0.005,True
+51,DIMA HASAO,Assam,human_system_reference,0.008944150149203293,0.01,risk >= 0.005,False
+52,GOALPARA,Assam,human_system_reference,0.031085064080911915,0.01,risk >= 0.005,True
+53,GOLAGHAT,Assam,human_system_reference,0.018090578003434006,0.01,risk >= 0.005,True
+54,HAILAKANDI,Assam,human_system_reference,0.015242231000919586,0.01,risk >= 0.005,True
+55,JORHAT,Assam,human_system_reference,0.015207292159150225,0.01,risk >= 0.005,True
+56,KAMRUP,Assam,human_system_reference,0.031573966454226374,0.01,risk >= 0.005,True
+57,KAMRUP METROPOLITAN,Assam,human_system_reference,0.01782680744606444,0.01,risk >= 0.005,True
+58,KARBI ANGLONG,Assam,human_system_reference,0.02114510747088594,0.01,risk >= 0.005,True
+59,KARIMGANJ,Assam,human_system_reference,0.044730178378217376,0.01,risk >= 0.005,True
+60,KOKRAJHAR,Assam,human_system_reference,0.050602718509156513,0.01,risk >= 0.005,True
+61,LAKHIMPUR,Assam,human_system_reference,0.015755317684870235,0.01,risk >= 0.005,True
+62,MORIGAON,Assam,human_system_reference,0.02762653178436605,0.01,risk >= 0.005,True
+63,NAGAON,Assam,human_system_reference,0.04083633709022069,0.01,risk >= 0.005,True
+64,NALBARI,Assam,human_system_reference,0.031490259722320196,0.01,risk >= 0.005,True
+65,SIVASAGAR,Assam,human_system_reference,0.01959582079218904,0.01,risk >= 0.005,True
+66,SONITPUR,Assam,human_system_reference,0.023844739380056816,0.01,risk >= 0.005,True
+67,TINSUKIA,Assam,human_system_reference,0.015983972048482255,0.01,risk >= 0.005,True
+68,UDALGURI,Assam,human_system_reference,0.022499790185243264,0.01,risk >= 0.005,True
+69,ARARIA,Bihar,human_system_reference,0.0646299774959328,0.01,risk >= 0.005,True
+70,ARWAL,Bihar,human_system_reference,0.07068786376532184,0.01,risk >= 0.005,True
+71,AURANGABAD,Bihar,human_system_reference,0.097668162716277,0.01,risk >= 0.005,True
+72,BANKA,Bihar,human_system_reference,0.060307217470547014,0.01,risk >= 0.005,True
+73,BEGUSARAI,Bihar,human_system_reference,0.05742333529789643,0.01,risk >= 0.005,True
+74,BHAGALPUR,Bihar,human_system_reference,0.06293339889573586,0.01,risk >= 0.005,True
+75,BHOJPUR,Bihar,human_system_reference,0.07419731725431258,0.01,risk >= 0.005,True
+76,BUXAR,Bihar,human_system_reference,0.11083287624068326,0.01,risk >= 0.005,True
+77,DARBHANGA,Bihar,human_system_reference,0.053878627587913515,0.01,risk >= 0.005,True
+78,GAYA,Bihar,human_system_reference,0.07830044810447502,0.01,risk >= 0.005,True
+79,GOPALGANJ,Bihar,human_system_reference,0.05978044967306062,0.01,risk >= 0.005,True
+80,JAMUI,Bihar,human_system_reference,0.04210056369454643,0.01,risk >= 0.005,True
+81,JEHANABAD,Bihar,human_system_reference,0.0650339167393521,0.01,risk >= 0.005,True
+82,KAIMUR,Bihar,human_system_reference,0.11387195372646554,0.01,risk >= 0.005,True
+83,KATIHAR,Bihar,human_system_reference,0.0651113074201668,0.01,risk >= 0.005,True
+84,KHAGARIA,Bihar,human_system_reference,0.0543765092290681,0.01,risk >= 0.005,True
+85,KISHANGANJ,Bihar,human_system_reference,0.06618902536100978,0.01,risk >= 0.005,True
+86,LAKHISARAI,Bihar,human_system_reference,0.051193796168003576,0.01,risk >= 0.005,True
+87,MADHEPURA,Bihar,human_system_reference,0.057866054963607534,0.01,risk >= 0.005,True
+88,MADHUBANI,Bihar,human_system_reference,0.04392156610159143,0.01,risk >= 0.005,True
+89,MUNGER,Bihar,human_system_reference,0.04419938745917326,0.01,risk >= 0.005,True
+90,MUZAFFARPUR,Bihar,human_system_reference,0.0498150883829742,0.01,risk >= 0.005,True
+91,NALANDA,Bihar,human_system_reference,0.05555177631860541,0.01,risk >= 0.005,True
+92,NAWADA,Bihar,human_system_reference,0.054236456160797177,0.01,risk >= 0.005,True
+93,PASHCHIM CHAMPARAN,Bihar,human_system_reference,0.053486607842681076,0.01,risk >= 0.005,True
+94,PATNA,Bihar,human_system_reference,0.0729628599000051,0.01,risk >= 0.005,True
+95,PURBA CHAMPARAN,Bihar,human_system_reference,0.051499442698291736,0.01,risk >= 0.005,True
+96,PURNIA,Bihar,human_system_reference,0.06089815334110607,0.01,risk >= 0.005,True
+97,ROHTAS,Bihar,human_system_reference,0.10415177102568432,0.01,risk >= 0.005,True
+98,SAHARSA,Bihar,human_system_reference,0.054831589512760855,0.01,risk >= 0.005,True
+99,SAMASTIPUR,Bihar,human_system_reference,0.05013029505569368,0.01,risk >= 0.005,True
+100,SARAN,Bihar,human_system_reference,0.06655826177537884,0.01,risk >= 0.005,True
+101,SHEIKHPURA,Bihar,human_system_reference,0.04969433466834421,0.01,risk >= 0.005,True
+102,SHEOHAR,Bihar,human_system_reference,0.03674825837370501,0.01,risk >= 0.005,True
+103,SITAMARHI,Bihar,human_system_reference,0.039345191877509025,0.01,risk >= 0.005,True
+104,SIWAN,Bihar,human_system_reference,0.07315945319703064,0.01,risk >= 0.005,True
+105,SUPAUL,Bihar,human_system_reference,0.05419663593562081,0.01,risk >= 0.005,True
+106,VAISHALI,Bihar,human_system_reference,0.05536693753265944,0.01,risk >= 0.005,True
+107,CHANDIGARH,Chandigarh,human_system_reference,0.031757590536545505,0.01,risk >= 0.005,True
+108,BASTAR,Chhattisgarh,human_system_reference,0.05929391557140841,0.01,risk >= 0.005,True
+109,BIJAPUR,Chhattisgarh,human_system_reference,0.020209891851025303,0.01,risk >= 0.005,True
+110,BILASPUR,Chhattisgarh,human_system_reference,0.10224228880277719,0.01,risk >= 0.005,True
+111,DAKSHIN BASTAR DANTEWADA,Chhattisgarh,human_system_reference,0.04280393062286127,0.01,risk >= 0.005,True
+112,DHAMTARI,Chhattisgarh,human_system_reference,0.1076548471626808,0.01,risk >= 0.005,True
+113,DURG,Chhattisgarh,human_system_reference,0.12374713392103034,0.01,risk >= 0.005,True
+114,JANJGIR - CHAMPA,Chhattisgarh,human_system_reference,0.11711093574243547,0.01,risk >= 0.005,True
+115,JASHPUR,Chhattisgarh,human_system_reference,0.06011877144434635,0.01,risk >= 0.005,True
+116,KABEERDHAM,Chhattisgarh,human_system_reference,0.09077335368886083,0.01,risk >= 0.005,True
+117,KORBA,Chhattisgarh,human_system_reference,0.08132634960064869,0.01,risk >= 0.005,True
+118,KORIYA,Chhattisgarh,human_system_reference,0.04365787532563513,0.01,risk >= 0.005,True
+119,MAHASAMUND,Chhattisgarh,human_system_reference,0.09332508068112771,0.01,risk >= 0.005,True
+120,NARAYANPUR,Chhattisgarh,human_system_reference,0.027038172983233934,0.01,risk >= 0.005,True
+121,RAIGARH,Chhattisgarh,human_system_reference,0.09702803973635724,0.01,risk >= 0.005,True
+122,RAIPUR,Chhattisgarh,human_system_reference,0.11201326500778083,0.01,risk >= 0.005,True
+123,RAJNANDGAON,Chhattisgarh,human_system_reference,0.10812243248756366,0.01,risk >= 0.005,True
+124,SURGUJA,Chhattisgarh,human_system_reference,0.054281837592349946,0.01,risk >= 0.005,True
+125,UTTAR BASTAR KANKER,Chhattisgarh,human_system_reference,0.07095713082193282,0.01,risk >= 0.005,True
+126,DADRA & NAGAR HAVELI,Dadara & Nagar Havelli,human_system_reference,0.11318190910273732,0.01,risk >= 0.005,True
+127,DAMAN,Daman & Diu,human_system_reference,,0.01,risk >= 0.005,False
+128,DIU,Daman & Diu,human_system_reference,,0.01,risk >= 0.005,False
+129,NORTH GOA,Goa,human_system_reference,0.03719430705210341,0.01,risk >= 0.005,True
+130,SOUTH GOA,Goa,human_system_reference,0.03759942879175231,0.01,risk >= 0.005,True
+131,AHMADABAD,Gujarat,human_system_reference,0.07627433826340359,0.01,risk >= 0.005,True
+132,AMRELI,Gujarat,human_system_reference,0.0740921576015643,0.01,risk >= 0.005,True
+133,ANAND,Gujarat,human_system_reference,0.06404410375909689,0.01,risk >= 0.005,True
+134,BANAS KANTHA,Gujarat,human_system_reference,0.04230742031976048,0.01,risk >= 0.005,True
+135,BHARUCH,Gujarat,human_system_reference,0.07598845416707416,0.01,risk >= 0.005,True
+136,BHAVNAGAR,Gujarat,human_system_reference,0.06629730951117349,0.01,risk >= 0.005,True
+137,DOHAD,Gujarat,human_system_reference,0.08414462129554495,0.01,risk >= 0.005,True
+138,GANDHINAGAR,Gujarat,human_system_reference,0.05350717593261235,0.01,risk >= 0.005,True
+139,JAMNAGAR,Gujarat,human_system_reference,0.06403572366205008,0.01,risk >= 0.005,True
+140,JUNAGADH,Gujarat,human_system_reference,0.08290941783618336,0.01,risk >= 0.005,True
+141,KACHCHH,Gujarat,human_system_reference,0.04551106538568751,0.01,risk >= 0.005,True
+142,KHEDA,Gujarat,human_system_reference,0.06698259939272579,0.01,risk >= 0.005,True
+143,MAHESANA,Gujarat,human_system_reference,0.04610347958027553,0.01,risk >= 0.005,True
+144,NARMADA,Gujarat,human_system_reference,0.06909494549720203,0.01,risk >= 0.005,True
+145,NAVSARI,Gujarat,human_system_reference,0.10061261361440932,0.01,risk >= 0.005,True
+146,PANCH MAHALS,Gujarat,human_system_reference,0.07186142575825892,0.01,risk >= 0.005,True
+147,PATAN,Gujarat,human_system_reference,0.04352845182336095,0.01,risk >= 0.005,True
+148,PORBANDAR,Gujarat,human_system_reference,0.07019036308732035,0.01,risk >= 0.005,True
+149,RAJKOT,Gujarat,human_system_reference,0.07166819085735286,0.01,risk >= 0.005,True
+150,SABAR KANTHA,Gujarat,human_system_reference,0.0502472501835165,0.01,risk >= 0.005,True
+151,SURAT,Gujarat,human_system_reference,0.10414450784932057,0.01,risk >= 0.005,True
+152,SURENDRANAGAR,Gujarat,human_system_reference,0.04937295530948079,0.01,risk >= 0.005,True
+153,TAPI,Gujarat,human_system_reference,0.09938032038489111,0.01,risk >= 0.005,True
+154,THE DANGS,Gujarat,human_system_reference,0.07830735566318318,0.01,risk >= 0.005,True
+155,VADODARA,Gujarat,human_system_reference,0.08121575783782205,0.01,risk >= 0.005,True
+156,VALSAD,Gujarat,human_system_reference,0.10709842737631903,0.01,risk >= 0.005,True
+157,AMBALA,Haryana,human_system_reference,0.030355357563261184,0.01,risk >= 0.005,True
+158,BHIWANI,Haryana,human_system_reference,0.042258478764456646,0.01,risk >= 0.005,True
+159,FARIDABAD,Haryana,human_system_reference,0.044084661157464976,0.01,risk >= 0.005,True
+160,FATEHABAD,Haryana,human_system_reference,0.028493503220300205,0.01,risk >= 0.005,True
+161,GURGAON,Haryana,human_system_reference,0.06598075999654768,0.01,risk >= 0.005,True
+162,HISAR,Haryana,human_system_reference,0.030764148869380146,0.01,risk >= 0.005,True
+163,JHAJJAR,Haryana,human_system_reference,0.042762833443911706,0.01,risk >= 0.005,True
+164,JIND,Haryana,human_system_reference,0.03339135100947344,0.01,risk >= 0.005,True
+165,KAITHAL,Haryana,human_system_reference,0.03244840942004169,0.01,risk >= 0.005,True
+166,KARNAL,Haryana,human_system_reference,0.03440863865451232,0.01,risk >= 0.005,True
+167,KURUKSHETRA,Haryana,human_system_reference,0.0320280144703025,0.01,risk >= 0.005,True
+168,MAHENDRAGARH,Haryana,human_system_reference,0.04208223139388762,0.01,risk >= 0.005,True
+169,MEWAT,Haryana,human_system_reference,0.04869417130695232,0.01,risk >= 0.005,True
+170,PALWAL,Haryana,human_system_reference,0.04878346971529372,0.01,risk >= 0.005,True
+171,PANCHKULA,Haryana,human_system_reference,0.016404745857246286,0.01,risk >= 0.005,True
+172,PANIPAT,Haryana,human_system_reference,0.03214998527220863,0.01,risk >= 0.005,True
+173,REWARI,Haryana,human_system_reference,0.041380187898345674,0.01,risk >= 0.005,True
+174,ROHTAK,Haryana,human_system_reference,0.03822854075479343,0.01,risk >= 0.005,True
+175,SIRSA,Haryana,human_system_reference,0.02232449135997927,0.01,risk >= 0.005,True
+176,SONIPAT,Haryana,human_system_reference,0.03771917319339919,0.01,risk >= 0.005,True
+177,YAMUNANAGAR,Haryana,human_system_reference,0.028467803870882512,0.01,risk >= 0.005,True
+178,BILASPUR,Himachal Pradesh,human_system_reference,0.009714823300136559,0.01,risk >= 0.005,False
+179,CHAMBA,Himachal Pradesh,human_system_reference,0.006427898416602546,0.01,risk >= 0.005,False
+180,HAMIRPUR,Himachal Pradesh,human_system_reference,0.010208720936224538,0.01,risk >= 0.005,True
+181,KANGRA,Himachal Pradesh,human_system_reference,0.01032469412724368,0.01,risk >= 0.005,True
+182,KINNAUR,Himachal Pradesh,human_system_reference,,0.01,risk >= 0.005,False
+183,KULLU,Himachal Pradesh,human_system_reference,,0.01,risk >= 0.005,False
+184,LAHUL & SPITI,Himachal Pradesh,human_system_reference,,0.01,risk >= 0.005,False
+185,MANDI,Himachal Pradesh,human_system_reference,0.007839962857111318,0.01,risk >= 0.005,False
+186,SHIMLA,Himachal Pradesh,human_system_reference,0.008681266977166008,0.01,risk >= 0.005,False
+187,SIRMAUR,Himachal Pradesh,human_system_reference,0.017348205411833545,0.01,risk >= 0.005,True
+188,SOLAN,Himachal Pradesh,human_system_reference,0.016901706353044343,0.01,risk >= 0.005,True
+189,UNA,Himachal Pradesh,human_system_reference,0.013349667145341214,0.01,risk >= 0.005,True
+190,ANANTNAG,Jammu & Kashmir,human_system_reference,0.007052656757563968,0.01,risk >= 0.005,False
+191,BADGAM,Jammu & Kashmir,human_system_reference,0.014067569449737605,0.01,risk >= 0.005,True
+192,BANDIPORE,Jammu & Kashmir,human_system_reference,,0.01,risk >= 0.005,False
+193,BARAMULA,Jammu & Kashmir,human_system_reference,0.008939480109988279,0.01,risk >= 0.005,False
+194,DODA,Jammu & Kashmir,human_system_reference,,0.01,risk >= 0.005,False
+195,GANDERBAL,Jammu & Kashmir,human_system_reference,,0.01,risk >= 0.005,False
+196,JAMMU,Jammu & Kashmir,human_system_reference,0.01891546840703455,0.01,risk >= 0.005,True
+197,KARGIL,Jammu & Kashmir,human_system_reference,,0.01,risk >= 0.005,False
+198,KATHUA,Jammu & Kashmir,human_system_reference,0.011181800539098724,0.01,risk >= 0.005,True
+199,KISHTWAR,Jammu & Kashmir,human_system_reference,,0.01,risk >= 0.005,False
+200,KULGAM,Jammu & Kashmir,human_system_reference,,0.01,risk >= 0.005,False
+201,KUPWARA,Jammu & Kashmir,human_system_reference,,0.01,risk >= 0.005,False
+202,LEH,Jammu & Kashmir,human_system_reference,,0.01,risk >= 0.005,False
+203,PULWAMA,Jammu & Kashmir,human_system_reference,0.009142859093595253,0.01,risk >= 0.005,False
+204,PUNCH,Jammu & Kashmir,human_system_reference,0.008996920630222723,0.01,risk >= 0.005,False
+205,RAJOURI,Jammu & Kashmir,human_system_reference,0.008634900813827895,0.01,risk >= 0.005,False
+206,RAMBAN,Jammu & Kashmir,human_system_reference,,0.01,risk >= 0.005,False
+207,REASI,Jammu & Kashmir,human_system_reference,0.008395055365128632,0.01,risk >= 0.005,False
+208,SAMBA,Jammu & Kashmir,human_system_reference,0.016853349939539214,0.01,risk >= 0.005,True
+209,SHUPIYAN,Jammu & Kashmir,human_system_reference,0.010427429648459177,0.01,risk >= 0.005,True
+210,SRINAGAR,Jammu & Kashmir,human_system_reference,0.010386889755001355,0.01,risk >= 0.005,True
+211,UDHAMPUR,Jammu & Kashmir,human_system_reference,0.006900247553003794,0.01,risk >= 0.005,False
+212,BOKARO,Jharkhand,human_system_reference,0.08184284812945826,0.01,risk >= 0.005,True
+213,CHATRA,Jharkhand,human_system_reference,0.044385539556587535,0.01,risk >= 0.005,True
+214,DEOGHAR,Jharkhand,human_system_reference,0.04570678157726739,0.01,risk >= 0.005,True
+215,DHANBAD,Jharkhand,human_system_reference,0.07205427501772363,0.01,risk >= 0.005,True
+216,DUMKA,Jharkhand,human_system_reference,0.04167254006869691,0.01,risk >= 0.005,True
+217,GARHWA,Jharkhand,human_system_reference,0.05818757259474908,0.01,risk >= 0.005,True
+218,GIRIDIH,Jharkhand,human_system_reference,0.04588231990825795,0.01,risk >= 0.005,True
+219,GODDA,Jharkhand,human_system_reference,0.05856234460196203,0.01,risk >= 0.005,True
+220,GUMLA,Jharkhand,human_system_reference,0.055432175725030154,0.01,risk >= 0.005,True
+221,HAZARIBAGH,Jharkhand,human_system_reference,0.03551718656789152,0.01,risk >= 0.005,True
+222,JAMTARA,Jharkhand,human_system_reference,0.055059346859665605,0.01,risk >= 0.005,True
+223,KHUNTI,Jharkhand,human_system_reference,0.0446209072007993,0.01,risk >= 0.005,True
+224,KODARMA,Jharkhand,human_system_reference,0.03329059517971778,0.01,risk >= 0.005,True
+225,LATEHAR,Jharkhand,human_system_reference,0.03311456038527787,0.01,risk >= 0.005,True
+226,LOHARDAGA,Jharkhand,human_system_reference,0.047928282811486575,0.01,risk >= 0.005,True
+227,PAKUR,Jharkhand,human_system_reference,0.05157824239272666,0.01,risk >= 0.005,True
+228,PALAMU,Jharkhand,human_system_reference,0.0751317590034494,0.01,risk >= 0.005,True
+229,PASHCHIMI SINGHBHUM,Jharkhand,human_system_reference,0.07486126971200074,0.01,risk >= 0.005,True
+230,PURBI SINGHBHUM,Jharkhand,human_system_reference,0.09304152896737926,0.01,risk >= 0.005,True
+231,RAMGARH,Jharkhand,human_system_reference,0.054280723997769516,0.01,risk >= 0.005,True
+232,RANCHI,Jharkhand,human_system_reference,0.07020917027915435,0.01,risk >= 0.005,True
+233,SAHIBGANJ,Jharkhand,human_system_reference,0.04218306134057046,0.01,risk >= 0.005,True
+234,SARAIKELA-KHARSAWAN,Jharkhand,human_system_reference,0.07761702896071161,0.01,risk >= 0.005,True
+235,SIMDEGA,Jharkhand,human_system_reference,0.04865961457619248,0.01,risk >= 0.005,True
+236,BAGALKOT,Karnataka,human_system_reference,0.04914828828762112,0.01,risk >= 0.005,True
+237,BANGALORE,Karnataka,human_system_reference,0.021436092921931528,0.01,risk >= 0.005,True
+238,BANGALORE RURAL,Karnataka,human_system_reference,0.011639676243598861,0.01,risk >= 0.005,True
+239,BELGAUM,Karnataka,human_system_reference,0.07961328858663964,0.01,risk >= 0.005,True
+240,BELLARY,Karnataka,human_system_reference,0.020279889222016654,0.01,risk >= 0.005,True
+241,BIDAR,Karnataka,human_system_reference,0.06110833946622766,0.01,risk >= 0.005,True
+242,BIJAPUR,Karnataka,human_system_reference,0.03819494467210281,0.01,risk >= 0.005,True
+243,CHAMARAJANAGAR,Karnataka,human_system_reference,0.00990456510951784,0.01,risk >= 0.005,False
+244,CHIKKABALLAPURA,Karnataka,human_system_reference,0.010501003285808521,0.01,risk >= 0.005,True
+245,CHIKMAGALUR,Karnataka,human_system_reference,0.013575721543217538,0.01,risk >= 0.005,True
+246,CHITRADURGA,Karnataka,human_system_reference,0.011280971715139136,0.01,risk >= 0.005,True
+247,DAKSHINA KANNADA,Karnataka,human_system_reference,0.01862691508297818,0.01,risk >= 0.005,True
+248,DAVANAGERE,Karnataka,human_system_reference,0.023945005579549043,0.01,risk >= 0.005,True
+249,DHARWAD,Karnataka,human_system_reference,0.03858734028464093,0.01,risk >= 0.005,True
+250,GADAG,Karnataka,human_system_reference,0.03161456242048485,0.01,risk >= 0.005,True
+251,GULBARGA,Karnataka,human_system_reference,0.049231089704537066,0.01,risk >= 0.005,True
+252,HASSAN,Karnataka,human_system_reference,0.0161386341256899,0.01,risk >= 0.005,True
+253,HAVERI,Karnataka,human_system_reference,0.03705514769953778,0.01,risk >= 0.005,True
+254,KODAGU,Karnataka,human_system_reference,0.011275560555938284,0.01,risk >= 0.005,True
+255,KOLAR,Karnataka,human_system_reference,0.009004240390701733,0.01,risk >= 0.005,False
+256,KOPPAL,Karnataka,human_system_reference,0.023234966824429805,0.01,risk >= 0.005,True
+257,MANDYA,Karnataka,human_system_reference,0.01650891951653637,0.01,risk >= 0.005,True
+258,MYSORE,Karnataka,human_system_reference,0.01954854709226083,0.01,risk >= 0.005,True
+259,RAICHUR,Karnataka,human_system_reference,0.02531473282367339,0.01,risk >= 0.005,True
+260,RAMANAGARA,Karnataka,human_system_reference,0.009417201893102117,0.01,risk >= 0.005,False
+261,SHIMOGA,Karnataka,human_system_reference,0.029541048589878844,0.01,risk >= 0.005,True
+262,TUMKUR,Karnataka,human_system_reference,0.012592576301550888,0.01,risk >= 0.005,True
+263,UDUPI,Karnataka,human_system_reference,0.03330971905134741,0.01,risk >= 0.005,True
+264,UTTARA KANNADA,Karnataka,human_system_reference,0.024286695110477947,0.01,risk >= 0.005,True
+265,YADGIR,Karnataka,human_system_reference,0.03719889411419652,0.01,risk >= 0.005,True
+266,ALAPPUZHA,Kerala,human_system_reference,0.010212283563290103,0.01,risk >= 0.005,True
+267,ERNAKULAM,Kerala,human_system_reference,0.04019563847302597,0.01,risk >= 0.005,True
+268,IDUKKI,Kerala,human_system_reference,,0.01,risk >= 0.005,False
+269,KANNUR,Kerala,human_system_reference,0.050344442074528956,0.01,risk >= 0.005,True
+270,KASARAGOD,Kerala,human_system_reference,0.02268700471698759,0.01,risk >= 0.005,True
+271,KOLLAM,Kerala,human_system_reference,0.007419240113069662,0.01,risk >= 0.005,False
+272,KOTTAYAM,Kerala,human_system_reference,0.009627910595900433,0.01,risk >= 0.005,False
+273,KOZHIKODE,Kerala,human_system_reference,0.012093632472033532,0.01,risk >= 0.005,True
+274,MALAPPURAM,Kerala,human_system_reference,0.020224401195382043,0.01,risk >= 0.005,True
+275,PALAKKAD,Kerala,human_system_reference,0.017899912438853104,0.01,risk >= 0.005,True
+276,PATHANAMTHITTA,Kerala,human_system_reference,0.005554627132133536,0.01,risk >= 0.005,False
+277,THIRUVANANTHAPURAM,Kerala,human_system_reference,0.01015378626655598,0.01,risk >= 0.005,True
+278,THRISSUR,Kerala,human_system_reference,0.02932963418537983,0.01,risk >= 0.005,True
+279,WAYANAD,Kerala,human_system_reference,0.006642171339997001,0.01,risk >= 0.005,False
+280,LAKSHADWEEP,Lakshadweep,human_system_reference,,0.01,risk >= 0.005,False
+281,ALIRAJPUR,Madhya Pradesh,human_system_reference,0.07125433512182179,0.01,risk >= 0.005,True
+282,ANUPPUR,Madhya Pradesh,human_system_reference,0.045730458308863284,0.01,risk >= 0.005,True
+283,ASHOKNAGAR,Madhya Pradesh,human_system_reference,0.05177100758793075,0.01,risk >= 0.005,True
+284,BALAGHAT,Madhya Pradesh,human_system_reference,0.0664364565449416,0.01,risk >= 0.005,True
+285,BARWANI,Madhya Pradesh,human_system_reference,0.06719876380521596,0.01,risk >= 0.005,True
+286,BETUL,Madhya Pradesh,human_system_reference,0.05627508025221062,0.01,risk >= 0.005,True
+287,BHIND,Madhya Pradesh,human_system_reference,0.04439217230096817,0.01,risk >= 0.005,True
+288,BHOPAL,Madhya Pradesh,human_system_reference,0.07310944187620645,0.01,risk >= 0.005,True
+289,BURHANPUR,Madhya Pradesh,human_system_reference,0.05897306739824076,0.01,risk >= 0.005,True
+290,CHHATARPUR,Madhya Pradesh,human_system_reference,0.06329419168042841,0.01,risk >= 0.005,True
+291,CHHINDWARA,Madhya Pradesh,human_system_reference,0.05413377240031462,0.01,risk >= 0.005,True
+292,DAMOH,Madhya Pradesh,human_system_reference,0.05182458647641205,0.01,risk >= 0.005,True
+293,DATIA,Madhya Pradesh,human_system_reference,0.05867768825670833,0.01,risk >= 0.005,True
+294,DEWAS,Madhya Pradesh,human_system_reference,0.08636813265021408,0.01,risk >= 0.005,True
+295,DHAR,Madhya Pradesh,human_system_reference,0.08821697548462296,0.01,risk >= 0.005,True
+296,DINDORI,Madhya Pradesh,human_system_reference,0.053025008582002604,0.01,risk >= 0.005,True
+297,GUNA,Madhya Pradesh,human_system_reference,0.04456194322699706,0.01,risk >= 0.005,True
+298,GWALIOR,Madhya Pradesh,human_system_reference,0.06128244982371436,0.01,risk >= 0.005,True
+299,HARDA,Madhya Pradesh,human_system_reference,0.07766537420496915,0.01,risk >= 0.005,True
+300,HOSHANGABAD,Madhya Pradesh,human_system_reference,0.06657870420794051,0.01,risk >= 0.005,True
+301,INDORE,Madhya Pradesh,human_system_reference,0.10163727489351679,0.01,risk >= 0.005,True
+302,JABALPUR,Madhya Pradesh,human_system_reference,0.07428992673190704,0.01,risk >= 0.005,True
+303,JHABUA,Madhya Pradesh,human_system_reference,0.08692680429244494,0.01,risk >= 0.005,True
+304,KATNI,Madhya Pradesh,human_system_reference,0.06298425239039324,0.01,risk >= 0.005,True
+305,KHANDWA,Madhya Pradesh,human_system_reference,0.06669660163838989,0.01,risk >= 0.005,True
+306,KHARGONE,Madhya Pradesh,human_system_reference,0.0643781416428425,0.01,risk >= 0.005,True
+307,MANDLA,Madhya Pradesh,human_system_reference,0.05356559313192508,0.01,risk >= 0.005,True
+308,MANDSAUR,Madhya Pradesh,human_system_reference,0.04885208550452336,0.01,risk >= 0.005,True
+309,MORENA,Madhya Pradesh,human_system_reference,0.04570910681129909,0.01,risk >= 0.005,True
+310,NARSIMHAPUR,Madhya Pradesh,human_system_reference,0.07684170990478026,0.01,risk >= 0.005,True
+311,NEEMUCH,Madhya Pradesh,human_system_reference,0.0447793555794432,0.01,risk >= 0.005,True
+312,PANNA,Madhya Pradesh,human_system_reference,0.05658883196375139,0.01,risk >= 0.005,True
+313,RAISEN,Madhya Pradesh,human_system_reference,0.07627218316129414,0.01,risk >= 0.005,True
+314,RAJGARH,Madhya Pradesh,human_system_reference,0.05067329778708043,0.01,risk >= 0.005,True
+315,RATLAM,Madhya Pradesh,human_system_reference,0.08522157668447104,0.01,risk >= 0.005,True
+316,REWA,Madhya Pradesh,human_system_reference,0.09360330910831319,0.01,risk >= 0.005,True
+317,SAGAR,Madhya Pradesh,human_system_reference,0.045812172506239805,0.01,risk >= 0.005,True
+318,SATNA,Madhya Pradesh,human_system_reference,0.07710673793669644,0.01,risk >= 0.005,True
+319,SEHORE,Madhya Pradesh,human_system_reference,0.07237145522988395,0.01,risk >= 0.005,True
+320,SEONI,Madhya Pradesh,human_system_reference,0.06228666043524933,0.01,risk >= 0.005,True
+321,SHAHDOL,Madhya Pradesh,human_system_reference,0.04504591406969154,0.01,risk >= 0.005,True
+322,SHAJAPUR,Madhya Pradesh,human_system_reference,0.070249915781594,0.01,risk >= 0.005,True
+323,SHEOPUR,Madhya Pradesh,human_system_reference,0.03200526304429622,0.01,risk >= 0.005,True
+324,SHIVPURI,Madhya Pradesh,human_system_reference,0.05245340640807702,0.01,risk >= 0.005,True
+325,SIDHI,Madhya Pradesh,human_system_reference,0.04676235189896467,0.01,risk >= 0.005,True
+326,SINGRAULI,Madhya Pradesh,human_system_reference,0.05231571035440489,0.01,risk >= 0.005,True
+327,TIKAMGARH,Madhya Pradesh,human_system_reference,0.04899281504044479,0.01,risk >= 0.005,True
+328,UJJAIN,Madhya Pradesh,human_system_reference,0.08165298149425478,0.01,risk >= 0.005,True
+329,UMARIA,Madhya Pradesh,human_system_reference,0.04577737995485283,0.01,risk >= 0.005,True
+330,VIDISHA,Madhya Pradesh,human_system_reference,0.04916594887623361,0.01,risk >= 0.005,True
+331,AHMADNAGAR,Maharashtra,human_system_reference,0.0881388965499378,0.01,risk >= 0.005,True
+332,AKOLA,Maharashtra,human_system_reference,0.08503018282872085,0.01,risk >= 0.005,True
+333,AMRAVATI,Maharashtra,human_system_reference,0.08259251079638354,0.01,risk >= 0.005,True
+334,AURANGABAD,Maharashtra,human_system_reference,0.07670701633062867,0.01,risk >= 0.005,True
+335,BHANDARA,Maharashtra,human_system_reference,0.0810749487440298,0.01,risk >= 0.005,True
+336,BID,Maharashtra,human_system_reference,0.06794661284898988,0.01,risk >= 0.005,True
+337,BULDANA,Maharashtra,human_system_reference,0.07694100812001188,0.01,risk >= 0.005,True
+338,CHANDRAPUR,Maharashtra,human_system_reference,0.08725648810545722,0.01,risk >= 0.005,True
+339,DHULE,Maharashtra,human_system_reference,0.09700368458042265,0.01,risk >= 0.005,True
+340,GADCHIROLI,Maharashtra,human_system_reference,0.0716846126215695,0.01,risk >= 0.005,True
+341,GONDIYA,Maharashtra,human_system_reference,0.07707907008877916,0.01,risk >= 0.005,True
+342,HINGOLI,Maharashtra,human_system_reference,0.07327433047482568,0.01,risk >= 0.005,True
+343,JALGAON,Maharashtra,human_system_reference,0.07437362046389584,0.01,risk >= 0.005,True
+344,JALNA,Maharashtra,human_system_reference,0.06316141437694238,0.01,risk >= 0.005,True
+345,KOLHAPUR,Maharashtra,human_system_reference,0.11129869721732782,0.01,risk >= 0.005,True
+346,LATUR,Maharashtra,human_system_reference,0.06546231270989857,0.01,risk >= 0.005,True
+347,MUMBAI,Maharashtra,human_system_reference,,0.01,risk >= 0.005,False
+348,MUMBAI SUBURBAN,Maharashtra,human_system_reference,,0.01,risk >= 0.005,False
+349,NAGPUR,Maharashtra,human_system_reference,0.08493546569068064,0.01,risk >= 0.005,True
+350,NANDED,Maharashtra,human_system_reference,0.08105799463580447,0.01,risk >= 0.005,True
+351,NANDURBAR,Maharashtra,human_system_reference,0.09944055438021038,0.01,risk >= 0.005,True
+352,NASHIK,Maharashtra,human_system_reference,0.15619947713397972,0.01,risk >= 0.005,True
+353,OSMANABAD,Maharashtra,human_system_reference,0.0585837570956165,0.01,risk >= 0.005,True
+354,PARBHANI,Maharashtra,human_system_reference,0.07962126033276462,0.01,risk >= 0.005,True
+355,PUNE,Maharashtra,human_system_reference,0.165556760001209,0.01,risk >= 0.005,True
+356,RAIGARH,Maharashtra,human_system_reference,0.11939953759369305,0.01,risk >= 0.005,True
+357,RATNAGIRI,Maharashtra,human_system_reference,0.04665537778884857,0.01,risk >= 0.005,True
+358,SANGLI,Maharashtra,human_system_reference,0.09608893365266714,0.01,risk >= 0.005,True
+359,SATARA,Maharashtra,human_system_reference,0.10358126188804134,0.01,risk >= 0.005,True
+360,SINDHUDURG,Maharashtra,human_system_reference,0.033128303025446434,0.01,risk >= 0.005,True
+361,SOLAPUR,Maharashtra,human_system_reference,0.049338022958562884,0.01,risk >= 0.005,True
+362,THANE,Maharashtra,human_system_reference,0.2077648021751235,0.01,risk >= 0.005,True
+363,WARDHA,Maharashtra,human_system_reference,0.09071054250455121,0.01,risk >= 0.005,True
+364,WASHIM,Maharashtra,human_system_reference,0.0753050612795968,0.01,risk >= 0.005,True
+365,YAVATMAL,Maharashtra,human_system_reference,0.0849299650647104,0.01,risk >= 0.005,True
+366,BISHNUPUR,Manipur,human_system_reference,0.018795795185841156,0.01,risk >= 0.005,True
+367,CHANDEL,Manipur,human_system_reference,0.01032863412254317,0.01,risk >= 0.005,True
+368,CHURACHANDPUR,Manipur,human_system_reference,0.009713014632364934,0.01,risk >= 0.005,False
+369,IMPHAL EAST,Manipur,human_system_reference,0.03995089842146005,0.01,risk >= 0.005,True
+370,IMPHAL WEST,Manipur,human_system_reference,,0.01,risk >= 0.005,False
+371,SENAPATI,Manipur,human_system_reference,0.017599026419880485,0.01,risk >= 0.005,True
+372,TAMENGLONG,Manipur,human_system_reference,0.00876266806974733,0.01,risk >= 0.005,False
+373,THOUBAL,Manipur,human_system_reference,0.02721124643964091,0.01,risk >= 0.005,True
+374,UKHRUL,Manipur,human_system_reference,0.01116897983564401,0.01,risk >= 0.005,True
+375,EAST GARO HILLS,Meghalaya,human_system_reference,0.0242173088464011,0.01,risk >= 0.005,True
+376,EAST KHASI HILLS,Meghalaya,human_system_reference,0.03156447352401671,0.01,risk >= 0.005,True
+377,JAINTIA HILLS,Meghalaya,human_system_reference,0.02317035297680597,0.01,risk >= 0.005,True
+378,RIBHOI,Meghalaya,human_system_reference,0.01421152203239485,0.01,risk >= 0.005,True
+379,SOUTH GARO HILLS,Meghalaya,human_system_reference,0.03835400649441905,0.01,risk >= 0.005,True
+380,WEST GARO HILLS,Meghalaya,human_system_reference,0.026988458248032244,0.01,risk >= 0.005,True
+381,WEST KHASI HILLS,Meghalaya,human_system_reference,0.029859160535866156,0.01,risk >= 0.005,True
+382,AIZAWL,Mizoram,human_system_reference,,0.01,risk >= 0.005,False
+383,CHAMPHAI,Mizoram,human_system_reference,,0.01,risk >= 0.005,False
+384,KOLASIB,Mizoram,human_system_reference,,0.01,risk >= 0.005,False
+385,LAWNGTLAI,Mizoram,human_system_reference,,0.01,risk >= 0.005,False
+386,LUNGLEI,Mizoram,human_system_reference,,0.01,risk >= 0.005,False
+387,MAMIT,Mizoram,human_system_reference,,0.01,risk >= 0.005,False
+388,SAIHA,Mizoram,human_system_reference,,0.01,risk >= 0.005,False
+389,SERCHHIP,Mizoram,human_system_reference,,0.01,risk >= 0.005,False
+390,CENTRAL,NCT of Delhi,human_system_reference,,0.01,risk >= 0.005,False
+391,EAST,NCT of Delhi,human_system_reference,,0.01,risk >= 0.005,False
+392,NEW DELHI,NCT of Delhi,human_system_reference,,0.01,risk >= 0.005,False
+393,NORTH,NCT of Delhi,human_system_reference,,0.01,risk >= 0.005,False
+394,NORTH EAST,NCT of Delhi,human_system_reference,0.08266109881812307,0.01,risk >= 0.005,True
+395,NORTH WEST,NCT of Delhi,human_system_reference,0.06421868157333348,0.01,risk >= 0.005,True
+396,SOUTH,NCT of Delhi,human_system_reference,0.0792762255026593,0.01,risk >= 0.005,True
+397,SOUTH WEST,NCT of Delhi,human_system_reference,,0.01,risk >= 0.005,False
+398,WEST,NCT of Delhi,human_system_reference,,0.01,risk >= 0.005,False
+399,DIMAPUR,Nagaland,human_system_reference,0.009016204776522008,0.01,risk >= 0.005,False
+400,KIPHIRE,Nagaland,human_system_reference,,0.01,risk >= 0.005,False
+401,KOHIMA,Nagaland,human_system_reference,0.006943466602690414,0.01,risk >= 0.005,False
+402,LONGLENG,Nagaland,human_system_reference,0.009395070173635339,0.01,risk >= 0.005,False
+403,MOKOKCHUNG,Nagaland,human_system_reference,,0.01,risk >= 0.005,False
+404,MON,Nagaland,human_system_reference,,0.01,risk >= 0.005,False
+405,PEREN,Nagaland,human_system_reference,,0.01,risk >= 0.005,False
+406,PHEK,Nagaland,human_system_reference,0.005438126580336482,0.01,risk >= 0.005,False
+407,TUENSANG,Nagaland,human_system_reference,,0.01,risk >= 0.005,False
+408,WOKHA,Nagaland,human_system_reference,0.01077881534245245,0.01,risk >= 0.005,True
+409,ZUNHEBOTO,Nagaland,human_system_reference,,0.01,risk >= 0.005,False
+410,ANUGUL,Odisha,human_system_reference,0.05365039367065759,0.01,risk >= 0.005,True
+411,BALANGIR,Odisha,human_system_reference,0.10063701709615047,0.01,risk >= 0.005,True
+412,BALESHWAR,Odisha,human_system_reference,0.09383725337745373,0.01,risk >= 0.005,True
+413,BARGARH,Odisha,human_system_reference,0.10819902787691715,0.01,risk >= 0.005,True
+414,BAUDH,Odisha,human_system_reference,0.07299151416924819,0.01,risk >= 0.005,True
+415,BHADRAK,Odisha,human_system_reference,0.09055522225813165,0.01,risk >= 0.005,True
+416,CUTTACK,Odisha,human_system_reference,0.10232690960031275,0.01,risk >= 0.005,True
+417,DEBAGARH,Odisha,human_system_reference,0.03940397933774923,0.01,risk >= 0.005,True
+418,DHENKANAL,Odisha,human_system_reference,0.0864134233612262,0.01,risk >= 0.005,True
+419,GAJAPATI,Odisha,human_system_reference,0.02188064401305264,0.01,risk >= 0.005,True
+420,GANJAM,Odisha,human_system_reference,0.059728606844744014,0.01,risk >= 0.005,True
+421,JAGATSINGHAPUR,Odisha,human_system_reference,0.09407454162975878,0.01,risk >= 0.005,True
+422,JAJAPUR,Odisha,human_system_reference,0.09993360449636607,0.01,risk >= 0.005,True
+423,JHARSUGUDA,Odisha,human_system_reference,0.06924204296752721,0.01,risk >= 0.005,True
+424,KALAHANDI,Odisha,human_system_reference,0.08385311651566592,0.01,risk >= 0.005,True
+425,KANDHAMAL,Odisha,human_system_reference,0.03094908305859107,0.01,risk >= 0.005,True
+426,KENDRAPARA,Odisha,human_system_reference,0.09077608057404635,0.01,risk >= 0.005,True
+427,KENDUJHAR,Odisha,human_system_reference,0.0628624564209977,0.01,risk >= 0.005,True
+428,KHORDHA,Odisha,human_system_reference,0.10961274491484031,0.01,risk >= 0.005,True
+429,KORAPUT,Odisha,human_system_reference,0.0638583885782334,0.01,risk >= 0.005,True
+430,MALKANGIRI,Odisha,human_system_reference,0.05053453565242075,0.01,risk >= 0.005,True
+431,MAYURBHANJ,Odisha,human_system_reference,0.07773368536026294,0.01,risk >= 0.005,True
+432,NABARANGAPUR,Odisha,human_system_reference,0.065588289950687,0.01,risk >= 0.005,True
+433,NAYAGARH,Odisha,human_system_reference,0.06010951030536701,0.01,risk >= 0.005,True
+434,NUAPADA,Odisha,human_system_reference,0.06370596835369668,0.01,risk >= 0.005,True
+435,PURI,Odisha,human_system_reference,0.0889522622971573,0.01,risk >= 0.005,True
+436,RAYAGADA,Odisha,human_system_reference,0.02272027198923363,0.01,risk >= 0.005,True
+437,SAMBALPUR,Odisha,human_system_reference,0.09063314874037484,0.01,risk >= 0.005,True
+438,SUBARNAPUR,Odisha,human_system_reference,0.10557016548662651,0.01,risk >= 0.005,True
+439,SUNDARGARH,Odisha,human_system_reference,0.08329048322683884,0.01,risk >= 0.005,True
+440,KARAIKAL,Puducherry,human_system_reference,0.008314383523489345,0.01,risk >= 0.005,False
+441,MAHE,Puducherry,human_system_reference,,0.01,risk >= 0.005,False
+442,PUDUCHERRY,Puducherry,human_system_reference,0.008759146417474108,0.01,risk >= 0.005,False
+443,YANAM,Puducherry,human_system_reference,,0.01,risk >= 0.005,False
+444,AMRITSAR,Punjab,human_system_reference,0.017844632435580293,0.01,risk >= 0.005,True
+445,BARNALA,Punjab,human_system_reference,0.025651045258643142,0.01,risk >= 0.005,True
+446,BATHINDA,Punjab,human_system_reference,0.025417502585901475,0.01,risk >= 0.005,True
+447,FARIDKOT,Punjab,human_system_reference,0.023274347634989066,0.01,risk >= 0.005,True
+448,FATEHGARH SAHIB,Punjab,human_system_reference,,0.01,risk >= 0.005,False
+449,FIROZPUR,Punjab,human_system_reference,0.02286241313325463,0.01,risk >= 0.005,True
+450,GURDASPUR,Punjab,human_system_reference,0.022173586875984558,0.01,risk >= 0.005,True
+451,HOSHIARPUR,Punjab,human_system_reference,0.020536049915337376,0.01,risk >= 0.005,True
+452,JALANDHAR,Punjab,human_system_reference,0.02317284102112991,0.01,risk >= 0.005,True
+453,KAPURTHALA,Punjab,human_system_reference,0.022354233887022054,0.01,risk >= 0.005,True
+454,LUDHIANA,Punjab,human_system_reference,0.030348402002847046,0.01,risk >= 0.005,True
+455,MANSA,Punjab,human_system_reference,0.026574309785034597,0.01,risk >= 0.005,True
+456,MOGA,Punjab,human_system_reference,0.02389745371483153,0.01,risk >= 0.005,True
+457,MUKTSAR,Punjab,human_system_reference,0.0186538088430861,0.01,risk >= 0.005,True
+458,PATIALA,Punjab,human_system_reference,0.030073559845159734,0.01,risk >= 0.005,True
+459,RUPNAGAR,Punjab,human_system_reference,0.02958979926211602,0.01,risk >= 0.005,True
+460,SAHIBZADA AJIT SINGH NAGAR,Punjab,human_system_reference,,0.01,risk >= 0.005,False
+461,SANGRUR,Punjab,human_system_reference,0.03187683194244379,0.01,risk >= 0.005,True
+462,SHAHID BHAGAT SINGH NAGAR,Punjab,human_system_reference,0.02680511219943126,0.01,risk >= 0.005,True
+463,TARN TARAN,Punjab,human_system_reference,0.022282780465982796,0.01,risk >= 0.005,True
+464,AJMER,Rajasthan,human_system_reference,0.027752006794263116,0.01,risk >= 0.005,True
+465,ALWAR,Rajasthan,human_system_reference,0.04336559802878086,0.01,risk >= 0.005,True
+466,BANSWARA,Rajasthan,human_system_reference,0.06026718428733128,0.01,risk >= 0.005,True
+467,BARAN,Rajasthan,human_system_reference,0.047882561856809315,0.01,risk >= 0.005,True
+468,BARMER,Rajasthan,human_system_reference,0.020885789419724552,0.01,risk >= 0.005,True
+469,BHARATPUR,Rajasthan,human_system_reference,0.04563992213760747,0.01,risk >= 0.005,True
+470,BHILWARA,Rajasthan,human_system_reference,0.031637808576680505,0.01,risk >= 0.005,True
+471,BIKANER,Rajasthan,human_system_reference,0.01949991384111737,0.01,risk >= 0.005,True
+472,BUNDI,Rajasthan,human_system_reference,0.04647637808441827,0.01,risk >= 0.005,True
+473,CHITTAURGARH,Rajasthan,human_system_reference,0.037598190341730155,0.01,risk >= 0.005,True
+474,CHURU,Rajasthan,human_system_reference,0.028023016944969892,0.01,risk >= 0.005,True
+475,DAUSA,Rajasthan,human_system_reference,0.03405817012954477,0.01,risk >= 0.005,True
+476,DHAULPUR,Rajasthan,human_system_reference,0.04275027931069648,0.01,risk >= 0.005,True
+477,DUNGARPUR,Rajasthan,human_system_reference,0.05576749932153696,0.01,risk >= 0.005,True
+478,GANGANAGAR,Rajasthan,human_system_reference,0.01945521699017523,0.01,risk >= 0.005,True
+479,HANUMANGARH,Rajasthan,human_system_reference,0.02269896634745879,0.01,risk >= 0.005,True
+480,JAIPUR,Rajasthan,human_system_reference,0.029051062829961973,0.01,risk >= 0.005,True
+481,JAISALMER,Rajasthan,human_system_reference,0.01613738503262425,0.01,risk >= 0.005,True
+482,JALOR,Rajasthan,human_system_reference,0.02810332879581299,0.01,risk >= 0.005,True
+483,JHALAWAR,Rajasthan,human_system_reference,0.04121020644965412,0.01,risk >= 0.005,True
+484,JHUNJHUNUN,Rajasthan,human_system_reference,0.03997281372330872,0.01,risk >= 0.005,True
+485,JODHPUR,Rajasthan,human_system_reference,0.03411519876754898,0.01,risk >= 0.005,True
+486,KARAULI,Rajasthan,human_system_reference,0.03308905991730648,0.01,risk >= 0.005,True
+487,KOTA,Rajasthan,human_system_reference,0.05137083881987399,0.01,risk >= 0.005,True
+488,NAGAUR,Rajasthan,human_system_reference,0.025337325555995657,0.01,risk >= 0.005,True
+489,PALI,Rajasthan,human_system_reference,0.022958912536069836,0.01,risk >= 0.005,True
+490,PRATAPGARH,Rajasthan,human_system_reference,0.041881615272402285,0.01,risk >= 0.005,True
+491,RAJSAMAND,Rajasthan,human_system_reference,0.02377226189717767,0.01,risk >= 0.005,True
+492,SAWAI MADHOPUR,Rajasthan,human_system_reference,0.03400561797601161,0.01,risk >= 0.005,True
+493,SIKAR,Rajasthan,human_system_reference,0.03206848710155877,0.01,risk >= 0.005,True
+494,SIROHI,Rajasthan,human_system_reference,0.02980090007284336,0.01,risk >= 0.005,True
+495,TONK,Rajasthan,human_system_reference,0.03794064795778995,0.01,risk >= 0.005,True
+496,UDAIPUR,Rajasthan,human_system_reference,0.04056030876726655,0.01,risk >= 0.005,True
+497,EAST,Sikkim,human_system_reference,,0.01,risk >= 0.005,False
+498,NORTH,Sikkim,human_system_reference,,0.01,risk >= 0.005,False
+499,SOUTH,Sikkim,human_system_reference,,0.01,risk >= 0.005,False
+500,WEST,Sikkim,human_system_reference,,0.01,risk >= 0.005,False
+501,ARIYALUR,Tamil Nadu,human_system_reference,0.008165339276185101,0.01,risk >= 0.005,False
+502,CHENNAI,Tamil Nadu,human_system_reference,0.039066191301458844,0.01,risk >= 0.005,True
+503,COIMBATORE,Tamil Nadu,human_system_reference,0.011161560149068642,0.01,risk >= 0.005,True
+504,CUDDALORE,Tamil Nadu,human_system_reference,0.008396661946739773,0.01,risk >= 0.005,False
+505,DHARMAPURI,Tamil Nadu,human_system_reference,0.009098088096849762,0.01,risk >= 0.005,False
+506,DINDIGUL,Tamil Nadu,human_system_reference,0.007154418184306297,0.01,risk >= 0.005,False
+507,ERODE,Tamil Nadu,human_system_reference,0.007315597037788808,0.01,risk >= 0.005,False
+508,KANCHEEPURAM,Tamil Nadu,human_system_reference,0.02343278170885794,0.01,risk >= 0.005,True
+509,KANNIYAKUMARI,Tamil Nadu,human_system_reference,0.005658087379517149,0.01,risk >= 0.005,False
+510,KARUR,Tamil Nadu,human_system_reference,0.007724620363186165,0.01,risk >= 0.005,False
+511,KRISHNAGIRI,Tamil Nadu,human_system_reference,0.010353627754922972,0.01,risk >= 0.005,True
+512,MADURAI,Tamil Nadu,human_system_reference,0.007312435821736748,0.01,risk >= 0.005,False
+513,NAGAPATTINAM,Tamil Nadu,human_system_reference,0.008189174892949144,0.01,risk >= 0.005,False
+514,NAMAKKAL,Tamil Nadu,human_system_reference,0.006367283424627459,0.01,risk >= 0.005,False
+515,PERAMBALUR,Tamil Nadu,human_system_reference,0.007890812329421083,0.01,risk >= 0.005,False
+516,PUDUKKOTTAI,Tamil Nadu,human_system_reference,0.006010286862727533,0.01,risk >= 0.005,False
+517,RAMANATHAPURAM,Tamil Nadu,human_system_reference,0.0060282190160075725,0.01,risk >= 0.005,False
+518,SALEM,Tamil Nadu,human_system_reference,0.006833588428264671,0.01,risk >= 0.005,False
+519,SIVAGANGA,Tamil Nadu,human_system_reference,,0.01,risk >= 0.005,False
+520,THANJAVUR,Tamil Nadu,human_system_reference,0.007754806025607791,0.01,risk >= 0.005,False
+521,THE NILGIRIS,Tamil Nadu,human_system_reference,0.005920990946269927,0.01,risk >= 0.005,False
+522,THENI,Tamil Nadu,human_system_reference,,0.01,risk >= 0.005,False
+523,THIRUVALLUR,Tamil Nadu,human_system_reference,0.02678249709353718,0.01,risk >= 0.005,True
+524,THIRUVARUR,Tamil Nadu,human_system_reference,0.007851517027629783,0.01,risk >= 0.005,False
+525,THOOTHUKKUDI,Tamil Nadu,human_system_reference,0.008404234097453167,0.01,risk >= 0.005,False
+526,TIRUCHIRAPPALLI,Tamil Nadu,human_system_reference,0.008592625702710457,0.01,risk >= 0.005,False
+527,TIRUNELVELI,Tamil Nadu,human_system_reference,0.007648097714257195,0.01,risk >= 0.005,False
+528,TIRUPPUR,Tamil Nadu,human_system_reference,0.009915378764139969,0.01,risk >= 0.005,False
+529,TIRUVANNAMALAI,Tamil Nadu,human_system_reference,0.009121593154087669,0.01,risk >= 0.005,False
+530,VELLORE,Tamil Nadu,human_system_reference,0.014409286268822303,0.01,risk >= 0.005,True
+531,VILUPPURAM,Tamil Nadu,human_system_reference,0.012798594712601042,0.01,risk >= 0.005,True
+532,VIRUDHUNAGAR,Tamil Nadu,human_system_reference,0.007366451689392726,0.01,risk >= 0.005,False
+533,DHALAI,Tripura,human_system_reference,0.007969424398124062,0.01,risk >= 0.005,False
+534,NORTH TRIPURA,Tripura,human_system_reference,0.021151116366443574,0.01,risk >= 0.005,True
+535,SOUTH TRIPURA,Tripura,human_system_reference,0.03216862272538503,0.01,risk >= 0.005,True
+536,WEST TRIPURA,Tripura,human_system_reference,0.04731982868156744,0.01,risk >= 0.005,True
+537,AGRA,Uttar Pradesh,human_system_reference,0.06431637125006107,0.01,risk >= 0.005,True
+538,ALIGARH,Uttar Pradesh,human_system_reference,0.04887768950472534,0.01,risk >= 0.005,True
+539,ALLAHABAD,Uttar Pradesh,human_system_reference,0.1115321179084159,0.01,risk >= 0.005,True
+540,AMBEDKAR NAGAR,Uttar Pradesh,human_system_reference,0.06829942584608888,0.01,risk >= 0.005,True
+541,AURAIYA,Uttar Pradesh,human_system_reference,0.0455391832786849,0.01,risk >= 0.005,True
+542,AZAMGARH,Uttar Pradesh,human_system_reference,0.1097017043657834,0.01,risk >= 0.005,True
+543,BAGHPAT,Uttar Pradesh,human_system_reference,0.03501710775734192,0.01,risk >= 0.005,True
+544,BAHRAICH,Uttar Pradesh,human_system_reference,0.04043267975408218,0.01,risk >= 0.005,True
+545,BALLIA,Uttar Pradesh,human_system_reference,0.10095467226628534,0.01,risk >= 0.005,True
+546,BALRAMPUR,Uttar Pradesh,human_system_reference,0.04347707546880554,0.01,risk >= 0.005,True
+547,BANDA,Uttar Pradesh,human_system_reference,0.09530543229671155,0.01,risk >= 0.005,True
+548,BARA BANKI,Uttar Pradesh,human_system_reference,0.0773908787839178,0.01,risk >= 0.005,True
+549,BAREILLY,Uttar Pradesh,human_system_reference,0.04300870590823009,0.01,risk >= 0.005,True
+550,BASTI,Uttar Pradesh,human_system_reference,0.06157066550867071,0.01,risk >= 0.005,True
+551,BIJNOR,Uttar Pradesh,human_system_reference,0.03377981140117038,0.01,risk >= 0.005,True
+552,BUDAUN,Uttar Pradesh,human_system_reference,0.039879399749212695,0.01,risk >= 0.005,True
+553,BULANDSHAHR,Uttar Pradesh,human_system_reference,0.043970146759861446,0.01,risk >= 0.005,True
+554,CHANDAULI,Uttar Pradesh,human_system_reference,0.11213786197690487,0.01,risk >= 0.005,True
+555,CHITRAKOOT,Uttar Pradesh,human_system_reference,0.0852773684428286,0.01,risk >= 0.005,True
+556,DEORIA,Uttar Pradesh,human_system_reference,0.06372739388697712,0.01,risk >= 0.005,True
+557,ETAH,Uttar Pradesh,human_system_reference,0.04010543480490445,0.01,risk >= 0.005,True
+558,ETAWAH,Uttar Pradesh,human_system_reference,0.04368229415386952,0.01,risk >= 0.005,True
+559,FAIZABAD,Uttar Pradesh,human_system_reference,0.08998390104030209,0.01,risk >= 0.005,True
+560,FARRUKHABAD,Uttar Pradesh,human_system_reference,0.040626357518747776,0.01,risk >= 0.005,True
+561,FATEHPUR,Uttar Pradesh,human_system_reference,0.0985518864427182,0.01,risk >= 0.005,True
+562,FIROZABAD,Uttar Pradesh,human_system_reference,0.045831535529823164,0.01,risk >= 0.005,True
+563,GAUTAM BUDDHA NAGAR,Uttar Pradesh,human_system_reference,0.059807658626464213,0.01,risk >= 0.005,True
+564,GHAZIABAD,Uttar Pradesh,human_system_reference,0.05393108774455392,0.01,risk >= 0.005,True
+565,GHAZIPUR,Uttar Pradesh,human_system_reference,0.11332898837535159,0.01,risk >= 0.005,True
+566,GONDA,Uttar Pradesh,human_system_reference,0.04818534999840162,0.01,risk >= 0.005,True
+567,GORAKHPUR,Uttar Pradesh,human_system_reference,0.0694720250059978,0.01,risk >= 0.005,True
+568,HAMIRPUR,Uttar Pradesh,human_system_reference,0.0797016772172517,0.01,risk >= 0.005,True
+569,HARDOI,Uttar Pradesh,human_system_reference,0.044024956513788384,0.01,risk >= 0.005,True
+570,JALAUN,Uttar Pradesh,human_system_reference,0.05529517855148797,0.01,risk >= 0.005,True
+571,JAUNPUR,Uttar Pradesh,human_system_reference,0.11382051277335435,0.01,risk >= 0.005,True
+572,JHANSI,Uttar Pradesh,human_system_reference,0.0627196970307782,0.01,risk >= 0.005,True
+573,JYOTIBA PHULE NAGAR,Uttar Pradesh,human_system_reference,0.03452968781304165,0.01,risk >= 0.005,True
+574,KANNAUJ,Uttar Pradesh,human_system_reference,0.04314505365675969,0.01,risk >= 0.005,True
+575,KANPUR DEHAT,Uttar Pradesh,human_system_reference,0.048342635607371766,0.01,risk >= 0.005,True
+576,KANPUR NAGAR,Uttar Pradesh,human_system_reference,0.08160744325954324,0.01,risk >= 0.005,True
+577,KANSHIRAM NAGAR,Uttar Pradesh,human_system_reference,0.03671641663736444,0.01,risk >= 0.005,True
+578,KAUSHAMBI,Uttar Pradesh,human_system_reference,0.09073830868409753,0.01,risk >= 0.005,True
+579,KHERI,Uttar Pradesh,human_system_reference,0.033768318814880044,0.01,risk >= 0.005,True
+580,KUSHINAGAR,Uttar Pradesh,human_system_reference,0.06443587013532985,0.01,risk >= 0.005,True
+581,LALITPUR,Uttar Pradesh,human_system_reference,0.052393966901865575,0.01,risk >= 0.005,True
+582,LUCKNOW,Uttar Pradesh,human_system_reference,0.1146683744173279,0.01,risk >= 0.005,True
+583,MAHAMAYA NAGAR,Uttar Pradesh,human_system_reference,0.03365514821085974,0.01,risk >= 0.005,True
+584,MAHOBA,Uttar Pradesh,human_system_reference,0.06611265026065895,0.01,risk >= 0.005,True
+585,MAHRAJGANJ,Uttar Pradesh,human_system_reference,0.05549802960016213,0.01,risk >= 0.005,True
+586,MAINPURI,Uttar Pradesh,human_system_reference,0.04577985087077563,0.01,risk >= 0.005,True
+587,MATHURA,Uttar Pradesh,human_system_reference,0.041866611927426856,0.01,risk >= 0.005,True
+588,MAU,Uttar Pradesh,human_system_reference,0.07916895772530559,0.01,risk >= 0.005,True
+589,MEERUT,Uttar Pradesh,human_system_reference,0.04491402022593556,0.01,risk >= 0.005,True
+590,MIRZAPUR,Uttar Pradesh,human_system_reference,0.08249713782092256,0.01,risk >= 0.005,True
+591,MORADABAD,Uttar Pradesh,human_system_reference,0.04293022248698787,0.01,risk >= 0.005,True
+592,MUZAFFARNAGAR,Uttar Pradesh,human_system_reference,0.032786843798555454,0.01,risk >= 0.005,True
+593,PILIBHIT,Uttar Pradesh,human_system_reference,0.03643211283070055,0.01,risk >= 0.005,True
+594,PRATAPGARH,Uttar Pradesh,human_system_reference,0.09559549349046523,0.01,risk >= 0.005,True
+595,RAE BARELI,Uttar Pradesh,human_system_reference,0.08436000754554605,0.01,risk >= 0.005,True
+596,RAMPUR,Uttar Pradesh,human_system_reference,0.03973577532933184,0.01,risk >= 0.005,True
+597,SAHARANPUR,Uttar Pradesh,human_system_reference,0.030294526136355825,0.01,risk >= 0.005,True
+598,SANT KABIR NAGAR,Uttar Pradesh,human_system_reference,0.06356094857292784,0.01,risk >= 0.005,True
+599,SANT RAVIDAS NAGAR,Uttar Pradesh,human_system_reference,0.1130966024364033,0.01,risk >= 0.005,True
+600,SHAHJAHANPUR,Uttar Pradesh,human_system_reference,0.04570336986218658,0.01,risk >= 0.005,True
+601,SHRAWASTI,Uttar Pradesh,human_system_reference,0.03908414697978755,0.01,risk >= 0.005,True
+602,SIDDHARTHNAGAR,Uttar Pradesh,human_system_reference,0.0488218451507149,0.01,risk >= 0.005,True
+603,SITAPUR,Uttar Pradesh,human_system_reference,0.052718911974245386,0.01,risk >= 0.005,True
+604,SONBHADRA,Uttar Pradesh,human_system_reference,0.06654318553167769,0.01,risk >= 0.005,True
+605,SULTANPUR,Uttar Pradesh,human_system_reference,0.09246042812083134,0.01,risk >= 0.005,True
+606,UNNAO,Uttar Pradesh,human_system_reference,0.0828657492479197,0.01,risk >= 0.005,True
+607,VARANASI,Uttar Pradesh,human_system_reference,0.13049443491721596,0.01,risk >= 0.005,True
+608,ALMORA,Uttarakhand,human_system_reference,0.013439116304525706,0.01,risk >= 0.005,True
+609,BAGESHWAR,Uttarakhand,human_system_reference,0.01210581123799897,0.01,risk >= 0.005,True
+610,CHAMOLI,Uttarakhand,human_system_reference,0.008532111738970201,0.01,risk >= 0.005,False
+611,CHAMPAWAT,Uttarakhand,human_system_reference,0.00900457425937497,0.01,risk >= 0.005,False
+612,DEHRADUN,Uttarakhand,human_system_reference,0.016685975257688425,0.01,risk >= 0.005,True
+613,GARHWAL,Uttarakhand,human_system_reference,0.016231185951774602,0.01,risk >= 0.005,True
+614,HARDWAR,Uttarakhand,human_system_reference,0.026389932310862466,0.01,risk >= 0.005,True
+615,NAINITAL,Uttarakhand,human_system_reference,0.021644744072939825,0.01,risk >= 0.005,True
+616,PITHORAGARH,Uttarakhand,human_system_reference,0.01109701972937642,0.01,risk >= 0.005,True
+617,RUDRAPRAYAG,Uttarakhand,human_system_reference,,0.01,risk >= 0.005,False
+618,TEHRI GARHWAL,Uttarakhand,human_system_reference,0.01382401246402127,0.01,risk >= 0.005,True
+619,UDHAM SINGH NAGAR,Uttarakhand,human_system_reference,0.03605475524240317,0.01,risk >= 0.005,True
+620,UTTARKASHI,Uttarakhand,human_system_reference,0.007328024720707733,0.01,risk >= 0.005,False
+621,BANKURA,West Bengal,human_system_reference,0.09134346581447479,0.01,risk >= 0.005,True
+622,BARDDHAMAN,West Bengal,human_system_reference,0.09042725711059539,0.01,risk >= 0.005,True
+623,BIRBHUM,West Bengal,human_system_reference,0.07548788928833404,0.01,risk >= 0.005,True
+624,DAKSHIN DINAJPUR,West Bengal,human_system_reference,0.059877320357925146,0.01,risk >= 0.005,True
+625,DARJILING,West Bengal,human_system_reference,0.04960300569696258,0.01,risk >= 0.005,True
+626,HAORA,West Bengal,human_system_reference,0.07637200312954145,0.01,risk >= 0.005,True
+627,HUGLI,West Bengal,human_system_reference,0.11041166896615585,0.01,risk >= 0.005,True
+628,JALPAIGURI,West Bengal,human_system_reference,0.05669162552844315,0.01,risk >= 0.005,True
+629,KOCH BIHAR,West Bengal,human_system_reference,0.07841511767194126,0.01,risk >= 0.005,True
+630,KOLKATA,West Bengal,human_system_reference,,0.01,risk >= 0.005,False
+631,MALDAH,West Bengal,human_system_reference,0.06036522054096398,0.01,risk >= 0.005,True
+632,MURSHIDABAD,West Bengal,human_system_reference,0.07718959076746908,0.01,risk >= 0.005,True
+633,NADIA,West Bengal,human_system_reference,0.07607527435892333,0.01,risk >= 0.005,True
+634,NORTH TWENTY FOUR PARGANAS,West Bengal,human_system_reference,0.09359342834071302,0.01,risk >= 0.005,True
+635,PASCHIM MEDINIPUR,West Bengal,human_system_reference,0.09703868007926773,0.01,risk >= 0.005,True
+636,PURBA MEDINIPUR,West Bengal,human_system_reference,0.09211783695015799,0.01,risk >= 0.005,True
+637,PURULIYA,West Bengal,human_system_reference,0.0774196664550914,0.01,risk >= 0.005,True
+638,SOUTH TWENTY FOUR PARGANAS,West Bengal,human_system_reference,0.13816411315933114,0.01,risk >= 0.005,True
+639,UTTAR DINAJPUR,West Bengal,human_system_reference,0.0665496495838841,0.01,risk >= 0.005,True
+0,NICOBARS,Andaman & Nicobar Island,population_2100_reference,5.70631123005428e-05,0.005,none,False
+1,NORTH & MIDDLE ANDAMAN,Andaman & Nicobar Island,population_2100_reference,0.00078384889478033,0.005,none,False
+2,SOUTH ANDAMAN,Andaman & Nicobar Island,population_2100_reference,0.00018531549525137495,0.005,none,False
+3,ADILABAD,Andhra Pradesh,population_2100_reference,0.006749994000868569,0.005,none,True
+4,ANANTAPUR,Andhra Pradesh,population_2100_reference,0.0013186620309028627,0.005,none,False
+5,CHITTOOR,Andhra Pradesh,population_2100_reference,0.0019063780332491743,0.005,none,False
+6,EAST GODAVARI,Andhra Pradesh,population_2100_reference,0.02321452858388693,0.005,none,True
+7,GUNTUR,Andhra Pradesh,population_2100_reference,0.01873793431796948,0.005,none,True
+8,HYDERABAD,Andhra Pradesh,population_2100_reference,,0.005,none,False
+9,KARIMNAGAR,Andhra Pradesh,population_2100_reference,0.008438791300302248,0.005,none,True
+10,KHAMMAM,Andhra Pradesh,population_2100_reference,0.008456843205726402,0.005,none,True
+11,KRISHNA,Andhra Pradesh,population_2100_reference,0.028118656550422248,0.005,none,True
+12,KURNOOL,Andhra Pradesh,population_2100_reference,0.0032224891494387,0.005,none,False
+13,MAHBUBNAGAR,Andhra Pradesh,population_2100_reference,0.003935904360359608,0.005,none,False
+14,MEDAK,Andhra Pradesh,population_2100_reference,0.010462549280022836,0.005,none,True
+15,NALGONDA,Andhra Pradesh,population_2100_reference,0.005474079940064056,0.005,none,True
+16,NIZAMABAD,Andhra Pradesh,population_2100_reference,0.005203109983473149,0.005,none,True
+17,PRAKASAM,Andhra Pradesh,population_2100_reference,0.0038657997697203327,0.005,none,False
+18,RANGAREDDY,Andhra Pradesh,population_2100_reference,0.06693168581796004,0.005,none,True
+19,SRI POTTI SRIRAMULU NELLORE,Andhra Pradesh,population_2100_reference,0.005383131001560245,0.005,none,True
+20,SRIKAKULAM,Andhra Pradesh,population_2100_reference,0.008561098931844318,0.005,none,True
+21,VISAKHAPATNAM,Andhra Pradesh,population_2100_reference,0.04187325985228499,0.005,none,True
+22,VIZIANAGARAM,Andhra Pradesh,population_2100_reference,0.007727538808478306,0.005,none,True
+23,WARANGAL,Andhra Pradesh,population_2100_reference,0.004711376815871729,0.005,none,False
+24,WEST GODAVARI,Andhra Pradesh,population_2100_reference,0.02139948209379514,0.005,none,True
+25,Y.S.R.,Andhra Pradesh,population_2100_reference,0.0029323015483333163,0.005,none,False
+26,ANJAW,Arunanchal Pradesh,population_2100_reference,1.642312298903641e-05,0.005,none,False
+27,CHANGLANG,Arunanchal Pradesh,population_2100_reference,0.000746077077143032,0.005,none,False
+28,DIBANG VALLEY,Arunanchal Pradesh,population_2100_reference,4.475078047022966e-06,0.005,none,False
+29,EAST KAMENG,Arunanchal Pradesh,population_2100_reference,0.0005216710905573824,0.005,none,False
+30,EAST SIANG,Arunanchal Pradesh,population_2100_reference,0.0002890214579778087,0.005,none,False
+31,KURUNG KUMEY,Arunanchal Pradesh,population_2100_reference,8.293590481851818e-05,0.005,none,False
+32,LOHIT,Arunanchal Pradesh,population_2100_reference,0.0002522384601758757,0.005,none,False
+33,LOWER DIBANG VALLEY,Arunanchal Pradesh,population_2100_reference,0.0002847912429263594,0.005,none,False
+34,LOWER SUBANSIRI,Arunanchal Pradesh,population_2100_reference,7.083154287919304e-05,0.005,none,False
+35,PAPUM PARE,Arunanchal Pradesh,population_2100_reference,0.0005448069895024772,0.005,none,False
+36,TAWANG,Arunanchal Pradesh,population_2100_reference,0.00012712772344932274,0.005,none,False
+37,TIRAP,Arunanchal Pradesh,population_2100_reference,0.001154701829455907,0.005,none,False
+38,UPPER SIANG,Arunanchal Pradesh,population_2100_reference,4.97531657291175e-05,0.005,none,False
+39,UPPER SUBANSIRI,Arunanchal Pradesh,population_2100_reference,7.211257124460716e-05,0.005,none,False
+40,WEST KAMENG,Arunanchal Pradesh,population_2100_reference,0.0006674596611665417,0.005,none,False
+41,WEST SIANG,Arunanchal Pradesh,population_2100_reference,0.00027992445422329404,0.005,none,False
+42,BAKSA,Assam,population_2100_reference,0.0034360287608245737,0.005,none,False
+43,BARPETA,Assam,population_2100_reference,0.007304756197965093,0.005,none,True
+44,BONGAIGAON,Assam,population_2100_reference,0.0055379334161864986,0.005,none,True
+45,CACHAR,Assam,population_2100_reference,0.0058496319834257385,0.005,none,True
+46,CHIRANG,Assam,population_2100_reference,0.00768587303655869,0.005,none,True
+47,DARRANG,Assam,population_2100_reference,0.0035180119396781423,0.005,none,False
+48,DHEMAJI,Assam,population_2100_reference,0.001303463445203138,0.005,none,False
+49,DHUBRI,Assam,population_2100_reference,0.008881876588610924,0.005,none,True
+50,DIBRUGARH,Assam,population_2100_reference,0.004198602197914888,0.005,none,False
+51,DIMA HASAO,Assam,population_2100_reference,0.0009294408147834819,0.005,none,False
+52,GOALPARA,Assam,population_2100_reference,0.0037545058156219797,0.005,none,False
+53,GOLAGHAT,Assam,population_2100_reference,0.0016357913431344843,0.005,none,False
+54,HAILAKANDI,Assam,population_2100_reference,0.0035257033178528268,0.005,none,False
+55,JORHAT,Assam,population_2100_reference,0.0025517148510326936,0.005,none,False
+56,KAMRUP,Assam,population_2100_reference,0.013926131210724604,0.005,none,True
+57,KAMRUP METROPOLITAN,Assam,population_2100_reference,0.0021927801962549334,0.005,none,False
+58,KARBI ANGLONG,Assam,population_2100_reference,0.002523252202318514,0.005,none,False
+59,KARIMGANJ,Assam,population_2100_reference,0.009398517145437326,0.005,none,True
+60,KOKRAJHAR,Assam,population_2100_reference,0.007157257730796373,0.005,none,True
+61,LAKHIMPUR,Assam,population_2100_reference,0.0010654940294030821,0.005,none,False
+62,MORIGAON,Assam,population_2100_reference,0.003053675436385514,0.005,none,False
+63,NAGAON,Assam,population_2100_reference,0.00621508571935789,0.005,none,True
+64,NALBARI,Assam,population_2100_reference,0.005808581573952427,0.005,none,True
+65,SIVASAGAR,Assam,population_2100_reference,0.003739293719985679,0.005,none,False
+66,SONITPUR,Assam,population_2100_reference,0.002376512914648275,0.005,none,False
+67,TINSUKIA,Assam,population_2100_reference,0.0033915390548004513,0.005,none,False
+68,UDALGURI,Assam,population_2100_reference,0.0036601745230075895,0.005,none,False
+69,ARARIA,Bihar,population_2100_reference,0.00782518278406091,0.005,none,True
+70,ARWAL,Bihar,population_2100_reference,0.008036531200200552,0.005,none,True
+71,AURANGABAD,Bihar,population_2100_reference,0.010144559485750375,0.005,none,True
+72,BANKA,Bihar,population_2100_reference,0.011982605432985013,0.005,none,True
+73,BEGUSARAI,Bihar,population_2100_reference,0.012392939392686349,0.005,none,True
+74,BHAGALPUR,Bihar,population_2100_reference,0.009444005933718866,0.005,none,True
+75,BHOJPUR,Bihar,population_2100_reference,0.012361671889310106,0.005,none,True
+76,BUXAR,Bihar,population_2100_reference,0.013675916483013969,0.005,none,True
+77,DARBHANGA,Bihar,population_2100_reference,0.012655611077091984,0.005,none,True
+78,GAYA,Bihar,population_2100_reference,0.016315328276082598,0.005,none,True
+79,GOPALGANJ,Bihar,population_2100_reference,0.008455763139973538,0.005,none,True
+80,JAMUI,Bihar,population_2100_reference,0.004097693767145944,0.005,none,False
+81,JEHANABAD,Bihar,population_2100_reference,0.009947512284459094,0.005,none,True
+82,KAIMUR,Bihar,population_2100_reference,0.01061469032631223,0.005,none,True
+83,KATIHAR,Bihar,population_2100_reference,0.009001189688580737,0.005,none,True
+84,KHAGARIA,Bihar,population_2100_reference,0.008380128896761756,0.005,none,True
+85,KISHANGANJ,Bihar,population_2100_reference,0.007321565490183025,0.005,none,True
+86,LAKHISARAI,Bihar,population_2100_reference,0.006173282957618648,0.005,none,True
+87,MADHEPURA,Bihar,population_2100_reference,0.008307744396764589,0.005,none,True
+88,MADHUBANI,Bihar,population_2100_reference,0.007865557509737862,0.005,none,True
+89,MUNGER,Bihar,population_2100_reference,0.007061246705594219,0.005,none,True
+90,MUZAFFARPUR,Bihar,population_2100_reference,0.012415354190570625,0.005,none,True
+91,NALANDA,Bihar,population_2100_reference,0.01104751025029271,0.005,none,True
+92,NAWADA,Bihar,population_2100_reference,0.007806060537768931,0.005,none,True
+93,PASHCHIM CHAMPARAN,Bihar,population_2100_reference,0.008519436231347098,0.005,none,True
+94,PATNA,Bihar,population_2100_reference,0.025170661685049008,0.005,none,True
+95,PURBA CHAMPARAN,Bihar,population_2100_reference,0.007815677620017898,0.005,none,True
+96,PURNIA,Bihar,population_2100_reference,0.008627633453342354,0.005,none,True
+97,ROHTAS,Bihar,population_2100_reference,0.01710559435250463,0.005,none,True
+98,SAHARSA,Bihar,population_2100_reference,0.008652678042231467,0.005,none,True
+99,SAMASTIPUR,Bihar,population_2100_reference,0.010869636161007262,0.005,none,True
+100,SARAN,Bihar,population_2100_reference,0.012657029591800017,0.005,none,True
+101,SHEIKHPURA,Bihar,population_2100_reference,0.00705081853450246,0.005,none,True
+102,SHEOHAR,Bihar,population_2100_reference,0.006683118238360396,0.005,none,True
+103,SITAMARHI,Bihar,population_2100_reference,0.009067688412061542,0.005,none,True
+104,SIWAN,Bihar,population_2100_reference,0.011695121925223024,0.005,none,True
+105,SUPAUL,Bihar,population_2100_reference,0.0058730385913779515,0.005,none,True
+106,VAISHALI,Bihar,population_2100_reference,0.01282971285056435,0.005,none,True
+107,CHANDIGARH,Chandigarh,population_2100_reference,0.012135105964133183,0.005,none,True
+108,BASTAR,Chhattisgarh,population_2100_reference,0.003278967742330406,0.005,none,False
+109,BIJAPUR,Chhattisgarh,population_2100_reference,0.0006675187478558599,0.005,none,False
+110,BILASPUR,Chhattisgarh,population_2100_reference,0.01043294128696335,0.005,none,True
+111,DAKSHIN BASTAR DANTEWADA,Chhattisgarh,population_2100_reference,0.002194877239781207,0.005,none,False
+112,DHAMTARI,Chhattisgarh,population_2100_reference,0.007599855272267802,0.005,none,True
+113,DURG,Chhattisgarh,population_2100_reference,0.02701893353081288,0.005,none,True
+114,JANJGIR - CHAMPA,Chhattisgarh,population_2100_reference,0.00863016648237435,0.005,none,True
+115,JASHPUR,Chhattisgarh,population_2100_reference,0.0027051452824868693,0.005,none,False
+116,KABEERDHAM,Chhattisgarh,population_2100_reference,0.0030423976631162126,0.005,none,False
+117,KORBA,Chhattisgarh,population_2100_reference,0.003856783236380927,0.005,none,False
+118,KORIYA,Chhattisgarh,population_2100_reference,0.002585036073368889,0.005,none,False
+119,MAHASAMUND,Chhattisgarh,population_2100_reference,0.003909160189610649,0.005,none,False
+120,NARAYANPUR,Chhattisgarh,population_2100_reference,0.001073909266220841,0.005,none,False
+121,RAIGARH,Chhattisgarh,population_2100_reference,0.00471065650062034,0.005,none,False
+122,RAIPUR,Chhattisgarh,population_2100_reference,0.018878667050953434,0.005,none,True
+123,RAJNANDGAON,Chhattisgarh,population_2100_reference,0.004959169942874224,0.005,none,False
+124,SURGUJA,Chhattisgarh,population_2100_reference,0.003631078090120219,0.005,none,False
+125,UTTAR BASTAR KANKER,Chhattisgarh,population_2100_reference,0.0036224705729339377,0.005,none,False
+126,DADRA & NAGAR HAVELI,Dadara & Nagar Havelli,population_2100_reference,0.02262530870800103,0.005,none,True
+127,DAMAN,Daman & Diu,population_2100_reference,,0.005,none,False
+128,DIU,Daman & Diu,population_2100_reference,,0.005,none,False
+129,NORTH GOA,Goa,population_2100_reference,0.01241325950568019,0.005,none,True
+130,SOUTH GOA,Goa,population_2100_reference,0.013271747752231286,0.005,none,True
+131,AHMADABAD,Gujarat,population_2100_reference,0.06532579629461623,0.005,none,True
+132,AMRELI,Gujarat,population_2100_reference,0.0036556557695325807,0.005,none,False
+133,ANAND,Gujarat,population_2100_reference,0.018921069869575053,0.005,none,True
+134,BANAS KANTHA,Gujarat,population_2100_reference,0.0033009292037369724,0.005,none,False
+135,BHARUCH,Gujarat,population_2100_reference,0.00946277275910218,0.005,none,True
+136,BHAVNAGAR,Gujarat,population_2100_reference,0.003958038130763052,0.005,none,False
+137,DOHAD,Gujarat,population_2100_reference,0.010999534095009105,0.005,none,True
+138,GANDHINAGAR,Gujarat,population_2100_reference,0.007554179175653873,0.005,none,True
+139,JAMNAGAR,Gujarat,population_2100_reference,0.0059934320651827844,0.005,none,True
+140,JUNAGADH,Gujarat,population_2100_reference,0.006967674681251566,0.005,none,True
+141,KACHCHH,Gujarat,population_2100_reference,0.0011664374134103077,0.005,none,False
+142,KHEDA,Gujarat,population_2100_reference,0.007442407189723527,0.005,none,True
+143,MAHESANA,Gujarat,population_2100_reference,0.005641075038307667,0.005,none,True
+144,NARMADA,Gujarat,population_2100_reference,0.0038779001411821425,0.005,none,False
+145,NAVSARI,Gujarat,population_2100_reference,0.021609956288263774,0.005,none,True
+146,PANCH MAHALS,Gujarat,population_2100_reference,0.007565030645023042,0.005,none,True
+147,PATAN,Gujarat,population_2100_reference,0.003503185145873,0.005,none,False
+148,PORBANDAR,Gujarat,population_2100_reference,0.0031195092479752396,0.005,none,False
+149,RAJKOT,Gujarat,population_2100_reference,0.007660278441698299,0.005,none,True
+150,SABAR KANTHA,Gujarat,population_2100_reference,0.004096352104851615,0.005,none,False
+151,SURAT,Gujarat,population_2100_reference,0.08208586243416816,0.005,none,True
+152,SURENDRANAGAR,Gujarat,population_2100_reference,0.002488575132120347,0.005,none,False
+153,TAPI,Gujarat,population_2100_reference,0.010482699775473866,0.005,none,True
+154,THE DANGS,Gujarat,population_2100_reference,0.006265526691910086,0.005,none,True
+155,VADODARA,Gujarat,population_2100_reference,0.03185682378838223,0.005,none,True
+156,VALSAD,Gujarat,population_2100_reference,0.025847619083463013,0.005,none,True
+157,AMBALA,Haryana,population_2100_reference,0.0039208425427251425,0.005,none,False
+158,BHIWANI,Haryana,population_2100_reference,0.0022551239274460648,0.005,none,False
+159,FARIDABAD,Haryana,population_2100_reference,0.005415465256289147,0.005,none,True
+160,FATEHABAD,Haryana,population_2100_reference,0.0014004960682813654,0.005,none,False
+161,GURGAON,Haryana,population_2100_reference,0.022201309401193733,0.005,none,True
+162,HISAR,Haryana,population_2100_reference,0.0018947924619547936,0.005,none,False
+163,JHAJJAR,Haryana,population_2100_reference,0.0039025477354858616,0.005,none,False
+164,JIND,Haryana,population_2100_reference,0.002219480599396746,0.005,none,False
+165,KAITHAL,Haryana,population_2100_reference,0.002372406471722519,0.005,none,False
+166,KARNAL,Haryana,population_2100_reference,0.003854312049782528,0.005,none,False
+167,KURUKSHETRA,Haryana,population_2100_reference,0.00251556640827978,0.005,none,False
+168,MAHENDRAGARH,Haryana,population_2100_reference,0.002893214172613011,0.005,none,False
+169,MEWAT,Haryana,population_2100_reference,0.004676670934935157,0.005,none,False
+170,PALWAL,Haryana,population_2100_reference,0.007414532457604005,0.005,none,True
+171,PANCHKULA,Haryana,population_2100_reference,0.002171758065235114,0.005,none,False
+172,PANIPAT,Haryana,population_2100_reference,0.003541017353149294,0.005,none,False
+173,REWARI,Haryana,population_2100_reference,0.003192577501914201,0.005,none,False
+174,ROHTAK,Haryana,population_2100_reference,0.002926908874543199,0.005,none,False
+175,SIRSA,Haryana,population_2100_reference,0.0011216219466857714,0.005,none,False
+176,SONIPAT,Haryana,population_2100_reference,0.0046476750644232085,0.005,none,False
+177,YAMUNANAGAR,Haryana,population_2100_reference,0.003121781186061891,0.005,none,False
+178,BILASPUR,Himachal Pradesh,population_2100_reference,0.0013158811878995881,0.005,none,False
+179,CHAMBA,Himachal Pradesh,population_2100_reference,0.0005110598547166456,0.005,none,False
+180,HAMIRPUR,Himachal Pradesh,population_2100_reference,0.0013530464858676448,0.005,none,False
+181,KANGRA,Himachal Pradesh,population_2100_reference,0.001607991646652918,0.005,none,False
+182,KINNAUR,Himachal Pradesh,population_2100_reference,0.00011310480354321831,0.005,none,False
+183,KULLU,Himachal Pradesh,population_2100_reference,0.00015553540340746525,0.005,none,False
+184,LAHUL & SPITI,Himachal Pradesh,population_2100_reference,1.4706312541675135e-05,0.005,none,False
+185,MANDI,Himachal Pradesh,population_2100_reference,0.0011141906809507792,0.005,none,False
+186,SHIMLA,Himachal Pradesh,population_2100_reference,0.0012240506240298224,0.005,none,False
+187,SIRMAUR,Himachal Pradesh,population_2100_reference,0.001489312618881881,0.005,none,False
+188,SOLAN,Himachal Pradesh,population_2100_reference,0.0011885339813912847,0.005,none,False
+189,UNA,Himachal Pradesh,population_2100_reference,0.0013040212280233576,0.005,none,False
+190,ANANTNAG,Jammu & Kashmir,population_2100_reference,0.0007639904649212997,0.005,none,False
+191,BADGAM,Jammu & Kashmir,population_2100_reference,0.0025527877397913154,0.005,none,False
+192,BANDIPORE,Jammu & Kashmir,population_2100_reference,0.00012743981486448052,0.005,none,False
+193,BARAMULA,Jammu & Kashmir,population_2100_reference,0.001668804086719257,0.005,none,False
+194,DODA,Jammu & Kashmir,population_2100_reference,0.0002586631672542783,0.005,none,False
+195,GANDERBAL,Jammu & Kashmir,population_2100_reference,4.4890901839400615e-05,0.005,none,False
+196,JAMMU,Jammu & Kashmir,population_2100_reference,0.0028842034227779477,0.005,none,False
+197,KARGIL,Jammu & Kashmir,population_2100_reference,7.964626062922521e-06,0.005,none,False
+198,KATHUA,Jammu & Kashmir,population_2100_reference,0.0009181258434384531,0.005,none,False
+199,KISHTWAR,Jammu & Kashmir,population_2100_reference,3.479518228894728e-05,0.005,none,False
+200,KULGAM,Jammu & Kashmir,population_2100_reference,0.00045066250096277983,0.005,none,False
+201,KUPWARA,Jammu & Kashmir,population_2100_reference,0.00045109512875397725,0.005,none,False
+202,LEH,Jammu & Kashmir,population_2100_reference,3.840539379031778e-06,0.005,none,False
+203,PULWAMA,Jammu & Kashmir,population_2100_reference,0.002114058981309329,0.005,none,False
+204,PUNCH,Jammu & Kashmir,population_2100_reference,0.0004918701279715457,0.005,none,False
+205,RAJOURI,Jammu & Kashmir,population_2100_reference,0.0006363928864944988,0.005,none,False
+206,RAMBAN,Jammu & Kashmir,population_2100_reference,0.00013057218694293747,0.005,none,False
+207,REASI,Jammu & Kashmir,population_2100_reference,0.0006562811707582399,0.005,none,False
+208,SAMBA,Jammu & Kashmir,population_2100_reference,0.001608196543035174,0.005,none,False
+209,SHUPIYAN,Jammu & Kashmir,population_2100_reference,0.0016067125260309032,0.005,none,False
+210,SRINAGAR,Jammu & Kashmir,population_2100_reference,0.001466933905259432,0.005,none,False
+211,UDHAMPUR,Jammu & Kashmir,population_2100_reference,0.000628875633106053,0.005,none,False
+212,BOKARO,Jharkhand,population_2100_reference,0.01667825391361764,0.005,none,True
+213,CHATRA,Jharkhand,population_2100_reference,0.002876634910709504,0.005,none,False
+214,DEOGHAR,Jharkhand,population_2100_reference,0.00591139498794905,0.005,none,True
+215,DHANBAD,Jharkhand,population_2100_reference,0.03542103670226788,0.005,none,True
+216,DUMKA,Jharkhand,population_2100_reference,0.004261586611081203,0.005,none,False
+217,GARHWA,Jharkhand,population_2100_reference,0.0057916682786190955,0.005,none,True
+218,GIRIDIH,Jharkhand,population_2100_reference,0.006673493435285713,0.005,none,True
+219,GODDA,Jharkhand,population_2100_reference,0.00837041088104596,0.005,none,True
+220,GUMLA,Jharkhand,population_2100_reference,0.002834285048999084,0.005,none,False
+221,HAZARIBAGH,Jharkhand,population_2100_reference,0.005155402387115863,0.005,none,True
+222,JAMTARA,Jharkhand,population_2100_reference,0.005685285467473837,0.005,none,True
+223,KHUNTI,Jharkhand,population_2100_reference,0.002973957215809057,0.005,none,False
+224,KODARMA,Jharkhand,population_2100_reference,0.0036504369733232262,0.005,none,False
+225,LATEHAR,Jharkhand,population_2100_reference,0.0019034929454119314,0.005,none,False
+226,LOHARDAGA,Jharkhand,population_2100_reference,0.004839761818770667,0.005,none,False
+227,PAKUR,Jharkhand,population_2100_reference,0.006018103321765926,0.005,none,True
+228,PALAMU,Jharkhand,population_2100_reference,0.0059335381074983005,0.005,none,True
+229,PASHCHIMI SINGHBHUM,Jharkhand,population_2100_reference,0.006598288014671007,0.005,none,True
+230,PURBI SINGHBHUM,Jharkhand,population_2100_reference,0.026055525931946304,0.005,none,True
+231,RAMGARH,Jharkhand,population_2100_reference,0.007247939106847181,0.005,none,True
+232,RANCHI,Jharkhand,population_2100_reference,0.02031367688281609,0.005,none,True
+233,SAHIBGANJ,Jharkhand,population_2100_reference,0.005177126577867651,0.005,none,True
+234,SARAIKELA-KHARSAWAN,Jharkhand,population_2100_reference,0.009455015958375303,0.005,none,True
+235,SIMDEGA,Jharkhand,population_2100_reference,0.002630075537634224,0.005,none,False
+236,BAGALKOT,Karnataka,population_2100_reference,0.004548579995631717,0.005,none,False
+237,BANGALORE,Karnataka,population_2100_reference,0.0052593221956892386,0.005,none,True
+238,BANGALORE RURAL,Karnataka,population_2100_reference,0.002024182513974041,0.005,none,False
+239,BELGAUM,Karnataka,population_2100_reference,0.014658150717389951,0.005,none,True
+240,BELLARY,Karnataka,population_2100_reference,0.0019866134435808174,0.005,none,False
+241,BIDAR,Karnataka,population_2100_reference,0.0041396238971387125,0.005,none,False
+242,BIJAPUR,Karnataka,population_2100_reference,0.002043913978154507,0.005,none,False
+243,CHAMARAJANAGAR,Karnataka,population_2100_reference,0.001025780122502862,0.005,none,False
+244,CHIKKABALLAPURA,Karnataka,population_2100_reference,0.0009306992349947487,0.005,none,False
+245,CHIKMAGALUR,Karnataka,population_2100_reference,0.002339797507603573,0.005,none,False
+246,CHITRADURGA,Karnataka,population_2100_reference,0.0009293080904176765,0.005,none,False
+247,DAKSHINA KANNADA,Karnataka,population_2100_reference,0.006543115084645212,0.005,none,True
+248,DAVANAGERE,Karnataka,population_2100_reference,0.0026268177860472456,0.005,none,False
+249,DHARWAD,Karnataka,population_2100_reference,0.002679241676219604,0.005,none,False
+250,GADAG,Karnataka,population_2100_reference,0.0024695665149329226,0.005,none,False
+251,GULBARGA,Karnataka,population_2100_reference,0.003444160872603856,0.005,none,False
+252,HASSAN,Karnataka,population_2100_reference,0.0022536076930378904,0.005,none,False
+253,HAVERI,Karnataka,population_2100_reference,0.00309524477967709,0.005,none,False
+254,KODAGU,Karnataka,population_2100_reference,0.0019805775814842642,0.005,none,False
+255,KOLAR,Karnataka,population_2100_reference,0.001289822372500777,0.005,none,False
+256,KOPPAL,Karnataka,population_2100_reference,0.0016350147522586414,0.005,none,False
+257,MANDYA,Karnataka,population_2100_reference,0.0019501192285285513,0.005,none,False
+258,MYSORE,Karnataka,population_2100_reference,0.0038394642163645507,0.005,none,False
+259,RAICHUR,Karnataka,population_2100_reference,0.0014326540781642253,0.005,none,False
+260,RAMANAGARA,Karnataka,population_2100_reference,0.0013877429782430258,0.005,none,False
+261,SHIMOGA,Karnataka,population_2100_reference,0.002317301363831471,0.005,none,False
+262,TUMKUR,Karnataka,population_2100_reference,0.0015371335946211353,0.005,none,False
+263,UDUPI,Karnataka,population_2100_reference,0.007681254905095131,0.005,none,True
+264,UTTARA KANNADA,Karnataka,population_2100_reference,0.0039050514027016594,0.005,none,False
+265,YADGIR,Karnataka,population_2100_reference,0.0015176824001902254,0.005,none,False
+266,ALAPPUZHA,Kerala,population_2100_reference,0.004704148464087088,0.005,none,False
+267,ERNAKULAM,Kerala,population_2100_reference,0.014935640926412143,0.005,none,True
+268,IDUKKI,Kerala,population_2100_reference,0.0010751218430311823,0.005,none,False
+269,KANNUR,Kerala,population_2100_reference,0.010510118915319546,0.005,none,True
+270,KASARAGOD,Kerala,population_2100_reference,0.0065224459839861235,0.005,none,True
+271,KOLLAM,Kerala,population_2100_reference,0.0038490614976683262,0.005,none,False
+272,KOTTAYAM,Kerala,population_2100_reference,0.004304790503551386,0.005,none,False
+273,KOZHIKODE,Kerala,population_2100_reference,0.011630394763448845,0.005,none,True
+274,MALAPPURAM,Kerala,population_2100_reference,0.016583264980043713,0.005,none,True
+275,PALAKKAD,Kerala,population_2100_reference,0.009049667992091729,0.005,none,True
+276,PATHANAMTHITTA,Kerala,population_2100_reference,0.0032140436079787994,0.005,none,False
+277,THIRUVANANTHAPURAM,Kerala,population_2100_reference,0.005764019103295388,0.005,none,True
+278,THRISSUR,Kerala,population_2100_reference,0.01096732193045807,0.005,none,True
+279,WAYANAD,Kerala,population_2100_reference,0.004887473436650605,0.005,none,False
+280,LAKSHADWEEP,Lakshadweep,population_2100_reference,,0.005,none,False
+281,ALIRAJPUR,Madhya Pradesh,population_2100_reference,0.0046695296919902285,0.005,none,False
+282,ANUPPUR,Madhya Pradesh,population_2100_reference,0.003744785725767932,0.005,none,False
+283,ASHOKNAGAR,Madhya Pradesh,population_2100_reference,0.001911199070731883,0.005,none,False
+284,BALAGHAT,Madhya Pradesh,population_2100_reference,0.004555024135290529,0.005,none,False
+285,BARWANI,Madhya Pradesh,population_2100_reference,0.0041539233003076515,0.005,none,False
+286,BETUL,Madhya Pradesh,population_2100_reference,0.002602457604708393,0.005,none,False
+287,BHIND,Madhya Pradesh,population_2100_reference,0.0030424111918838943,0.005,none,False
+288,BHOPAL,Madhya Pradesh,population_2100_reference,0.015320261992869988,0.005,none,True
+289,BURHANPUR,Madhya Pradesh,population_2100_reference,0.003981553967494322,0.005,none,False
+290,CHHATARPUR,Madhya Pradesh,population_2100_reference,0.002873670962574802,0.005,none,False
+291,CHHINDWARA,Madhya Pradesh,population_2100_reference,0.004007113956464222,0.005,none,False
+292,DAMOH,Madhya Pradesh,population_2100_reference,0.003184133849839684,0.005,none,False
+293,DATIA,Madhya Pradesh,population_2100_reference,0.002641032209187133,0.005,none,False
+294,DEWAS,Madhya Pradesh,population_2100_reference,0.006739061886756043,0.005,none,True
+295,DHAR,Madhya Pradesh,population_2100_reference,0.00403475904295823,0.005,none,False
+296,DINDORI,Madhya Pradesh,population_2100_reference,0.0025238048244975906,0.005,none,False
+297,GUNA,Madhya Pradesh,population_2100_reference,0.001313365536496428,0.005,none,False
+298,GWALIOR,Madhya Pradesh,population_2100_reference,0.004705313762923642,0.005,none,False
+299,HARDA,Madhya Pradesh,population_2100_reference,0.002304435971095844,0.005,none,False
+300,HOSHANGABAD,Madhya Pradesh,population_2100_reference,0.003733442869261698,0.005,none,False
+301,INDORE,Madhya Pradesh,population_2100_reference,0.024647550194723738,0.005,none,True
+302,JABALPUR,Madhya Pradesh,population_2100_reference,0.01296831848832675,0.005,none,True
+303,JHABUA,Madhya Pradesh,population_2100_reference,0.005372095037073187,0.005,none,True
+304,KATNI,Madhya Pradesh,population_2100_reference,0.0032900632188921377,0.005,none,False
+305,KHANDWA,Madhya Pradesh,population_2100_reference,0.0030098474436144693,0.005,none,False
+306,KHARGONE,Madhya Pradesh,population_2100_reference,0.004575492540109414,0.005,none,False
+307,MANDLA,Madhya Pradesh,population_2100_reference,0.00736444805100354,0.005,none,True
+308,MANDSAUR,Madhya Pradesh,population_2100_reference,0.002379579640901205,0.005,none,False
+309,MORENA,Madhya Pradesh,population_2100_reference,0.003330602591049343,0.005,none,False
+310,NARSIMHAPUR,Madhya Pradesh,population_2100_reference,0.003430548457779241,0.005,none,False
+311,NEEMUCH,Madhya Pradesh,population_2100_reference,0.0022408232903967473,0.005,none,False
+312,PANNA,Madhya Pradesh,population_2100_reference,0.0025005361056037027,0.005,none,False
+313,RAISEN,Madhya Pradesh,population_2100_reference,0.00279657722670077,0.005,none,False
+314,RAJGARH,Madhya Pradesh,population_2100_reference,0.0022899158151527513,0.005,none,False
+315,RATLAM,Madhya Pradesh,population_2100_reference,0.006155764311235641,0.005,none,True
+316,REWA,Madhya Pradesh,population_2100_reference,0.007693040301022989,0.005,none,True
+317,SAGAR,Madhya Pradesh,population_2100_reference,0.0026748665288317173,0.005,none,False
+318,SATNA,Madhya Pradesh,population_2100_reference,0.005169906308182614,0.005,none,True
+319,SEHORE,Madhya Pradesh,population_2100_reference,0.003203689184645043,0.005,none,False
+320,SEONI,Madhya Pradesh,population_2100_reference,0.002420424917270079,0.005,none,False
+321,SHAHDOL,Madhya Pradesh,population_2100_reference,0.0027555189054724203,0.005,none,False
+322,SHAJAPUR,Madhya Pradesh,population_2100_reference,0.002926527935732327,0.005,none,False
+323,SHEOPUR,Madhya Pradesh,population_2100_reference,0.0011341873617240082,0.005,none,False
+324,SHIVPURI,Madhya Pradesh,population_2100_reference,0.0019330448947487975,0.005,none,False
+325,SIDHI,Madhya Pradesh,population_2100_reference,0.0033835956845482823,0.005,none,False
+326,SINGRAULI,Madhya Pradesh,population_2100_reference,0.004117027827121471,0.005,none,False
+327,TIKAMGARH,Madhya Pradesh,population_2100_reference,0.002798310026555567,0.005,none,False
+328,UJJAIN,Madhya Pradesh,population_2100_reference,0.0063902616734462835,0.005,none,True
+329,UMARIA,Madhya Pradesh,population_2100_reference,0.004682767585771956,0.005,none,False
+330,VIDISHA,Madhya Pradesh,population_2100_reference,0.0018279976808260824,0.005,none,False
+331,AHMADNAGAR,Maharashtra,population_2100_reference,0.007673476435064846,0.005,none,True
+332,AKOLA,Maharashtra,population_2100_reference,0.008537134353017771,0.005,none,True
+333,AMRAVATI,Maharashtra,population_2100_reference,0.010846059379070171,0.005,none,True
+334,AURANGABAD,Maharashtra,population_2100_reference,0.007507205992894595,0.005,none,True
+335,BHANDARA,Maharashtra,population_2100_reference,0.004526979449850343,0.005,none,False
+336,BID,Maharashtra,population_2100_reference,0.0048333337597315645,0.005,none,False
+337,BULDANA,Maharashtra,population_2100_reference,0.00434999038789031,0.005,none,False
+338,CHANDRAPUR,Maharashtra,population_2100_reference,0.006331582228448154,0.005,none,True
+339,DHULE,Maharashtra,population_2100_reference,0.005640395663670847,0.005,none,True
+340,GADCHIROLI,Maharashtra,population_2100_reference,0.00324100694159344,0.005,none,False
+341,GONDIYA,Maharashtra,population_2100_reference,0.007424605611509455,0.005,none,True
+342,HINGOLI,Maharashtra,population_2100_reference,0.003349565452039665,0.005,none,False
+343,JALGAON,Maharashtra,population_2100_reference,0.009709948425569003,0.005,none,True
+344,JALNA,Maharashtra,population_2100_reference,0.0032566499568473842,0.005,none,False
+345,KOLHAPUR,Maharashtra,population_2100_reference,0.031862647633214156,0.005,none,True
+346,LATUR,Maharashtra,population_2100_reference,0.003466857272577859,0.005,none,False
+347,MUMBAI,Maharashtra,population_2100_reference,,0.005,none,False
+348,MUMBAI SUBURBAN,Maharashtra,population_2100_reference,,0.005,none,False
+349,NAGPUR,Maharashtra,population_2100_reference,0.040933838392967034,0.005,none,True
+350,NANDED,Maharashtra,population_2100_reference,0.011142277265168017,0.005,none,True
+351,NANDURBAR,Maharashtra,population_2100_reference,0.005589991487088848,0.005,none,True
+352,NASHIK,Maharashtra,population_2100_reference,0.04788682730801066,0.005,none,True
+353,OSMANABAD,Maharashtra,population_2100_reference,0.003331611701931257,0.005,none,False
+354,PARBHANI,Maharashtra,population_2100_reference,0.006005426280811815,0.005,none,True
+355,PUNE,Maharashtra,population_2100_reference,0.10639071919640222,0.005,none,True
+356,RAIGARH,Maharashtra,population_2100_reference,0.027396073644474418,0.005,none,True
+357,RATNAGIRI,Maharashtra,population_2100_reference,0.008359656688473556,0.005,none,True
+358,SANGLI,Maharashtra,population_2100_reference,0.013996154746760357,0.005,none,True
+359,SATARA,Maharashtra,population_2100_reference,0.013974271670551847,0.005,none,True
+360,SINDHUDURG,Maharashtra,population_2100_reference,0.0047443816567815985,0.005,none,False
+361,SOLAPUR,Maharashtra,population_2100_reference,0.005382713462361388,0.005,none,True
+362,THANE,Maharashtra,population_2100_reference,0.26223148088429066,0.005,none,True
+363,WARDHA,Maharashtra,population_2100_reference,0.004834772986537527,0.005,none,False
+364,WASHIM,Maharashtra,population_2100_reference,0.0033371426931994175,0.005,none,False
+365,YAVATMAL,Maharashtra,population_2100_reference,0.004181509921677611,0.005,none,False
+366,BISHNUPUR,Manipur,population_2100_reference,0.0018538853552056592,0.005,none,False
+367,CHANDEL,Manipur,population_2100_reference,0.0007542995903430219,0.005,none,False
+368,CHURACHANDPUR,Manipur,population_2100_reference,0.0014049561273932576,0.005,none,False
+369,IMPHAL EAST,Manipur,population_2100_reference,0.014657679623019748,0.005,none,True
+370,IMPHAL WEST,Manipur,population_2100_reference,,0.005,none,False
+371,SENAPATI,Manipur,population_2100_reference,0.001867771898617753,0.005,none,False
+372,TAMENGLONG,Manipur,population_2100_reference,0.0005285801437963009,0.005,none,False
+373,THOUBAL,Manipur,population_2100_reference,0.004082085937403862,0.005,none,False
+374,UKHRUL,Manipur,population_2100_reference,0.000595394706694854,0.005,none,False
+375,EAST GARO HILLS,Meghalaya,population_2100_reference,0.0035191794503395407,0.005,none,False
+376,EAST KHASI HILLS,Meghalaya,population_2100_reference,0.0041590412764956185,0.005,none,False
+377,JAINTIA HILLS,Meghalaya,population_2100_reference,0.0013640279069353568,0.005,none,False
+378,RIBHOI,Meghalaya,population_2100_reference,0.002095693872542079,0.005,none,False
+379,SOUTH GARO HILLS,Meghalaya,population_2100_reference,0.003312774830744113,0.005,none,False
+380,WEST GARO HILLS,Meghalaya,population_2100_reference,0.004956852116203809,0.005,none,False
+381,WEST KHASI HILLS,Meghalaya,population_2100_reference,0.0018082206637678004,0.005,none,False
+382,AIZAWL,Mizoram,population_2100_reference,0.00214523624789521,0.005,none,False
+383,CHAMPHAI,Mizoram,population_2100_reference,0.00022131202087617558,0.005,none,False
+384,KOLASIB,Mizoram,population_2100_reference,0.0007594027573213983,0.005,none,False
+385,LAWNGTLAI,Mizoram,population_2100_reference,0.0004967544560652735,0.005,none,False
+386,LUNGLEI,Mizoram,population_2100_reference,0.0006714256547298503,0.005,none,False
+387,MAMIT,Mizoram,population_2100_reference,0.00032052244550643985,0.005,none,False
+388,SAIHA,Mizoram,population_2100_reference,0.0002989311265719632,0.005,none,False
+389,SERCHHIP,Mizoram,population_2100_reference,0.0003188389682320534,0.005,none,False
+390,CENTRAL,NCT of Delhi,population_2100_reference,,0.005,none,False
+391,EAST,NCT of Delhi,population_2100_reference,,0.005,none,False
+392,NEW DELHI,NCT of Delhi,population_2100_reference,,0.005,none,False
+393,NORTH,NCT of Delhi,population_2100_reference,,0.005,none,False
+394,NORTH EAST,NCT of Delhi,population_2100_reference,0.08266109881812307,0.005,none,True
+395,NORTH WEST,NCT of Delhi,population_2100_reference,0.042554509894974016,0.005,none,True
+396,SOUTH,NCT of Delhi,population_2100_reference,0.05367012269985722,0.005,none,True
+397,SOUTH WEST,NCT of Delhi,population_2100_reference,,0.005,none,False
+398,WEST,NCT of Delhi,population_2100_reference,,0.005,none,False
+399,DIMAPUR,Nagaland,population_2100_reference,0.001966192514818499,0.005,none,False
+400,KIPHIRE,Nagaland,population_2100_reference,0.000569637717722142,0.005,none,False
+401,KOHIMA,Nagaland,population_2100_reference,0.0011002583889660798,0.005,none,False
+402,LONGLENG,Nagaland,population_2100_reference,0.0023490587088622933,0.005,none,False
+403,MOKOKCHUNG,Nagaland,population_2100_reference,0.0005835921243987838,0.005,none,False
+404,MON,Nagaland,population_2100_reference,0.000844315569073962,0.005,none,False
+405,PEREN,Nagaland,population_2100_reference,0.00025436707660038784,0.005,none,False
+406,PHEK,Nagaland,population_2100_reference,0.0010308210886837083,0.005,none,False
+407,TUENSANG,Nagaland,population_2100_reference,0.0006130036731503108,0.005,none,False
+408,WOKHA,Nagaland,population_2100_reference,0.001197788333225066,0.005,none,False
+409,ZUNHEBOTO,Nagaland,population_2100_reference,0.0013177838692884835,0.005,none,False
+410,ANUGUL,Odisha,population_2100_reference,0.004710661568942376,0.005,none,False
+411,BALANGIR,Odisha,population_2100_reference,0.008551246560481266,0.005,none,True
+412,BALESHWAR,Odisha,population_2100_reference,0.011460020334852742,0.005,none,True
+413,BARGARH,Odisha,population_2100_reference,0.010146990644562872,0.005,none,True
+414,BAUDH,Odisha,population_2100_reference,0.0033158932373557586,0.005,none,False
+415,BHADRAK,Odisha,population_2100_reference,0.010534155642987009,0.005,none,True
+416,CUTTACK,Odisha,population_2100_reference,0.023819548551257497,0.005,none,True
+417,DEBAGARH,Odisha,population_2100_reference,0.0018686400675975829,0.005,none,False
+418,DHENKANAL,Odisha,population_2100_reference,0.009871051072987904,0.005,none,True
+419,GAJAPATI,Odisha,population_2100_reference,0.0021444673323814645,0.005,none,False
+420,GANJAM,Odisha,population_2100_reference,0.015451541137156166,0.005,none,True
+421,JAGATSINGHAPUR,Odisha,population_2100_reference,0.015741636726627085,0.005,none,True
+422,JAJAPUR,Odisha,population_2100_reference,0.016818275396963595,0.005,none,True
+423,JHARSUGUDA,Odisha,population_2100_reference,0.0038072805053524805,0.005,none,False
+424,KALAHANDI,Odisha,population_2100_reference,0.004454399633367401,0.005,none,False
+425,KANDHAMAL,Odisha,population_2100_reference,0.002352399892525211,0.005,none,False
+426,KENDRAPARA,Odisha,population_2100_reference,0.015744562958605112,0.005,none,True
+427,KENDUJHAR,Odisha,population_2100_reference,0.0048471858394307735,0.005,none,False
+428,KHORDHA,Odisha,population_2100_reference,0.024032949958190945,0.005,none,True
+429,KORAPUT,Odisha,population_2100_reference,0.003934958095686617,0.005,none,False
+430,MALKANGIRI,Odisha,population_2100_reference,0.0027514029191017236,0.005,none,False
+431,MAYURBHANJ,Odisha,population_2100_reference,0.007626695212571686,0.005,none,True
+432,NABARANGAPUR,Odisha,population_2100_reference,0.004953782351992144,0.005,none,False
+433,NAYAGARH,Odisha,population_2100_reference,0.006064331825626609,0.005,none,True
+434,NUAPADA,Odisha,population_2100_reference,0.0032348725825323537,0.005,none,False
+435,PURI,Odisha,population_2100_reference,0.00851869152252782,0.005,none,True
+436,RAYAGADA,Odisha,population_2100_reference,0.002621405332362324,0.005,none,False
+437,SAMBALPUR,Odisha,population_2100_reference,0.007587458860351036,0.005,none,True
+438,SUBARNAPUR,Odisha,population_2100_reference,0.007375910157337977,0.005,none,True
+439,SUNDARGARH,Odisha,population_2100_reference,0.01637200009685711,0.005,none,True
+440,KARAIKAL,Puducherry,population_2100_reference,0.0013374248703602837,0.005,none,False
+441,MAHE,Puducherry,population_2100_reference,,0.005,none,False
+442,PUDUCHERRY,Puducherry,population_2100_reference,0.002250265911385106,0.005,none,False
+443,YANAM,Puducherry,population_2100_reference,,0.005,none,False
+444,AMRITSAR,Punjab,population_2100_reference,0.003594423649310704,0.005,none,False
+445,BARNALA,Punjab,population_2100_reference,0.0015137907787544187,0.005,none,False
+446,BATHINDA,Punjab,population_2100_reference,0.001661525649832885,0.005,none,False
+447,FARIDKOT,Punjab,population_2100_reference,0.0012804337608598513,0.005,none,False
+448,FATEHGARH SAHIB,Punjab,population_2100_reference,,0.005,none,False
+449,FIROZPUR,Punjab,population_2100_reference,0.001363219355653636,0.005,none,False
+450,GURDASPUR,Punjab,population_2100_reference,0.0023224456695521995,0.005,none,False
+451,HOSHIARPUR,Punjab,population_2100_reference,0.0027986707187449907,0.005,none,False
+452,JALANDHAR,Punjab,population_2100_reference,0.002922574917415351,0.005,none,False
+453,KAPURTHALA,Punjab,population_2100_reference,0.0030130981680700428,0.005,none,False
+454,LUDHIANA,Punjab,population_2100_reference,0.005593947098632178,0.005,none,True
+455,MANSA,Punjab,population_2100_reference,0.0011193228524776654,0.005,none,False
+456,MOGA,Punjab,population_2100_reference,0.0014367206079705366,0.005,none,False
+457,MUKTSAR,Punjab,population_2100_reference,0.001171913132261753,0.005,none,False
+458,PATIALA,Punjab,population_2100_reference,0.003370448529470886,0.005,none,False
+459,RUPNAGAR,Punjab,population_2100_reference,0.002183687487284856,0.005,none,False
+460,SAHIBZADA AJIT SINGH NAGAR,Punjab,population_2100_reference,,0.005,none,False
+461,SANGRUR,Punjab,population_2100_reference,0.0018413837492196122,0.005,none,False
+462,SHAHID BHAGAT SINGH NAGAR,Punjab,population_2100_reference,0.005148743750075769,0.005,none,True
+463,TARN TARAN,Punjab,population_2100_reference,0.0027385759247093547,0.005,none,False
+464,AJMER,Rajasthan,population_2100_reference,0.003068150209739167,0.005,none,False
+465,ALWAR,Rajasthan,population_2100_reference,0.004156775889456926,0.005,none,False
+466,BANSWARA,Rajasthan,population_2100_reference,0.004814144440820856,0.005,none,False
+467,BARAN,Rajasthan,population_2100_reference,0.0020190279957410886,0.005,none,False
+468,BARMER,Rajasthan,population_2100_reference,0.0010672141265147207,0.005,none,False
+469,BHARATPUR,Rajasthan,population_2100_reference,0.004166676380907155,0.005,none,False
+470,BHILWARA,Rajasthan,population_2100_reference,0.002136571246153131,0.005,none,False
+471,BIKANER,Rajasthan,population_2100_reference,0.001449803247928217,0.005,none,False
+472,BUNDI,Rajasthan,population_2100_reference,0.0032470814844001356,0.005,none,False
+473,CHITTAURGARH,Rajasthan,population_2100_reference,0.0020352165142946085,0.005,none,False
+474,CHURU,Rajasthan,population_2100_reference,0.0009610663394895694,0.005,none,False
+475,DAUSA,Rajasthan,population_2100_reference,0.003217151186387642,0.005,none,False
+476,DHAULPUR,Rajasthan,population_2100_reference,0.0036660304459589345,0.005,none,False
+477,DUNGARPUR,Rajasthan,population_2100_reference,0.005709907607236408,0.005,none,True
+478,GANGANAGAR,Rajasthan,population_2100_reference,0.0008928934982235095,0.005,none,False
+479,HANUMANGARH,Rajasthan,population_2100_reference,0.0010434050233093595,0.005,none,False
+480,JAIPUR,Rajasthan,population_2100_reference,0.01459904276586898,0.005,none,True
+481,JAISALMER,Rajasthan,population_2100_reference,0.0009189069196634894,0.005,none,False
+482,JALOR,Rajasthan,population_2100_reference,0.001028521418150971,0.005,none,False
+483,JHALAWAR,Rajasthan,population_2100_reference,0.0017024431464885506,0.005,none,False
+484,JHUNJHUNUN,Rajasthan,population_2100_reference,0.0028648476734028316,0.005,none,False
+485,JODHPUR,Rajasthan,population_2100_reference,0.0032974855051679185,0.005,none,False
+486,KARAULI,Rajasthan,population_2100_reference,0.0030979513331414904,0.005,none,False
+487,KOTA,Rajasthan,population_2100_reference,0.0036364289052763393,0.005,none,False
+488,NAGAUR,Rajasthan,population_2100_reference,0.0009451873904466385,0.005,none,False
+489,PALI,Rajasthan,population_2100_reference,0.000896572779390411,0.005,none,False
+490,PRATAPGARH,Rajasthan,population_2100_reference,0.001598547111342288,0.005,none,False
+491,RAJSAMAND,Rajasthan,population_2100_reference,0.0020452310155613693,0.005,none,False
+492,SAWAI MADHOPUR,Rajasthan,population_2100_reference,0.0019040727782119276,0.005,none,False
+493,SIKAR,Rajasthan,population_2100_reference,0.002699942537578821,0.005,none,False
+494,SIROHI,Rajasthan,population_2100_reference,0.0013139554340689465,0.005,none,False
+495,TONK,Rajasthan,population_2100_reference,0.0016276521508422417,0.005,none,False
+496,UDAIPUR,Rajasthan,population_2100_reference,0.002763287483912873,0.005,none,False
+497,EAST,Sikkim,population_2100_reference,0.0009034695912292399,0.005,none,False
+498,NORTH,Sikkim,population_2100_reference,0.0001356395319183422,0.005,none,False
+499,SOUTH,Sikkim,population_2100_reference,,0.005,none,False
+500,WEST,Sikkim,population_2100_reference,0.0004247461729688271,0.005,none,False
+501,ARIYALUR,Tamil Nadu,population_2100_reference,0.0010120556470157567,0.005,none,False
+502,CHENNAI,Tamil Nadu,population_2100_reference,0.040026003228231966,0.005,none,True
+503,COIMBATORE,Tamil Nadu,population_2100_reference,0.00373573632582604,0.005,none,False
+504,CUDDALORE,Tamil Nadu,population_2100_reference,0.0015627354656914368,0.005,none,False
+505,DHARMAPURI,Tamil Nadu,population_2100_reference,0.0008980262365254224,0.005,none,False
+506,DINDIGUL,Tamil Nadu,population_2100_reference,0.0007986980434900577,0.005,none,False
+507,ERODE,Tamil Nadu,population_2100_reference,0.001248275233242365,0.005,none,False
+508,KANCHEEPURAM,Tamil Nadu,population_2100_reference,0.007473344418142011,0.005,none,True
+509,KANNIYAKUMARI,Tamil Nadu,population_2100_reference,0.0021685945135224544,0.005,none,False
+510,KARUR,Tamil Nadu,population_2100_reference,0.0008674418238262428,0.005,none,False
+511,KRISHNAGIRI,Tamil Nadu,population_2100_reference,0.0011232634861243164,0.005,none,False
+512,MADURAI,Tamil Nadu,population_2100_reference,0.0021070150240206555,0.005,none,False
+513,NAGAPATTINAM,Tamil Nadu,population_2100_reference,0.0011823410038597514,0.005,none,False
+514,NAMAKKAL,Tamil Nadu,population_2100_reference,0.0013442413286435403,0.005,none,False
+515,PERAMBALUR,Tamil Nadu,population_2100_reference,0.0004315972160450944,0.005,none,False
+516,PUDUKKOTTAI,Tamil Nadu,population_2100_reference,0.0006183760328901345,0.005,none,False
+517,RAMANATHAPURAM,Tamil Nadu,population_2100_reference,0.0004202444583660454,0.005,none,False
+518,SALEM,Tamil Nadu,population_2100_reference,0.0012822784423665817,0.005,none,False
+519,SIVAGANGA,Tamil Nadu,population_2100_reference,0.0004512338155941746,0.005,none,False
+520,THANJAVUR,Tamil Nadu,population_2100_reference,0.0015488073786652636,0.005,none,False
+521,THE NILGIRIS,Tamil Nadu,population_2100_reference,0.001665160962384771,0.005,none,False
+522,THENI,Tamil Nadu,population_2100_reference,0.0010014738157069672,0.005,none,False
+523,THIRUVALLUR,Tamil Nadu,population_2100_reference,0.006741091776976608,0.005,none,True
+524,THIRUVARUR,Tamil Nadu,population_2100_reference,0.0011186468755495231,0.005,none,False
+525,THOOTHUKKUDI,Tamil Nadu,population_2100_reference,0.0010989682802660873,0.005,none,False
+526,TIRUCHIRAPPALLI,Tamil Nadu,population_2100_reference,0.003713178620814176,0.005,none,False
+527,TIRUNELVELI,Tamil Nadu,population_2100_reference,0.0011864396165975966,0.005,none,False
+528,TIRUPPUR,Tamil Nadu,population_2100_reference,0.0012378564547278596,0.005,none,False
+529,TIRUVANNAMALAI,Tamil Nadu,population_2100_reference,0.0010677832756921712,0.005,none,False
+530,VELLORE,Tamil Nadu,population_2100_reference,0.002506839141551953,0.005,none,False
+531,VILUPPURAM,Tamil Nadu,population_2100_reference,0.0013082456773460028,0.005,none,False
+532,VIRUDHUNAGAR,Tamil Nadu,population_2100_reference,0.0008403432912679545,0.005,none,False
+533,DHALAI,Tripura,population_2100_reference,0.002129697624409903,0.005,none,False
+534,NORTH TRIPURA,Tripura,population_2100_reference,0.004585312616704404,0.005,none,False
+535,SOUTH TRIPURA,Tripura,population_2100_reference,0.0052278737028843255,0.005,none,True
+536,WEST TRIPURA,Tripura,population_2100_reference,0.01556210557373582,0.005,none,True
+537,AGRA,Uttar Pradesh,population_2100_reference,0.017730727150525805,0.005,none,True
+538,ALIGARH,Uttar Pradesh,population_2100_reference,0.006412009036451435,0.005,none,True
+539,ALLAHABAD,Uttar Pradesh,population_2100_reference,0.03449091876747329,0.005,none,True
+540,AMBEDKAR NAGAR,Uttar Pradesh,population_2100_reference,0.008958161742875842,0.005,none,True
+541,AURAIYA,Uttar Pradesh,population_2100_reference,0.004767289238997141,0.005,none,False
+542,AZAMGARH,Uttar Pradesh,population_2100_reference,0.014869173941190111,0.005,none,True
+543,BAGHPAT,Uttar Pradesh,population_2100_reference,0.0045036827002805325,0.005,none,False
+544,BAHRAICH,Uttar Pradesh,population_2100_reference,0.003960339491377451,0.005,none,False
+545,BALLIA,Uttar Pradesh,population_2100_reference,0.014004977310766492,0.005,none,True
+546,BALRAMPUR,Uttar Pradesh,population_2100_reference,0.005098015507265731,0.005,none,True
+547,BANDA,Uttar Pradesh,population_2100_reference,0.005645796868174999,0.005,none,True
+548,BARA BANKI,Uttar Pradesh,population_2100_reference,0.00802259782819826,0.005,none,True
+549,BAREILLY,Uttar Pradesh,population_2100_reference,0.007581873318081789,0.005,none,True
+550,BASTI,Uttar Pradesh,population_2100_reference,0.008891920664392011,0.005,none,True
+551,BIJNOR,Uttar Pradesh,population_2100_reference,0.006357528116252171,0.005,none,True
+552,BUDAUN,Uttar Pradesh,population_2100_reference,0.004536779632864632,0.005,none,False
+553,BULANDSHAHR,Uttar Pradesh,population_2100_reference,0.0075658952507476635,0.005,none,True
+554,CHANDAULI,Uttar Pradesh,population_2100_reference,0.015623788229103552,0.005,none,True
+555,CHITRAKOOT,Uttar Pradesh,population_2100_reference,0.007154516500476833,0.005,none,True
+556,DEORIA,Uttar Pradesh,population_2100_reference,0.00947991609831035,0.005,none,True
+557,ETAH,Uttar Pradesh,population_2100_reference,0.004281179406503851,0.005,none,False
+558,ETAWAH,Uttar Pradesh,population_2100_reference,0.0054006380477340235,0.005,none,True
+559,FAIZABAD,Uttar Pradesh,population_2100_reference,0.01070349264906468,0.005,none,True
+560,FARRUKHABAD,Uttar Pradesh,population_2100_reference,0.006243371127354826,0.005,none,True
+561,FATEHPUR,Uttar Pradesh,population_2100_reference,0.009486643451507704,0.005,none,True
+562,FIROZABAD,Uttar Pradesh,population_2100_reference,0.008233316905426861,0.005,none,True
+563,GAUTAM BUDDHA NAGAR,Uttar Pradesh,population_2100_reference,0.010260305518675211,0.005,none,True
+564,GHAZIABAD,Uttar Pradesh,population_2100_reference,0.017925063273935556,0.005,none,True
+565,GHAZIPUR,Uttar Pradesh,population_2100_reference,0.014645810286053702,0.005,none,True
+566,GONDA,Uttar Pradesh,population_2100_reference,0.0052746143226990875,0.005,none,True
+567,GORAKHPUR,Uttar Pradesh,population_2100_reference,0.013790581358176424,0.005,none,True
+568,HAMIRPUR,Uttar Pradesh,population_2100_reference,0.004204123676249468,0.005,none,False
+569,HARDOI,Uttar Pradesh,population_2100_reference,0.004405863057560782,0.005,none,False
+570,JALAUN,Uttar Pradesh,population_2100_reference,0.00312210941258213,0.005,none,False
+571,JAUNPUR,Uttar Pradesh,population_2100_reference,0.01704236152544918,0.005,none,True
+572,JHANSI,Uttar Pradesh,population_2100_reference,0.005983936452780756,0.005,none,True
+573,JYOTIBA PHULE NAGAR,Uttar Pradesh,population_2100_reference,0.006696547464710024,0.005,none,True
+574,KANNAUJ,Uttar Pradesh,population_2100_reference,0.00472637126237725,0.005,none,False
+575,KANPUR DEHAT,Uttar Pradesh,population_2100_reference,0.0037555014292908777,0.005,none,False
+576,KANPUR NAGAR,Uttar Pradesh,population_2100_reference,0.02195579574142008,0.005,none,True
+577,KANSHIRAM NAGAR,Uttar Pradesh,population_2100_reference,0.0039232847643584255,0.005,none,False
+578,KAUSHAMBI,Uttar Pradesh,population_2100_reference,0.010732954551540068,0.005,none,True
+579,KHERI,Uttar Pradesh,population_2100_reference,0.0037588085485699197,0.005,none,False
+580,KUSHINAGAR,Uttar Pradesh,population_2100_reference,0.00958466316362006,0.005,none,True
+581,LALITPUR,Uttar Pradesh,population_2100_reference,0.002040129794625839,0.005,none,False
+582,LUCKNOW,Uttar Pradesh,population_2100_reference,0.031145631630058977,0.005,none,True
+583,MAHAMAYA NAGAR,Uttar Pradesh,population_2100_reference,0.0043876931331039695,0.005,none,False
+584,MAHOBA,Uttar Pradesh,population_2100_reference,0.0029211302337745866,0.005,none,False
+585,MAHRAJGANJ,Uttar Pradesh,population_2100_reference,0.006902987641649803,0.005,none,True
+586,MAINPURI,Uttar Pradesh,population_2100_reference,0.004619391240457323,0.005,none,False
+587,MATHURA,Uttar Pradesh,population_2100_reference,0.004614916070894933,0.005,none,False
+588,MAU,Uttar Pradesh,population_2100_reference,0.012981758000614725,0.005,none,True
+589,MEERUT,Uttar Pradesh,population_2100_reference,0.01225363289521305,0.005,none,True
+590,MIRZAPUR,Uttar Pradesh,population_2100_reference,0.009513822965481571,0.005,none,True
+591,MORADABAD,Uttar Pradesh,population_2100_reference,0.008017352521767846,0.005,none,True
+592,MUZAFFARNAGAR,Uttar Pradesh,population_2100_reference,0.006471675623454799,0.005,none,True
+593,PILIBHIT,Uttar Pradesh,population_2100_reference,0.0037740253715596687,0.005,none,False
+594,PRATAPGARH,Uttar Pradesh,population_2100_reference,0.01116744188446283,0.005,none,True
+595,RAE BARELI,Uttar Pradesh,population_2100_reference,0.010352237799268188,0.005,none,True
+596,RAMPUR,Uttar Pradesh,population_2100_reference,0.006421348640533884,0.005,none,True
+597,SAHARANPUR,Uttar Pradesh,population_2100_reference,0.006288484171613503,0.005,none,True
+598,SANT KABIR NAGAR,Uttar Pradesh,population_2100_reference,0.008063600944409053,0.005,none,True
+599,SANT RAVIDAS NAGAR,Uttar Pradesh,population_2100_reference,0.020809111912033423,0.005,none,True
+600,SHAHJAHANPUR,Uttar Pradesh,population_2100_reference,0.005387361172533922,0.005,none,True
+601,SHRAWASTI,Uttar Pradesh,population_2100_reference,0.004444122306961516,0.005,none,False
+602,SIDDHARTHNAGAR,Uttar Pradesh,population_2100_reference,0.005400104602266257,0.005,none,True
+603,SITAPUR,Uttar Pradesh,population_2100_reference,0.004823793854484278,0.005,none,False
+604,SONBHADRA,Uttar Pradesh,population_2100_reference,0.0037916742330681248,0.005,none,False
+605,SULTANPUR,Uttar Pradesh,population_2100_reference,0.011253190945195394,0.005,none,True
+606,UNNAO,Uttar Pradesh,population_2100_reference,0.008704618552304264,0.005,none,True
+607,VARANASI,Uttar Pradesh,population_2100_reference,0.038206344501485,0.005,none,True
+608,ALMORA,Uttarakhand,population_2100_reference,0.001494394786738844,0.005,none,False
+609,BAGESHWAR,Uttarakhand,population_2100_reference,0.0012196140651821554,0.005,none,False
+610,CHAMOLI,Uttarakhand,population_2100_reference,0.0005658002620542883,0.005,none,False
+611,CHAMPAWAT,Uttarakhand,population_2100_reference,0.0007241148299838633,0.005,none,False
+612,DEHRADUN,Uttarakhand,population_2100_reference,0.0033149871761469665,0.005,none,False
+613,GARHWAL,Uttarakhand,population_2100_reference,0.002438666244965007,0.005,none,False
+614,HARDWAR,Uttarakhand,population_2100_reference,0.003598202247806045,0.005,none,False
+615,NAINITAL,Uttarakhand,population_2100_reference,0.002264997709630292,0.005,none,False
+616,PITHORAGARH,Uttarakhand,population_2100_reference,0.0011361228652504967,0.005,none,False
+617,RUDRAPRAYAG,Uttarakhand,population_2100_reference,0.0003578715711414108,0.005,none,False
+618,TEHRI GARHWAL,Uttarakhand,population_2100_reference,0.0018166871543103878,0.005,none,False
+619,UDHAM SINGH NAGAR,Uttarakhand,population_2100_reference,0.00390791899766936,0.005,none,False
+620,UTTARKASHI,Uttarakhand,population_2100_reference,0.00034067853723584253,0.005,none,False
+621,BANKURA,West Bengal,population_2100_reference,0.012883784785457994,0.005,none,True
+622,BARDDHAMAN,West Bengal,population_2100_reference,0.016279620380146576,0.005,none,True
+623,BIRBHUM,West Bengal,population_2100_reference,0.012848035401946806,0.005,none,True
+624,DAKSHIN DINAJPUR,West Bengal,population_2100_reference,0.00561415028519709,0.005,none,True
+625,DARJILING,West Bengal,population_2100_reference,0.007185730604536177,0.005,none,True
+626,HAORA,West Bengal,population_2100_reference,0.02134342102834105,0.005,none,True
+627,HUGLI,West Bengal,population_2100_reference,0.0580381753735865,0.005,none,True
+628,JALPAIGURI,West Bengal,population_2100_reference,0.00867377172298906,0.005,none,True
+629,KOCH BIHAR,West Bengal,population_2100_reference,0.012684745887563447,0.005,none,True
+630,KOLKATA,West Bengal,population_2100_reference,,0.005,none,False
+631,MALDAH,West Bengal,population_2100_reference,0.011631580036461068,0.005,none,True
+632,MURSHIDABAD,West Bengal,population_2100_reference,0.014915029180135807,0.005,none,True
+633,NADIA,West Bengal,population_2100_reference,0.018751374150863313,0.005,none,True
+634,NORTH TWENTY FOUR PARGANAS,West Bengal,population_2100_reference,0.061791266722706066,0.005,none,True
+635,PASCHIM MEDINIPUR,West Bengal,population_2100_reference,0.01775968807753259,0.005,none,True
+636,PURBA MEDINIPUR,West Bengal,population_2100_reference,0.017291305516435623,0.005,none,True
+637,PURULIYA,West Bengal,population_2100_reference,0.009469452821070354,0.005,none,True
+638,SOUTH TWENTY FOUR PARGANAS,West Bengal,population_2100_reference,0.20181208074431534,0.005,none,True
+639,UTTAR DINAJPUR,West Bengal,population_2100_reference,0.008161561663914147,0.005,none,True
