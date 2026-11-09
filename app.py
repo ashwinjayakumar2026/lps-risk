@@ -31,8 +31,8 @@ MAP_STYLE = MAP_DIR / "Map_Style.json"
 # LOAD DATA
 # ============================================================
 
-@st.cache_resource(show_spinner="Loading LPS risk data...")
-def load_data():
+@st.cache_data(show_spinner="Loading LPS risk data...")
+def load_data(data_signature):
 
     maxima = pd.read_parquet(TABLE_DIR / "district_maxima.parquet")
     changes = pd.read_parquet(TABLE_DIR / "district_risk_change.parquet")
@@ -113,6 +113,10 @@ if missing:
 
 
 try:
+    data_signature = tuple(
+        (str(path.resolve()), path.stat().st_mtime_ns, path.stat().st_size)
+        for path in required
+    )
     (
         maxima,
         changes,
@@ -121,7 +125,7 @@ try:
         districts,
         outline,
         style
-    ) = load_data()
+    ) = load_data(data_signature)
 
 except Exception as e:
     st.error(f"Data loading error: {e}")
@@ -278,6 +282,9 @@ def get_change_comparison(time_period):
         "Far future (2079-2099)":
             "Far future vs Present"
     }
+
+    if time_period in mapping.values():
+        return time_period
 
     return mapping.get(time_period)
 
@@ -620,7 +627,11 @@ if metric_label == "Risk Maximum":
 
 else:
 
-    selected_comparison = time_value
+    selected_comparison = get_change_comparison(time_value)
+
+    if selected_comparison is None:
+        st.error("Invalid risk-change comparison.")
+        st.stop()
 
     selected_change_scenario = get_change_scenario(
         scenario
