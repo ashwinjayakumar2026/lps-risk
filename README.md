@@ -1,80 +1,138 @@
-# LPS Risk Explorer — Optimized Dashboard Package
+# Indian Monsoon LPS Risk Explorer
 
-This package runs the existing Indian Monsoon LPS Risk Explorer interface
-against self-contained, preprocessed copies of the source data. The original
-GitHub project is not needed to run the dashboard.
+## Overview
 
-## Run
+The **Indian Monsoon LPS Risk Explorer** is an interactive geospatial dashboard developed to explore district-level climate risk associated with Indian Monsoon Low Pressure Systems (LPS) across India.
 
-From PowerShell:
+The dashboard integrates hazard, exposure and vulnerability information to examine the spatial distribution of risk, compare historical and future scenarios, and investigate changes in district-level risk over time.
 
-```powershell
-cd D:\IISER\Project\App\LPS_Risk_Explorer\Dashboard_package
-python -m pip install -r requirements.txt
-python -m streamlit run app.py
+## Features
+
+- Interactive district-level risk maps across India.
+- Historical and future risk assessment.
+- Risk-change comparisons between historical and future periods.
+- Population and human-system exposure scenarios.
+- Future population scenario using projected 2100 population.
+- District-level hazard, exposure, vulnerability and risk results.
+- IMD homogeneous regional risk-change maps and summary tables.
+
+## Temporal Framework
+
+The dashboard covers the following assessment periods:
+
+| Period | Years |
+|---|---|
+| Epoch 1 | 1979–2000 |
+| Epoch 2 | 2001–2022 |
+| Historical | 1979–2022 |
+| Near Future | 2020–2049 |
+| Far Future | 2079–2099 |
+
+### Risk Change Comparisons
+
+- Epoch 2 vs Epoch 1
+- Near Future vs Historical
+- Far Future vs Historical
+
+## Risk Assessment Framework
+
+Risk is conceptualised through the integration of three components:
+
+**Risk = Hazard × Exposure × Vulnerability**
+
+### Hazard
+
+LPS-associated rainfall extremes represented using selected ETCCDI-based rainfall indices.
+
+### Exposure
+
+The dashboard includes two principal exposure representations:
+
+- **Population:** Population-based exposure.
+- **Human System:** Exposure representing population, built-up areas and cropland.
+
+A future population scenario based on projected 2100 population is also included.
+
+### Vulnerability
+
+District-level socio-economic vulnerability represented using the original district vulnerability values incorporated into the application dataset.
+
+## Risk Indicators
+
+The dashboard provides two principal indicators:
+
+- **Risk Maximum:** District-level maximum risk values, including normalised and raw risk.
+- **Risk Change (%):** Percentage change in risk relative to the corresponding baseline period.
+
+The district-level results table presents hazard, exposure, vulnerability and relevant risk indicators for the selected district.
+
+## IMD Homogeneous Regional Analysis
+
+The dashboard additionally provides risk-change summaries across the four IMD homogeneous rainfall regions of India.
+
+The regional analysis includes:
+
+- Spatial representation of regional average risk change.
+- Regional mean and median risk-change values.
+- Number of valid districts contributing to each regional summary.
+
+## Technology Stack
+
+- Python
+- Streamlit
+- Pandas
+- NumPy
+- Plotly
+- PyArrow
+
+## Repository Structure
+
+```text
+LPS_Risk_Explorer/
+│
+├── app.py
+├── map_rendering.py
+├── prepare_data.py
+├── requirements.txt
+├── README.md
+│
+└── data/
+    ├── source/
+    ├── tables/
+    └── maps/
 ```
 
-The ready-to-run Parquet tables and map files are included under `data`. To
-rebuild them after replacing the source workbook or map files in `data\source`,
-run:
+## Installation and Execution
 
-```powershell
-python prepare_data.py
-python validate_science.py
+### 1. Clone the repository
+
+```bash
+git clone <YOUR-GITHUB-REPOSITORY-URL>
+cd LPS_Risk_Explorer
 ```
 
-District vulnerability is read only from
-`data\source\application_district_metrics.csv`, using its `DIST_ID` and `vul`
-columns. The workbook's `Vulnerability_PCA` fields are not used by the app.
+### 2. Install dependencies
 
-## Package contents
-
-- `app.py` — Streamlit dashboard, retaining the existing layout, controls,
-  tables, labels, scenarios and outputs.
-- `map_rendering.py` — fast choropleth rendering using one copy of each
-  district geometry per figure and one combined outline trace.
-- `prepare_data.py` — creates the Parquet tables and render-ready GeoJSON from
-  the included source copies. Geometry coordinates and district IDs are
-  preserved; no simplification is applied.
-- `validate_science.py` — exact source-to-package checks for displayed data,
-  vulnerability provenance, district IDs, regional values and geometries.
-- `benchmark.py` — comparable data-loading and map-rendering benchmarks for
-  the original and optimized approaches.
-- `data\source` — copies of the workbook, app metrics CSV, district and outline
-  GeoJSON, and map style used to produce this package.
-- `data\tables` — app-specific Parquet projections of the workbook sheets.
-- `data\maps` — compact GeoJSON files and map style used by the app.
-
-## Reports
-
-- `performance_benchmark_report.md` — measured before/after timings and
-  browser interaction results.
-- `scientific_validation_report.md` — value, ID, missingness and geometry
-  validation results.
-
-To re-run the local benchmark:
-
-```powershell
-python benchmark.py --mode baseline --repeat 3
-python benchmark.py --mode optimized --repeat 3
+```bash
+pip install -r requirements.txt
 ```
 
-Benchmark commands write JSON measurements to `benchmarks`. Baseline mode
-reads the bundled copies of the unoptimized workbook and GeoJSON and reproduces
-the original Excel/Plotly workflow; optimized mode measures the packaged data
-and renderer.
+### 3. Run the dashboard
 
-## Portable Windows desktop package
+```bash
+streamlit run app.py
+```
 
-The Windows one-folder build and supervisor instructions are in
-`README_DESKTOP.txt`. On a Windows build machine with Python 3.13 and the
-dashboard dependencies installed, run
-`powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\build_desktop.ps1`
-from this directory.
-The script installs PyInstaller if needed, builds
-`dist\LPS_Risk_Explorer\LPS_Risk_Explorer.exe`, and creates
-`LPS_Risk_Explorer_Desktop.zip`. The ZIP contains the complete application
-folder; keep its files together after extraction.
+The dashboard will open in your default web browser.
 
-Desktop packaging results and test limitations are recorded in
-`desktop_build_test_report.md`.
+## Data
+
+The application uses prepared district-level risk datasets and supporting geospatial files derived from the underlying research.
+
+The `data/` directory contains the processed tables, district vulnerability data and map geometries required to run the dashboard.
+
+## Research Context
+
+This dashboard accompanies a research assessment of compound climate risk associated with Indian Monsoon Low Pressure Systems. It is intended to support the exploration and interpretation of spatial and temporal patterns in district-level risk across India.
+
+**Note:** Dashboard outputs reflect the datasets, scenarios, assumptions and methodology documented in the associated research.
