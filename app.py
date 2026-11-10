@@ -675,7 +675,8 @@ main_fig, main_map_df = create_optimized_map(
 
 st.plotly_chart(
     main_fig,
-    use_container_width=True
+    use_container_width=True,
+    key="district-risk-map",
 )
 
 
@@ -700,12 +701,29 @@ district_info = master[
 
 district_id = district_info["DIST_ID"]
 
-district_vul = district_info["vul"]
-
-
 # ============================================================
 # GET DISTRICT HAZARD / EXPOSURE / RISK
 # ============================================================
+
+hazard = exposure = vulnerability = np.nan
+raw_risk = normalized_risk = risk_change = np.nan
+
+
+def valid_risk_change(record):
+    baseline = pd.to_numeric(record["Baseline_Risk_Max_Raw"], errors="coerce")
+    comparison = pd.to_numeric(
+        record["Comparison_Risk_Max_Raw"], errors="coerce"
+    )
+    value = pd.to_numeric(record["Risk_Change_Percent"], errors="coerce")
+    if (
+        not np.isfinite(baseline)
+        or baseline == 0
+        or not np.isfinite(comparison)
+        or not np.isfinite(value)
+    ):
+        return np.nan
+    return float(value)
+
 
 if metric_label == "Risk Maximum":
 
@@ -722,24 +740,20 @@ if metric_label == "Risk Maximum":
     if not selected_record.empty:
 
         r = selected_record.iloc[0]
-
-        hazard = r["Hazard_at_Normalized_Max"]
-
-        exposure = r["Exposure_at_Normalized_Max"]
-
-        grid_vulnerability = r["Vulnerability_at_Normalized_Max"]
-
-        reconstructed_risk = hazard * exposure * grid_vulnerability
-
-        normalized_risk = r["Risk_Max_Normalized"]
-
-        raw_risk = r["Risk_Max_Raw"]
-
-    else:
-
-        hazard = exposure = grid_vulnerability = np.nan
-
-        reconstructed_risk = normalized_risk = raw_risk = np.nan
+        raw_risk = pd.to_numeric(r["Risk_Max_Raw"], errors="coerce")
+        if np.isfinite(raw_risk):
+            hazard = pd.to_numeric(
+                r["Hazard_at_Normalized_Max"], errors="coerce"
+            )
+            exposure = pd.to_numeric(
+                r["Exposure_at_Normalized_Max"], errors="coerce"
+            )
+            vulnerability = pd.to_numeric(
+                r["Vulnerability_at_Normalized_Max"], errors="coerce"
+            )
+            normalized_risk = pd.to_numeric(
+                r["Risk_Max_Normalized"], errors="coerce"
+            )
 
     change_comparison = get_change_comparison(
         time_value
@@ -765,59 +779,8 @@ if metric_label == "Risk Maximum":
 
         ]
 
-        risk_change = (
-            selected_change.iloc[0]["Risk_Change_Percent"]
-            if not selected_change.empty
-            else np.nan
-        )
-
-    else:
-
-        risk_change = np.nan
-
-    table = pd.DataFrame({
-
-        "Indicator": [
-
-            "Hazard",
-
-            "Exposure",
-
-            "Grid vulnerability (used in risk)",
-
-            "Reconstructed H × E × V",
-
-            "District vulnerability index (vul)",
-
-            "Normalized risk map value (0–1)",
-
-            "Raw Risk Maximum",
-
-            "Risk Change (%)"
-
-        ],
-
-        "Value": [
-
-            hazard,
-
-            exposure,
-
-            grid_vulnerability,
-
-            reconstructed_risk,
-
-            district_vul,
-
-            normalized_risk,
-
-            raw_risk,
-
-            risk_change
-
-        ]
-
-    })
+        if not selected_change.empty:
+            risk_change = valid_risk_change(selected_change.iloc[0])
 
 else:
 
@@ -839,11 +802,7 @@ else:
 
         r = selected_record.iloc[0]
 
-        risk_change = r["Risk_Change_Percent"]
-
-        baseline_risk = r["Baseline_Risk_Max_Raw"]
-
-        comparison_risk = r["Comparison_Risk_Max_Raw"]
+        risk_change = valid_risk_change(r)
 
         config = r["Comparison_Configuration"]
 
@@ -860,78 +819,41 @@ else:
         if not selected_maxima.empty:
 
             m = selected_maxima.iloc[0]
+            raw_risk = pd.to_numeric(m["Risk_Max_Raw"], errors="coerce")
+            if np.isfinite(raw_risk):
+                hazard = pd.to_numeric(
+                    m["Hazard_at_Normalized_Max"], errors="coerce"
+                )
+                exposure = pd.to_numeric(
+                    m["Exposure_at_Normalized_Max"], errors="coerce"
+                )
+                vulnerability = pd.to_numeric(
+                    m["Vulnerability_at_Normalized_Max"], errors="coerce"
+                )
+                normalized_risk = pd.to_numeric(
+                    m["Risk_Max_Normalized"], errors="coerce"
+                )
 
-            hazard = m["Hazard_at_Normalized_Max"]
-
-            exposure = m["Exposure_at_Normalized_Max"]
-
-            grid_vulnerability = m["Vulnerability_at_Normalized_Max"]
-
-            reconstructed_risk = hazard * exposure * grid_vulnerability
-
-            normalized_risk = m["Risk_Max_Normalized"]
-
-        else:
-
-            hazard = exposure = grid_vulnerability = np.nan
-
-            reconstructed_risk = normalized_risk = np.nan
-
-    else:
-
-        risk_change = baseline_risk = comparison_risk = np.nan
-
-        hazard = exposure = grid_vulnerability = np.nan
-
-        reconstructed_risk = normalized_risk = np.nan
-
-    table = pd.DataFrame({
-
+table = pd.DataFrame(
+    {
         "Indicator": [
-
-            "Hazard (comparison period)",
-
-            "Exposure (comparison period)",
-
-            "Grid vulnerability (used in risk)",
-
-            "Reconstructed H × E × V",
-
-            "District vulnerability index (vul)",
-
-            "Baseline Raw Risk Maximum",
-
-            "Comparison Raw Risk Maximum",
-
-            "Comparison normalized map value (0–1)",
-
-            "Risk Change (%)"
-
+            "Hazard (H)",
+            "Exposure (E)",
+            "Vulnerability (V)",
+            "Raw Risk Maximum",
+            "Normalised Risk Maximum",
+            "Risk Change (%)",
         ],
-
         "Value": [
-
             hazard,
-
             exposure,
-
-            grid_vulnerability,
-
-            reconstructed_risk,
-
-            district_vul,
-
-            baseline_risk,
-
-            comparison_risk,
-
+            vulnerability,
+            raw_risk,
             normalized_risk,
-
-            risk_change
-
-        ]
-
-    })
+            risk_change,
+        ],
+    }
+)
 
 
 # ============================================================
@@ -945,7 +867,7 @@ st.markdown(
 table["Value"] = pd.to_numeric(
     table["Value"],
     errors="coerce"
-).round(5)
+).round(8)
 
 st.dataframe(
     table,
@@ -954,10 +876,10 @@ st.dataframe(
 )
 
 st.caption(
-    "Grid hazard, exposure and vulnerability are collocated at the maximum-risk "
-    "cell; their product reconstructs raw risk. The district vulnerability index "
-    "('vul') is a separate application metric. Raw risk maxima drive percentage "
-    "change; normalized map values are for display."
+    "H, E and V are the values at the same grid cell used for the district risk "
+    "maximum. Raw risk is the existing H × E × V maximum; normalised risk is the "
+    "existing 0–1 map value. Risk change uses the selected scenario's raw-risk "
+    "baseline. Blank values indicate missing, masked, zero-baseline or unsupported data."
 )
 
 
@@ -1113,7 +1035,8 @@ else:
 
             regional_fig,
 
-            use_container_width=True
+            use_container_width=True,
+            key="imd-regional-risk-change-map",
 
         )
 
